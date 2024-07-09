@@ -23,8 +23,6 @@ public enum Browser {
     CHROME {
         @Override
         public WebDriver createDriver() {
-            //WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
-
             return new ChromeDriver(getOptions());
         }
 
@@ -55,9 +53,7 @@ public enum Browser {
     }, FIREFOX {
         @Override
         public WebDriver createDriver() {
-            //WebDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
-
-            return new FirefoxDriver(getOptions());
+           return new FirefoxDriver(getOptions());
         }
 
         @Override
@@ -76,8 +72,6 @@ public enum Browser {
     }, EDGE {
         @Override
         public WebDriver createDriver() {
-            //WebDriverManager.getInstance(DriverManagerType.EDGE).setup();
-
             return new EdgeDriver(getOptions());
         }
 
@@ -108,8 +102,6 @@ public enum Browser {
     }, SAFARI {
         @Override
         public WebDriver createDriver() {
-            //WebDriverManager.getInstance(DriverManagerType.SAFARI).setup();
-
             return new SafariDriver(getOptions());
         }
 
