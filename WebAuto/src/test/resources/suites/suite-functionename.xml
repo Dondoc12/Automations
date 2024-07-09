@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Tests CMS">
+
+    <listeners>
+        <listener class-name=""/>
+    </listeners>
+
+    <test name="Tests Add Product CMS">
+        <parameter name="BROWSER" value="firefox"/>
+        <classes>
+            <class name="function.class""/>
+        </classes>
+    </test>
+
+</suite>
