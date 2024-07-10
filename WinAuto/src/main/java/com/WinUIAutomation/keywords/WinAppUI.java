@@ -15,6 +15,7 @@ import com.google.zxing.MultiFormatReader;
 import com.google.zxing.Result;
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
+import io.appium.java_client.windows.WindowsElement;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
@@ -43,8 +44,8 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.List;
 /**
-    * Keyword WebUI is a generic class that is a preprocessed library with many custom functions from Selenium and Java.
-    * Returns is a Class containing Static functions. Callback is used by taking the class name and dotting the function name (WebUI.method)
+ * Keyword WebUI is a generic class that is a preprocessed library with many custom functions from Selenium and Java.
+ * Returns is a Class containing Static functions. Callback is used by taking the class name and dotting the function name (WebUI.method)
  * */
 public class WinAppUI {
 
@@ -470,7 +471,7 @@ public class WinAppUI {
      * @param by is an element of type By
      * @return Returns a WebElement object
      */
-    public static WebElement getWebElement(By by) {
+    public static WindowsElement getWebElement(By by) {
         return WinAppDriverManagement.getDriver().findElement(by);
     }
 
@@ -480,7 +481,7 @@ public class WinAppUI {
      * @param by is an element of type By
      * @return Returns a List of WebElement objects
      */
-    public static List<WebElement> getWebElements(By by) {
+    public static List<WindowsElement> getWebElements(By by) {
         return WinAppDriverManagement.getDriver().findElements(by);
     }
 
@@ -749,7 +750,7 @@ public class WinAppUI {
         smartWait();
         //For dynamic dropdowns (div, li, span,...not select options)
         try {
-            List<WebElement> elements = getWebElements(objectListItem);
+            List<WindowsElement> elements = getWebElements(objectListItem);
 
             for (WebElement element : elements) {
                 WinAppLogUtils.info(element.getText());
@@ -776,7 +777,7 @@ public class WinAppUI {
         smartWait();
 
         try {
-            List<WebElement> elements = getWebElements(by);
+            List<WindowsElement> elements = getWebElements(by);
 
             for (WebElement element : elements) {
                 WinAppLogUtils.info(element.getText());
@@ -802,7 +803,7 @@ public class WinAppUI {
 
         WinAppLogUtils.info("Get total of Option Dynamic with list element. " + objectListItem);
         try {
-            List<WebElement> elements = getWebElements(objectListItem);
+            List<WindowsElement> elements = getWebElements(objectListItem);
             return elements.size();
         } catch (Exception e) {
             WinAppLogUtils.info(e.getMessage());
@@ -1159,7 +1160,7 @@ public class WinAppUI {
         WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 
-        List<WebElement> listElement = getWebElements(by);
+        List<WindowsElement> listElement = getWebElements(by);
         List<String> listText = new ArrayList<>();
 
         for (WebElement e : listElement) {
@@ -1179,7 +1180,7 @@ public class WinAppUI {
         smartWait();
 
         boolean res;
-        List<WebElement> elementList = getWebElements(by);
+        List<WindowsElement> elementList = getWebElements(by);
         if (elementList.size() > 0) {
             res = true;
             WinAppLogUtils.info("Element existing");
@@ -2599,7 +2600,7 @@ public class WinAppUI {
     public static void checkEqualsValueOnTableByColumn(int column, String value) {
         smartWait();
         sleep(1);
-        List<WebElement> totalRows = getWebElements(By.xpath("//tbody/tr"));
+        List<WindowsElement> totalRows = getWebElements(By.xpath("//tbody/tr"));
         WinAppLogUtils.info("Number of results for keywords (" + value + "): " + totalRows.size());
 
         if (totalRows.size() < 1) {
@@ -2624,7 +2625,7 @@ public class WinAppUI {
     public static void checkContainsValueOnTableByColumn(int column, String value) {
         smartWait();
         sleep(1);
-        List<WebElement> totalRows = getWebElements(By.xpath("//tbody/tr"));
+        List<WindowsElement> totalRows = getWebElements(By.xpath("//tbody/tr"));
         WinAppLogUtils.info("Number of results for keywords (" + value + "): " + totalRows.size());
 
         if (totalRows.size() < 1) {
@@ -2651,7 +2652,7 @@ public class WinAppUI {
         smartWait();
 
         //xpathToTRtagname is locator from table to "tr" tagname of data section: //tbody/tr, //div[@id='example_wrapper']//tbody/tr, ...
-        List<WebElement> totalRows = WinAppDriverManagement.getDriver().findElements(By.xpath(xpathToTRtagname));
+        List<WindowsElement> totalRows = WinAppDriverManagement.getDriver().findElements(By.xpath(xpathToTRtagname));
         sleep(1);
         WinAppLogUtils.info("Number of results for keywords (" + value + "): " + totalRows.size());
 
@@ -2677,7 +2678,7 @@ public class WinAppUI {
     public static ArrayList getValueTableByColumn(int column) {
         smartWait();
 
-        List<WebElement> totalRows = WinAppDriverManagement.getDriver().findElements(By.xpath("//tbody/tr"));
+        List<WindowsElement> totalRows = WinAppDriverManagement.getDriver().findElements(By.xpath("//tbody/tr"));
         sleep(1);
         WinAppLogUtils.info("Number of results for column (" + column + "): " + totalRows.size()); //Không thích ghi log thì xóa nhen
 

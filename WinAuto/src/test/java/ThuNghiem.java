@@ -13,25 +13,22 @@ import java.net.MalformedURLException;
 
 public class ThuNghiem {
     public static WebElement getUsername(WindowsDriver driver) {
-        return getLocatedElement(driver, "User");
+        return getLocatedElement("User");
     }
     public static void main(String[] args) throws MalformedURLException {
-        WindowsDriver<WindowsElement> driver = (WindowsDriver<WindowsElement>) ThreadGuard.protect(WinAppDriver.LAWSON_CLIENT.createDriver());
+        WindowsDriver<WindowsElement> driver = WinAppDriver.LAWSON_CLIENT.createDriver();
 
         WinAppDriverManagement.setDriver(driver);
 
         System.out.println("Driver created successfully!");
-        if(pageObject.getPasswordPrompt(driver) != null){
-            getUsername(driver).clear();
-            getUsername(driver).sendKeys(data.userName);
-         }
+
     }
-    public static WebElement getLocatedElement(WindowsDriver driver, String elementAutoID) {
-        for (String windowHandle : driver.getWindowHandles()) {
-            driver.switchTo().window(windowHandle);
+    public static WebElement getLocatedElement(String elementAutoID) {
+        for (String windowHandle : WinAppDriverManagement.getDriver().getWindowHandles()) {
+            WinAppDriverManagement.getDriver().switchTo().window(windowHandle);
             try{
-                WebDriverWait wait = new WebDriverWait(driver,20);
-                return wait.until(ExpectedConditions.visibilityOf(driver.findElementByAccessibilityId(elementAutoID)));
+                WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(),20);
+                return wait.until(ExpectedConditions.visibilityOf(WinAppDriverManagement.getDriver().findElementByAccessibilityId(elementAutoID)));
             }
             catch (Exception e){
                 return null;

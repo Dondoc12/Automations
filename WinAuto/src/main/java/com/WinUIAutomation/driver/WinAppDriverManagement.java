@@ -12,7 +12,7 @@ public class WinAppDriverManagement {
         super();
     }
 
-    public static WebDriver getDriver() {
+    public static WindowsDriver<WindowsElement> getDriver() {
         return driver.get();
     }
 
