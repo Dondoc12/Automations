@@ -10,14 +10,14 @@ public final class WinAppIconUtils {
     }
 
     public static String getBrowserIcon() {
-        if (WinAppBrowserInfoUtils.getBrowserInfo().contains(WinAppDriverValue.LAWSON_CLIENT.toString())) {
+        if (WinAppBrowserInfoUtils.getAppInfo().contains(WinAppDriverValue.LAWSON_CLIENT.toString())) {
             return WinAppConstants.ICON_LAWSON_CLIENT;
-        } else if (WinAppBrowserInfoUtils.getBrowserInfo().contains(WinAppDriverValue.EDGE.toString())) {
+        } else if (WinAppBrowserInfoUtils.getAppInfo().contains(WinAppDriverValue.EDGE.toString())) {
             return WinAppConstants.ICON_BROWSER_EDGE;
-        } else if (WinAppBrowserInfoUtils.getBrowserInfo().contains(WinAppDriverValue.FIREFOX.toString())) {
+        } else if (WinAppBrowserInfoUtils.getAppInfo().contains(WinAppDriverValue.FIREFOX.toString())) {
             return WinAppConstants.ICON_BROWSER_FIREFOX;
         } else {
-            return WinAppBrowserInfoUtils.getBrowserInfo();
+            return WinAppBrowserInfoUtils.getAppInfo();
         }
     }
 

@@ -133,7 +133,7 @@ public class WinAppExtentReportManagement {
     }
 
     synchronized public static void addDevices() {
-        WinAppExtentTestManagement.getExtentTest().assignDevice(WinAppBrowserInfoUtils.getBrowserInfo());
+        WinAppExtentTestManagement.getExtentTest().assignDevice(WinAppBrowserInfoUtils.getAppInfo());
 //		ExtentReportManager.getExtentTest()
 //				.assignDevice(BrowserIconUtils.getBrowserIcon() + " : " + BrowserInfoUtils.getBrowserInfo());
     }

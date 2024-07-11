@@ -10,14 +10,14 @@ public class WinAppBrowserInfoUtils {
 
     private static final String OS = System.getProperty("os.name").toLowerCase();
 
-    public static String getBrowserInfo() {
-        String browser = "";
-        if (Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("BROWSER") == null) {
-            browser = WinAppConstants.BROWSER.toUpperCase();
+    public static String getAppInfo() {
+        String app = "";
+        if (Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("APP_NAME") == null) {
+            app = WinAppConstants.APP_NAME.toUpperCase();
         } else {
-            browser = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("BROWSER").trim().toUpperCase();
+            app = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("APP_NAME").trim().toUpperCase();
         }
-        return browser;
+        return app;
     }
 
     public static String getOSInfo() {

@@ -5,19 +5,22 @@ import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.WinUIAutomation.constants.WinAppConstants;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 public enum WinAppDriver {
     LAWSON_CLIENT {
         @Override
         public WindowsDriver<WindowsElement> createDriver() throws MalformedURLException {
+            openLawSonApp();
             return new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), getOptions());
         }
 
         @Override
         public DesiredCapabilities getOptions() {
-            String lawsonClientPath = "C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe";
+            String lawsonClientPath = WinAppConstants.LAWSON_CLIENT_PATH;
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("platformName", "windows");
             capabilities.setCapability("deviceName", "WindowsPC");
@@ -26,7 +29,24 @@ public enum WinAppDriver {
             return capabilities;
         }
     };
+    public static void openLawSonApp() {
+        String lawSonAppDirect = WinAppConstants.LAWSON_DIRECT_LINK;
 
+        ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "start", lawSonAppDirect);
+        processBuilder.redirectErrorStream(true);
+
+        try {
+            Process process = processBuilder.start();
+            process.waitFor(); // Đợi cho đến khi quá trình hoàn thành
+            System.out.println("Application launched successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Failed to launch the application: IOException");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            System.out.println("Failed to launch the application: InterruptedException");
+        }
+    }
     public abstract WindowsDriver<WindowsElement> createDriver() throws MalformedURLException;
 
     public abstract DesiredCapabilities getOptions();

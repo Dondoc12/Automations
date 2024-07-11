@@ -144,4 +144,9 @@ public class WinAppUIKey {
             WinAppExtentReportManagement.info("Upload File with Local Form: " + filePath);
         }
     }
+    public static void performDoubleClick(WindowsElement element) {
+        Actions action = new Actions(WinAppDriverManagement.getDriver());
+        action.moveToElement(element).doubleClick().perform();
+        System.out.println("Double click performed on element: " + element);
+    }
 }

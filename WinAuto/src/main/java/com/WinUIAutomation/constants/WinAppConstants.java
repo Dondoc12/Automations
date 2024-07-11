@@ -19,8 +19,9 @@ public class WinAppConstants {
     public static final String EXCEL_DATA_FILE_PATH = WinAppPropertiesHelpers.getValue("EXCEL_DATA_FILE_PATH");
     public static final String JSON_DATA_FILE_PATH = WinAppPropertiesHelpers.getValue("JSON_DATA_FILE_PATH");
     public static final String LAWSON_CLIENT_PATH =  WinAppPropertiesHelpers.getValue("LAWSON_CLIENT_PATH");
+    public static final String LAWSON_DIRECT_LINK=  WinAppPropertiesHelpers.getValue("LAWSON_DIRECT_LINK");
 
-    public static final String BROWSER = WinAppPropertiesHelpers.getValue("BROWSER");
+    public static final String APP_NAME = WinAppPropertiesHelpers.getValue("APP_NAME");
     public static final String PROJECT_NAME = WinAppPropertiesHelpers.getValue("PROJECT_NAME");
     public static final String REPORT_TITLE = WinAppPropertiesHelpers.getValue("REPORT_TITLE");
     public static final String EXTENT_REPORT_NAME = WinAppPropertiesHelpers.getValue("EXTENT_REPORT_NAME");

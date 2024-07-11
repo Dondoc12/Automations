@@ -1,5 +1,6 @@
 package org.example;
 
+import com.WinUIAutomation.driver.WinAppDriverManagement;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.apache.commons.io.FileUtils;
@@ -133,6 +134,11 @@ public class demoAutomation {
 //        }
 //
 //    }
+public static void performDoubleClick(WindowsDriver<WindowsElement> driver, WindowsElement element) {
+    Actions action = new Actions(driver);
+    action.moveToElement(element).doubleClick().perform();
+    System.out.println("Double click performed on element: " + element);
+}
     public static void openLawSonApp() {
         String filePath = "C:\\TE\\aaaaaaaa.appref-ms";
 
@@ -163,11 +169,6 @@ public class demoAutomation {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-    }
-    public static void performDoubleClick(WindowsDriver<WindowsElement> driver, WindowsElement element) {
-        Actions action = new Actions(driver);
-        action.moveToElement(element).doubleClick().perform();
-        System.out.println("Double click performed on element: " + element);
     }
     public static void TakeImage(WebDriver driver) {
         try {

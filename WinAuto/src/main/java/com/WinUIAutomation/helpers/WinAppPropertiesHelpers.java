@@ -3,11 +3,14 @@ package com.WinUIAutomation.helpers;
 import com.WinUIAutomation.utils.WinAppLanguageUtils;
 import com.WinUIAutomation.utils.WinAppLogUtils;
 
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Properties;
+
+
 
 public class WinAppPropertiesHelpers {
 
@@ -16,33 +19,34 @@ public class WinAppPropertiesHelpers {
     private static FileInputStream file;
     private static FileOutputStream out;
     private static String relPropertiesFilePathDefault = "src/test/resources/config/config.properties";
+    private static String mainModulePath = WinAppHelpers.getCurrentDir() + "WinAuto\\";
+        public static Properties loadAllFiles() {
+            LinkedList<String> files = new LinkedList<>();
+            // Add all file Properties
+            files.add("src/test/resources/config/config.properties");
+            files.add("src/test/resources/config/data.properties");
 
-    public static Properties loadAllFiles() {
-        LinkedList<String> files = new LinkedList<>();
-        // Add all file Properties
-        files.add("src/test/resources/config/config.properties");
-        files.add("src/test/resources/config/data.properties");
 
+            try {
+                properties = new Properties();
 
-        try {
-            properties = new Properties();
+                for (String f : files) {
+                    Properties tempProp = new Properties();
 
-            for (String f : files) {
-                Properties tempProp = new Properties();
-                linkFile = WinAppHelpers.getCurrentDir() + f;
-                file = new FileInputStream(linkFile);
-                tempProp.load(file);
-                properties.putAll(tempProp);
+                    linkFile = mainModulePath + f;
+                    file = new FileInputStream(linkFile);
+                    tempProp.load(file);
+                    properties.putAll(tempProp);
+                }
+                file.close();
+                WinAppLogUtils.info("Loaded all properties files.");
+                return properties;
+            } catch (IOException e) {
+                WinAppLogUtils.info("Warning !! Can not Load File: " + linkFile);
+                WinAppLogUtils.info("Warning !! Can not Load All File.");
+                return new Properties();
             }
-            file.close();
-            WinAppLogUtils.info("Loaded all properties files.");
-            //LogUtils.info(properties);
-            return properties;
-        } catch (IOException e) {
-            WinAppLogUtils.info("Warning !! Can not Load All File.");
-            return new Properties();
         }
-    }
 
     public static Properties getProperties() {
         return properties;
@@ -51,7 +55,7 @@ public class WinAppPropertiesHelpers {
     public static void setFile(String relPropertiesFilePath) {
         properties = new Properties();
         try {
-            linkFile = WinAppHelpers.getCurrentDir() + relPropertiesFilePath;
+            linkFile = mainModulePath + relPropertiesFilePath;
             file = new FileInputStream(linkFile);
             properties.load(file);
             file.close();
@@ -63,7 +67,7 @@ public class WinAppPropertiesHelpers {
     public static void setDefaultFile() {
         properties = new Properties();
         try {
-            linkFile = WinAppHelpers.getCurrentDir() + relPropertiesFilePathDefault;
+            linkFile = mainModulePath + relPropertiesFilePathDefault;
             file = new FileInputStream(linkFile);
             properties.load(file);
             file.close();
@@ -77,7 +81,7 @@ public class WinAppPropertiesHelpers {
         try {
             if (file == null && properties == null) {
                 properties = new Properties();
-                linkFile = WinAppHelpers.getCurrentDir() + relPropertiesFilePathDefault;
+                linkFile = mainModulePath + relPropertiesFilePathDefault;
                 file = new FileInputStream(linkFile);
                 properties.load(file);
                 file.close();
@@ -96,10 +100,10 @@ public class WinAppPropertiesHelpers {
         try {
             if (file == null) {
                 properties = new Properties();
-                file = new FileInputStream(WinAppHelpers.getCurrentDir() + relPropertiesFilePathDefault);
+                file = new FileInputStream(mainModulePath + relPropertiesFilePathDefault);
                 properties.load(file);
                 file.close();
-                out = new FileOutputStream(WinAppHelpers.getCurrentDir() + relPropertiesFilePathDefault);
+                out = new FileOutputStream(mainModulePath + relPropertiesFilePathDefault);
             }
             //Write to the same Prop file as the extracted file
             out = new FileOutputStream(linkFile);

@@ -13,20 +13,20 @@ public class WinAppTarget {
     WindowsDriver<WindowsElement> winAppDriver;
 
     public WindowsDriver<WindowsElement> createInstance() throws MalformedURLException {
-        if (WinAppConstants.BROWSER == null || WinAppConstants.BROWSER.isEmpty()) {
+        if (WinAppConstants.APP_NAME == null || WinAppConstants.APP_NAME.isEmpty()) {
             throw new WinAppTargetNotValidException("Browser name is not valid.");
         }
         try {
-            return winAppDriver = WinAppDriver.valueOf(WinAppConstants.BROWSER.toUpperCase()).createDriver();
+            return winAppDriver = WinAppDriver.valueOf(WinAppConstants.APP_NAME.toUpperCase()).createDriver();
         } catch (IllegalArgumentException e) {
             throw new WinAppTargetNotValidException("Browser name is not valid.");
         }
     }
 
-    public WebDriver createInstance(String browser) throws MalformedURLException {
-        String browserName = (WinAppConstants.BROWSER != null && !WinAppConstants.BROWSER.isEmpty()) ? WinAppConstants.BROWSER : browser;
+    public WebDriver createInstance(String app) throws MalformedURLException {
+        String appName = (WinAppConstants.APP_NAME != null && !WinAppConstants.APP_NAME.isEmpty()) ? WinAppConstants.APP_NAME : app;
         try {
-            return winAppDriver = WinAppDriver.valueOf(browserName.toUpperCase()).createDriver();
+            return winAppDriver = WinAppDriver.valueOf(appName.toUpperCase()).createDriver();
         } catch (IllegalArgumentException e) {
             throw new WinAppTargetNotValidException("Browser name is not valid.");
         }
