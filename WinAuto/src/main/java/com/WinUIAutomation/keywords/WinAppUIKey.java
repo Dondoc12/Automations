@@ -1,6 +1,8 @@
 package com.WinUIAutomation.keywords;
 
+import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.driver.WinAppDriverManagement;
+import com.WinUIAutomation.helpers.WinAppHelpers;
 import com.WinUIAutomation.report.WinAppExtentReportManagement;
 import com.WinUIAutomation.report.WinAppExtentTestManagement;
 import com.WinUIAutomation.utils.WinAppBrowserInfoUtils;
@@ -69,84 +71,31 @@ public class WinAppUIKey {
     public static void logConsole(@Nullable Object object) {
         System.out.println(object);
     }
-    /**
-     * Uploading files with a click shows a form to select local files on your computer
-     *
-     * @param by       is an element of type By
-     * @param filePath the absolute path to the file on your computer
-     */
-    public static void uploadFileWithLocalForm(By by, String filePath) {
-       // smartWait();
-
+    public static void performDoubleClick(By by) {
         Actions action = new Actions(WinAppDriverManagement.getDriver());
-        //Click to open form upload
-        action.moveToElement(getWindowElement(by)).click().perform();
-        sleep(3);
-
-        // Create Robot class
-        Robot robot = null;
-        try {
-            robot = new Robot();
-        } catch (AWTException e) {
-            e.printStackTrace();
-        }
-
-        // Copy File path to Clipboard
-        StringSelection str = new StringSelection(filePath);
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-
-        //Check OS for Windows
-        if (WinAppBrowserInfoUtils.isWindows()) {
-            // Press Control+V to paste
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_V);
-
-            // Release the Control V
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-            robot.keyRelease(KeyEvent.VK_V);
-            robot.delay(2000);
-            // Press Enter
-            robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
-        }
-        //Check OS for MAC
-        if (WinAppBrowserInfoUtils.isMac()) {
-            robot.keyPress(KeyEvent.VK_META);
-            robot.keyPress(KeyEvent.VK_TAB);
-            robot.keyRelease(KeyEvent.VK_META);
-            robot.keyRelease(KeyEvent.VK_TAB);
-            robot.delay(1000);
-
-            //Open goto MAC
-            robot.keyPress(KeyEvent.VK_META);
-            robot.keyPress(KeyEvent.VK_SHIFT);
-            robot.keyPress(KeyEvent.VK_G);
-            robot.keyRelease(KeyEvent.VK_META);
-            robot.keyRelease(KeyEvent.VK_SHIFT);
-            robot.keyRelease(KeyEvent.VK_G);
-
-            //Paste the clipboard value
-            robot.keyPress(KeyEvent.VK_META);
-            robot.keyPress(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_META);
-            robot.keyRelease(KeyEvent.VK_V);
-            robot.delay(1000);
-
-            //Press Enter key to close the Goto MAC and Upload on MAC
-            robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
-            robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
-        }
-
-        WinAppLogUtils.info("Upload File with Local Form: " + filePath);
+        action.moveToElement(WinAppDriverManagement.getDriver().findElement(by)).doubleClick().perform();
         if (WinAppExtentTestManagement.getExtentTest() != null) {
-            WinAppExtentReportManagement.info("Upload File with Local Form: " + filePath);
+            WinAppExtentReportManagement.pass("Double Click on "+ by);
         }
+
     }
     public static void performDoubleClick(WindowsElement element) {
         Actions action = new Actions(WinAppDriverManagement.getDriver());
         action.moveToElement(element).doubleClick().perform();
-        System.out.println("Double click performed on element: " + element);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Double Click on "+ element);
+        }
+    }
+    /**
+     * Take entire-page screenshot and add to Extent report
+     *
+     * @param screenName Screenshot name
+     */
+    public static void addScreenshotToReport(String screenName) {
+        if (WinAppConstants.SCREENSHOT_ALL_STEPS.equals(WinAppConstants.YES)) {
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.addScreenShot(WinAppHelpers.makeSlug(screenName));
+            }
+        }
     }
 }

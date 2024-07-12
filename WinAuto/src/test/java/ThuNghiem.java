@@ -1,9 +1,11 @@
 import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.driver.WinAppDriver;
 import com.WinUIAutomation.driver.WinAppDriverManagement;
+import com.WinUIAutomation.keywords.ByAccessibilityId;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.example.data;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,6 +19,8 @@ import java.util.concurrent.TimeUnit;
 import static org.example.demoAutomation.TakeImage;
 
 public class ThuNghiem {
+    public By buttonAddClient = By.xpath("//a[normalize-space()='Add client']");
+    public By heloman = ByAccessibilityId.accessibilityId("");
     public static WebElement getLocatedElement(String elementAutoID) {
         WinAppDriverManagement.getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         for (String windowHandle : WinAppDriverManagement.getDriver().getWindowHandles()) {
@@ -87,7 +91,7 @@ public class ThuNghiem {
         getSearchField().clear();
         getSearchField().sendKeys(data.OpenVMIAPI);
         getSearchButton().click();
-        wait.until(ExpectedConditions.visibilityOf(driver.findElementByClassName("ListViewItem")));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ListViewItem"))));
         List<WindowsElement> gribViewData = driver.findElementsByClassName("ListViewItem");
         if(gribViewData.isEmpty()){
             getDataset().sendKeys(data.DatasetValue);
