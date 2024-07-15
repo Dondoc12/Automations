@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import com.WinUIAutomation.keywords.WinAppUIKey;
 
 import java.net.MalformedURLException;
 import java.util.List;
@@ -104,7 +103,6 @@ public class ThuNghiem {
         gribViewData.get(2).findElementByClassName("TextBox").sendKeys(data.ItemNumberValue);
         getApplyButton().click();
         List<WindowsElement> gribViewDetailData = driver.findElementsByClassName("ListViewItem");
-        WinAppUIKey.performDoubleClick(gribViewDetailData.get(0));
         List<WindowsElement> gribViewDetailData2 = driver.findElementsByClassName("ListViewItem");
         gribViewDetailData2.get(22).click();
         String value = gribViewDetailData2.get(22).findElementByAccessibilityId("R23C4").getAttribute("Value.Value").trim();

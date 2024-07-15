@@ -72,8 +72,7 @@ public class WinAppUI {
     }
 
     /**
-     * Take entire-page screenshot and add to Extent report and Allure report
-     *
+     * Take entire-page screenshot and add to Extent report
      * @param screenName Screenshot name
      */
     public static void addScreenshotToReport(String screenName) {
