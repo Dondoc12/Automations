@@ -6,41 +6,24 @@ import com.WinUIAutomation.enums.WinAppFailureHandling;
 import com.WinUIAutomation.helpers.WinAppHelpers;
 import com.WinUIAutomation.report.WinAppExtentReportManagement;
 import com.WinUIAutomation.report.WinAppExtentTestManagement;
-import com.WinUIAutomation.utils.WinAppBrowserInfoUtils;
 import com.WinUIAutomation.utils.WinAppDateUtils;
 import com.WinUIAutomation.utils.WinAppLogUtils;
-import com.google.zxing.BinaryBitmap;
-import com.google.zxing.LuminanceSource;
-import com.google.zxing.MultiFormatReader;
-import com.google.zxing.Result;
-import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
-import com.google.zxing.common.HybridBinarizer;
+import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import javax.annotation.Nullable;
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.datatransfer.StringSelection;
 import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.List;
@@ -69,6 +52,7 @@ public class WinUI {
             e.printStackTrace();
         }
     }
+    // Wait Control
     /**
      * Smart Waits contains waitForPageLoaded and sleep functions
      */
@@ -77,17 +61,364 @@ public class WinUI {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(),WinAppConstants.WAIT_EXPLICIT);
             wait.until(d -> WinAppDriverManagement.getDriver().findElement(by));
         sleep(WinAppConstants.WAIT_SLEEP_STEP);
+        }
     }
-    }
+    /**
+     * Wait for the given element to present
+     *
+     * @param by an element of object type By
+     * @return an existing WebElement object
+     */
+    public static WebElement waitForElementPresent(By by) {
+        smartWait(by);
 
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            return wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        } catch (Throwable error) {
+            WinAppLogUtils.error("Element not exist. " + by.toString());
+            Assert.fail("Element not exist. " + by.toString());
+        }
+        return null;
+    }
+    /**
+     * Wait until the given web element is visible.
+     *
+     * @param by an element of object type By
+     * @return a WebElement object ready to be visible
+     */
+    public static Boolean waitForElementInvisible(By by) {
+        smartWait(by);
+        waitForElementPresent(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            boolean check = isElementVisible(by, 1);
+            if (check == true) {
+                return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+            } else {
+                scrollToElementAtBottom(by);
+                return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+            }
+        } catch (Throwable error) {
+            WinAppLogUtils.error("Timeout waiting for the element Invisible. " + by.toString());
+            Assert.fail("Timeout waiting for the element Invisible. " + by.toString());
+        }
+        return null;
+    }
+    /**
+     * Wait until the given web element is visible.
+     *
+     * @param by an element of object type By
+     * @return a WebElement object ready to be visible
+     */
+    public static WebElement waitForElementVisible(By by) {
+        smartWait(by);
+        waitForElementPresent(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            boolean check = isElementVisible(by, 1);
+            if (check == true) {
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            } else {
+                scrollToElementAtBottom(by);
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            }
+        } catch (Throwable error) {
+            WinAppLogUtils.error("Timeout waiting for the element Visible. " + by.toString());
+            Assert.fail("Timeout waiting for the element Visible. " + by.toString());
+        }
+        return null;
+    }
+    // Scroll/Move control
+    /**
+     * Move to an offset location.
+     *
+     * @param X x offset
+     * @param Y y offset
+     * @return true/false
+     */
+    public static boolean moveToOffset(int X, int Y) {
+        try {
+            Actions action = new Actions(WinAppDriverManagement.getDriver());
+            action.moveByOffset(X, Y).build().perform();
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.info(e.getMessage());
+            return false;
+        }
+    }
+    /**
+     * Scroll to an offset location
+     *
+     * @param x x offset
+     * @param y y offset
+     */
+    public static void scrollToPosition(int x, int y) {
+        WindowsDriver<WindowsElement> driver = WinAppDriverManagement.getDriver();
+        new Actions(driver)
+                .moveByOffset(x, y)
+                .perform();
+        WinAppLogUtils.info("Scroll to position X = " + x + " ; Y = " + y);
+    }
+    /**
+     * Scroll an element into the visible area of the application window. (at TOP)
+     *
+     * @param by Represent a UI element as the By object
+     */
+    public static void scrollToElementAtTop(By by) {
+        smartWait(by);
+        WebElement element = WinAppDriverManagement.getDriver().findElement(by);
+
+        // Perform the scroll action
+        new Actions(WinAppDriverManagement.getDriver())
+                .moveToElement(element)
+                .perform();
+
+        WinAppLogUtils.info("Scroll to element " + by);
+    }
+    /**
+     * Scroll an element into the visible area of the application window. (at BOTTOM)
+     *
+     * @param by Represent a UI element as the By object
+     */
+    public static void scrollToElementAtBottom(By by) {
+        smartWait(by);
+
+        WindowsElement element = WinAppDriverManagement.getDriver().findElement(by);
+        Dimension elementSize = element.getSize();
+        Dimension windowSize = WinAppDriverManagement.getDriver().manage().window().getSize();
+        int scrollAmount = elementSize.getHeight() - windowSize.getHeight();
+        new Actions(WinAppDriverManagement.getDriver())
+                .moveToElement(element, 0, scrollAmount)
+                .perform();
+        WinAppLogUtils.info("Scroll to element " + by);
+    }
     /* Element Control */
+    /**
+     * Set the value of an input field
+     *
+     * @param by    an element of object type By
+     * @param value the value to fill in the text box
+     */
+    public static void setText(By by, String value) {
+        waitForElementVisible(by).sendKeys(value);
+        WinAppLogUtils.info("Set text " + value + " on " + by.toString());
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Set text " + value + " on " + by.toString());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Set the value of an input field and press the key on the keyboard
+     *
+     * @param by    an element of object type By
+     * @param value the value to fill in the text box
+     * @param keys  key on the keyboard to press
+     */
+    public static void setText(By by, String value, Keys keys) {
+        waitForElementVisible(by).sendKeys(value, keys);
+        WinAppLogUtils.info("Set text " + value + " on " + by + " and press key " + keys.name());
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Set text " + value + " on " + by + " and press key " + keys.name());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Simulates keystroke events on the specified element, as though you typed the value key-by-key.
+     *
+     * @param by   an element of object type By
+     * @param keys key on the keyboard to press
+     */
+    public static void sendKeys(By by, Keys keys) {
+        waitForElementVisible(by).sendKeys(keys);
+        WinAppLogUtils.info("Press key " + keys.name() + " on element " + by);
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Press key " + keys.name() + " on element " + by);
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Simulates keystroke events at the current position, as though you typed the value key-by-key.
+     *
+     * @param keys key on the keyboard to press
+     */
+    public static void sendKeys(Keys keys) {
+        Actions actions = new Actions(WinAppDriverManagement.getDriver());
+        actions.sendKeys(keys);
+        WinAppLogUtils.info("Press key " + keys.name() + " on keyboard");
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Press key " + keys.name() + " on keyboard");
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Clear all text of the element.
+     *
+     * @param by an element of object type By
+     */
+    public static void clearText(By by) {
+        waitForElementVisible(by).clear();
+        WinAppLogUtils.info("Clear text in textbox " + by.toString());
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Clear text in textbox " + by.toString());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Simulate users hovering a mouse over the given element.
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean hoverOnElement(By by) {
+        smartWait(by);
+
+        try {
+            Actions action = new Actions(WinAppDriverManagement.getDriver());
+            action.moveToElement(getWindowElement(by)).perform();
+            WinAppLogUtils.info("Hover on element " + by);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    /**
+     * Verify element is visible. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @return true/false
+     */
+    public static boolean isElementVisible(By by, int timeout) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            WinAppLogUtils.info("Verify element visible " + by);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    /**
+     * Move to the given element.
+     *
+     * @param toElement Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean moveToElement(By toElement) {
+        smartWait(toElement);
+
+        try {
+            Actions action = new Actions(WinAppDriverManagement.getDriver());
+            action.moveToElement(getWindowElement(toElement)).release(getWindowElement(toElement)).build().perform();
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.info(e.getMessage());
+            return false;
+        }
+    }
+    /**
+     * Simulate users hovering a mouse over the given element.
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean mouseHover(By by) {
+        smartWait(by);
+
+        try {
+            Actions action = new Actions(WinAppDriverManagement.getDriver());
+            action.moveToElement(getWindowElement(by)).perform();
+            WinAppLogUtils.info("Mouse hover on element " + by);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    /**
+     * Drag and drop an element onto another element.
+     *
+     * @param fromElement represent the drag-able element
+     * @param toElement   represent the drop-able element
+     * @return true/false
+     */
+    public static boolean dragAndDrop(By fromElement, By toElement) {
+        smartWait(fromElement);
+        smartWait(toElement);
+        try {
+            Actions action = new Actions(WinAppDriverManagement.getDriver());
+            action.dragAndDrop(getWindowElement(fromElement), getWindowElement(toElement)).perform();
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.info(e.getMessage());
+            return false;
+        }
+    }
+    /**
+     * Drag an object and drop it to an offset location.
+     *
+     * @param fromElement represent the drag-able element
+     * @param X           x offset
+     * @param Y           y offset
+     * @return true/false
+     */
+    public static boolean dragAndDropToOffset(By fromElement, int X, int Y) {
+        smartWait(fromElement);
+
+        try {
+            Robot robot = new Robot();
+            robot.mouseMove(0, 0);
+            int X1 = getWindowElement(fromElement).getLocation().getX() + (getWindowElement(fromElement).getSize().getWidth() / 2);
+            int Y1 = getWindowElement(fromElement).getLocation().getY() + (getWindowElement(fromElement).getSize().getHeight() / 2);
+            System.out.println(X1 + " , " + Y1);
+            sleep(1);
+
+            //This place takes the current coordinates plus 120px which is the browser header (1920x1080 current window)
+            //Header: chrome is being controlled by automated test software
+            robot.mouseMove(X1, Y1 + 120);
+            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+
+            sleep(1);
+            robot.mouseMove(X, Y + 120);
+            sleep(1);
+            robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.info(e.getMessage());
+            return false;
+        }
+    }
+    /**
+     * Get text of an element
+     *
+     * @param by an element of object type By
+     * @return text of a element
+     */
+    public static String getTextElement(By by) {
+        smartWait(by);
+        WinAppLogUtils.info("Get text on element " + by);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Get text on element " + by);
+            WinAppExtentReportManagement.pass("The Text is: " + waitForElementVisible(by).getText().trim());
+        }
+        return waitForElementVisible(by).getText().trim();
+    }
     /**
      * Convert the By object to the WebElement
      *
      * @param by is an element of type By
      * @return Returns a WebElement object
      */
-    public static WindowsElement getWebElement(By by) {
+    public static WindowsElement getWindowElement(By by) {
         return WinAppDriverManagement.getDriver().findElement(by);
     }
     /**
@@ -96,8 +427,86 @@ public class WinUI {
      * @param by is an element of type By
      * @return Returns a List of WebElement objects
      */
-    public static List<WindowsElement> getWebElements(By by) {
+    public static List<WindowsElement> getWindowElements(By by) {
         return WinAppDriverManagement.getDriver().findElements(by);
+    }
+    /**
+     * Select the options with the given label (displayed text).
+     *
+     * @param by   Represent a web element as the By object
+     * @param text the specified text of option
+     */
+    public static void selectOptionByText(By by, String text) {
+        smartWait(by);
+        Select select = new Select(getWindowElement(by));
+        select.selectByVisibleText(text);
+        WinAppLogUtils.info("Select Option " + by + "by text " + text);
+    }
+    /**
+     * Select the options with the given value.
+     *
+     * @param by    Represent a web element as the By object
+     * @param value the specified value of option
+     */
+    public static void selectOptionByValue(By by, String value) {
+        smartWait(by);
+
+        Select select = new Select(getWindowElement(by));
+        select.selectByValue(value);
+        WinAppLogUtils.info("Select Option " + by + "by value " + value);
+    }
+    /**
+     * Select the options with the given index.
+     *
+     * @param by    Represent a web element as the By object
+     * @param index the specified index of option
+     */
+    public static void selectOptionByIndex(By by, int index) {
+        smartWait(by);
+
+        Select select = new Select(getWindowElement(by));
+        select.selectByIndex(index);
+        WinAppLogUtils.info("Select Option " + by + "by index " + index);
+    }
+    /**
+     * Get list text of specified elements
+     *
+     * @param by Represent a web element as the By object
+     * @return Text list of specified elements
+     */
+    public static List<String> getListElementsText(By by) {
+        smartWait(by);
+
+        WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+
+        List<WindowsElement> listElement = getWindowElements(by);
+        List<String> listText = new ArrayList<>();
+
+        for (WebElement e : listElement) {
+            listText.add(e.getText());
+        }
+
+        return listText;
+    }
+    /**
+     * Get total number of options the given web element has. (select option)
+     *
+     * @param objectListItem Represent a web element as the By object
+     * @return total number of options
+     */
+    public static int getOptionDynamicTotal(By objectListItem) {
+        smartWait(objectListItem);
+
+        WinAppLogUtils.info("Get total of Option Dynamic with list element. " + objectListItem);
+        try {
+            List<WindowsElement> elements = getWindowElements(objectListItem);
+            return elements.size();
+        } catch (Exception e) {
+            WinAppLogUtils.info(e.getMessage());
+            e.getMessage();
+        }
+        return 0;
     }
     /**
      * Take entire-page screenshot and add to Extent report
@@ -140,7 +549,7 @@ public class WinUI {
                 WinAppLogUtils.info("Folder created: " + file);
             }
 
-            File source = getWebElement(by).getScreenshotAs(OutputType.FILE);
+            File source = getWindowElement(by).getScreenshotAs(OutputType.FILE);
             // result.getName() gets the name of the test case and assigns it to the screenshot file name
             FileUtils.copyFile(source, new File(path + "/" + screenName + "_" + dateFormat.format(new Date()) + ".png"));
             WinAppLogUtils.info("Screenshot taken: " + screenName);
@@ -186,7 +595,7 @@ public class WinUI {
      * @param elementName to name the .png image file
      */
     public static void screenshotElement(By by, String elementName) {
-        File scrFile = getWebElement(by).getScreenshotAs(OutputType.FILE);
+        File scrFile = getWindowElement(by).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(scrFile, new File("./" + elementName + ".png"));
         } catch (IOException e) {
@@ -260,6 +669,468 @@ public class WinUI {
 
     /* Verify Value */
     /**
+     * Verify if the options at the given text are selected.
+     *
+     * @param by   Represent a web element as the By object
+     * @param text the specified options text
+     * @return true if options given selected, else is false
+     */
+    public static boolean verifySelectedByText(By by, String text) {
+        smartWait(by);
+
+        Select select = new Select(getWindowElement(by));
+        WinAppLogUtils.info("Verify Option Selected by text: " + select.getFirstSelectedOption().getText());
+
+        if (select.getFirstSelectedOption().getText().equals(text)) {
+            return true;
+        } else {
+            Assert.assertEquals(select.getFirstSelectedOption().getText(), text, "The option NOT selected. " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the options at the given index are selected.
+     *
+     * @param by    Represent a web element as the By object
+     * @param index the specified options index
+     * @return true if options given selected, else is false
+     */
+    public static boolean verifySelectedByIndex(By by, int index) {
+        smartWait(by);
+
+        Select select = new Select(getWindowElement(by));
+        int indexFirstOption = select.getOptions().indexOf(select.getFirstSelectedOption());
+        WinAppLogUtils.info("The First Option selected by index: " + indexFirstOption);
+        WinAppLogUtils.info("Expected index: " + index);
+        if (indexFirstOption == index) {
+            return true;
+        } else {
+            Assert.assertTrue(false, "The option NOT selected. " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if a web element is present (findElements.size > 0).
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean verifyElementExists(By by) {
+        smartWait(by);
+
+        boolean res;
+        List<WindowsElement> elementList = getWindowElements(by);
+        if (elementList.size() > 0) {
+            res = true;
+            WinAppLogUtils.info("Element existing");
+        } else {
+            res = false;
+            WinAppLogUtils.error("Element not exists");
+
+        }
+        return res;
+    }
+    /**
+     * Verify if two object are equal.
+     *
+     * @param value1 The object one
+     * @param value2 The object two
+     * @return true/false
+     */
+    public static boolean verifyEquals(Object value1, Object value2) {
+        boolean result = value1.equals(value2);
+        if (result == true) {
+            WinAppLogUtils.info("Verify Equals: " + value1 + " = " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.pass("Verify Equals: " + value1 + " = " + value2);
+            }
+        } else {
+            WinAppLogUtils.info("Verify Equals: " + value1 + " != " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.fail("Verify Equals: " + value1 + " != " + value2);
+            }
+            Assert.assertEquals(value1, value2, value1 + " != " + value2);
+        }
+        return result;
+    }
+    /**
+     * Verify text of an element. (equals)
+     *
+     * @param by          Represent a web element as the By object
+     * @param text        Text of the element to verify.
+     * @param flowControl Specify failure handling schema (STOP_ON_FAILURE, CONTINUE_ON_FAILURE, OPTIONAL) to determine whether the execution should be allowed to continue or stop
+     * @return true if the element has the desired text, otherwise false.
+     */
+    public static boolean verifyElementTextEquals(By by, String text, WinAppFailureHandling flowControl) {
+        smartWait(by);
+
+        waitForElementVisible(by);
+
+        boolean result = getTextElement(by).trim().equals(text.trim());
+
+        if (result == true) {
+            WinAppLogUtils.info("Verify text of an element [Equals]: " + result);
+        } else {
+            WinAppLogUtils.warn("Verify text of an element [Equals]: " + result);
+        }
+
+        if (flowControl.equals(WinAppFailureHandling.STOP_ON_FAILURE)) {
+            Assert.assertEquals(getTextElement(by).trim(), text.trim(), "The actual text is '" + getTextElement(by).trim() + "' not equals '" + text.trim() + "'");
+        }
+        if (flowControl.equals(WinAppFailureHandling.CONTINUE_ON_FAILURE)) {
+            softAssert.assertEquals(getTextElement(by).trim(), text.trim(), "The actual text is '" + getTextElement(by).trim() + "' not equals '" + text.trim() + "'");
+            if (result == false) {
+                WinAppExtentReportManagement.fail("The actual text is '" + getTextElement(by).trim() + "' not equals '" + text.trim() + "'");
+            }
+        }
+        if (flowControl.equals(WinAppFailureHandling.OPTIONAL)) {
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.warning("Verify text of an element [Equals] - " + result);
+                WinAppExtentReportManagement.warning("The actual text is '" + getTextElement(by).trim() + "' not equals expected text '" + text.trim() + "'");
+            }
+        }
+
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+
+        return getTextElement(by).trim().equals(text.trim());
+    }
+    /**
+     * Verify text of an element. (equals)
+     *
+     * @param by   Represent a web element as the By object
+     * @param text Text of the element to verify.
+     * @return true if the element has the desired text, otherwise false.
+     */
+    public static boolean verifyElementTextEquals(By by, String text) {
+        smartWait(by);
+        waitForElementVisible(by);
+
+        boolean result = getTextElement(by).trim().equals(text.trim());
+
+        if (result == true) {
+            WinAppLogUtils.info("Verify text of an element [Equals]: " + result);
+        } else {
+            WinAppLogUtils.warn("Verify text of an element [Equals]: " + result);
+        }
+
+        Assert.assertEquals(getTextElement(by).trim(), text.trim(), "The actual text is '" + getTextElement(by).trim() + "' not equals '" + text.trim() + "'");
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.warning("Verify text of an element [Equals] : " + result);
+            WinAppExtentReportManagement.warning("The actual text is '" + getTextElement(by).trim() + "' not equals '" + text.trim() + "'");
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+        return result;
+    }
+    /**
+     * Verify text of an element. (contains)
+     *
+     * @param by          Represent a web element as the By object
+     * @param text        Text of the element to verify.
+     * @param flowControl Specify failure handling schema (STOP_ON_FAILURE, CONTINUE_ON_FAILURE, OPTIONAL) to determine whether the execution should be allowed to continue or stop
+     * @return true if the element has the desired text, otherwise false.
+     */
+    public static boolean verifyElementTextContains(By by, String text, WinAppFailureHandling flowControl) {
+        smartWait(by);
+        waitForElementVisible(by);
+
+        boolean result = getTextElement(by).trim().contains(text.trim());
+
+        if (result == true) {
+            WinAppLogUtils.info("Verify text of an element [Contains]: " + result);
+        } else {
+            WinAppLogUtils.warn("Verify text of an element [Contains]: " + result);
+        }
+
+        if (flowControl.equals(WinAppFailureHandling.STOP_ON_FAILURE)) {
+            Assert.assertTrue(result, "The actual text is " + getTextElement(by).trim() + " not contains " + text.trim());
+        }
+        if (flowControl.equals(WinAppFailureHandling.CONTINUE_ON_FAILURE)) {
+            softAssert.assertTrue(result, "The actual text is " + getTextElement(by).trim() + " not contains " + text.trim());
+        }
+        if (flowControl.equals(WinAppFailureHandling.OPTIONAL)) {
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.warning("Verify text of an element [Contains] - " + result);
+            }
+        }
+
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+
+        return getTextElement(by).trim().contains(text.trim());
+    }
+    /**
+     * Verify text of an element. (contains)
+     *
+     * @param by   Represent a web element as the By object
+     * @param text Text of the element to verify.
+     * @return true if the element has the desired text, otherwise false.
+     */
+    public static boolean verifyElementTextContains(By by, String text) {
+        smartWait(by);
+        waitForElementVisible(by);
+
+        boolean result = getTextElement(by).trim().contains(text.trim());
+
+        if (result == true) {
+            WinAppLogUtils.info("Verify text of an element [Contains]: " + result);
+        } else {
+            WinAppLogUtils.warn("Verify text of an element [Contains]: " + result);
+        }
+
+        Assert.assertTrue(result, "The actual text is " + getTextElement(by).trim() + " not contains " + text.trim());
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.info("Verify text of an element [Contains] : " + result);
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+
+        return result;
+    }
+
+    /**
+     * Verify if two object are equal.
+     *
+     * @param value1  The object one
+     * @param value2  The object two
+     * @param message The custom message if false
+     * @return true/false
+     */
+    public static boolean verifyEquals(Object value1, Object value2, String message) {
+        boolean result = value1.equals(value2);
+        if (result == true) {
+            WinAppLogUtils.info("Verify Equals: " + value1 + " = " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.pass("Verify Equals: " + value1 + " = " + value2);
+            }
+        } else {
+            WinAppLogUtils.info("Verify Equals: " + value1 + " != " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.fail("Verify Equals: " + value1 + " != " + value2);
+            }
+            Assert.assertEquals(value1, value2, message);
+        }
+        return result;
+    }
+    /**
+     * Verify if the given element is clickable. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementClickable(By by, int timeout, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.elementToBeClickable(by));
+            WinAppLogUtils.info("Verify element clickable " + by);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.info("Verify element clickable " + by);
+            }
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.error(message);
+            WinAppLogUtils.error(e.getMessage());
+            Assert.fail(message + "" + e.getMessage());
+            return false;
+        }
+    }
+    /**
+     * Verify if the given element is clickable. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @return true/false
+     */
+    public static boolean verifyElementClickable(By by, int timeout) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.elementToBeClickable(by));
+            WinAppLogUtils.info("Verify element clickable " + by);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.info("Verify element clickable " + by);
+            }
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.error("FAILED. Element not clickable " + by);
+            WinAppLogUtils.error(e.getMessage());
+            Assert.fail("FAILED. Element not clickable " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the given element is clickable.
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean verifyElementClickable(By by) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.elementToBeClickable(by));
+            WinAppLogUtils.info("Verify element clickable " + by);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.info("Verify element clickable " + by);
+            }
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.error(e.getMessage());
+            Assert.fail("FAILED. Element not clickable " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the options at the given value are selected.
+     *
+     * @param by    Represent a web element as the By object
+     * @param value the specified options value
+     * @return true if options given selected, else is false
+     */
+    public static boolean verifySelectedByValue(By by, String value) {
+        smartWait(by);
+
+        Select select = new Select(getWindowElement(by));
+        WinAppLogUtils.info("Verify Option Selected by value: " + select.getFirstSelectedOption().getAttribute("value"));
+        if (select.getFirstSelectedOption().getAttribute("value").equals(value)) {
+            return true;
+        } else {
+            Assert.assertEquals(select.getFirstSelectedOption().getAttribute("value"), value, "The option NOT selected. " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the first object contains the second object.
+     *
+     * @param value1 The first object
+     * @param value2 The second object
+     * @return true/false
+     */
+    public static boolean verifyContains(String value1, String value2) {
+        boolean result = value1.contains(value2);
+        if (result == true) {
+            WinAppLogUtils.info("Verify Equals: " + value1 + " CONTAINS " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.pass("Verify Contains: " + value1 + " CONTAINS " + value2);
+            }
+        } else {
+            WinAppLogUtils.info("Verify Contains: " + value1 + " NOT CONTAINS " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.fail("Verify Contains: " + value1 + " NOT CONTAINS " + value2);
+            }
+            Assert.assertEquals(value1, value2, value1 + " NOT CONTAINS " + value2);
+        }
+        return result;
+    }
+    /**
+     * Verify if the first object contains the second object.
+     *
+     * @param value1  The first object
+     * @param value2  The second object
+     * @param message The custom message if false
+     * @return true/false
+     */
+    public static boolean verifyContains(String value1, String value2, String message) {
+        boolean result = value1.contains(value2);
+        if (result == true) {
+            WinAppLogUtils.info("Verify Equals: " + value1 + " CONTAINS " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.pass("Verify Contains: " + value1 + " CONTAINS " + value2);
+            }
+        } else {
+            WinAppLogUtils.info("Verify Contains: " + value1 + " NOT CONTAINS " + value2);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.fail("Verify Contains: " + value1 + " NOT CONTAINS " + value2);
+            }
+            Assert.assertEquals(value1, value2, message);
+        }
+        return result;
+    }
+    /**
+     * Verify the condition is true.
+     *
+     * @return true/false
+     */
+    public static boolean verifyTrue(Boolean condition) {
+        if (condition == true) {
+            WinAppLogUtils.info("Verify TRUE: " + condition);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.pass("Verify TRUE: " + condition);
+            }
+        } else {
+            WinAppLogUtils.info("Verify TRUE: " + condition);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.fail("Verify TRUE: " + condition);
+            }
+            Assert.assertTrue(condition, "The condition is FALSE.");
+        }
+        return condition;
+    }
+    /**
+     * Verify the condition is true.
+     *
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyTrue(Boolean condition, String message) {
+        if (condition == true) {
+            WinAppLogUtils.info("Verify TRUE: " + condition);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.pass("Verify TRUE: " + condition);
+            }
+        } else {
+            WinAppLogUtils.info("Verify TRUE: " + condition);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.fail("Verify TRUE: " + condition);
+            }
+            Assert.assertTrue(condition, message);
+        }
+        return condition;
+    }
+    /**
+     * Verify text of an element. (equals)
+     *
+     * @param by   Represent a web element as the By object
+     * @param text Text of the element to verify.
+     * @return true if the element has the desired text, otherwise false.
+     */
+    public static boolean verifyElementText(By by, String text) {
+        smartWait(by);
+        waitForElementVisible(by);
+
+        return getTextElement(by).trim().equals(text.trim());
+    }
+    /**
+     * Verify All Options contains the specified text (select option)
+     *
+     * @param by   Represent a web element as the By object
+     * @param text the specified text
+     * @return true if all option contains the specified text
+     */
+    public static boolean verifyOptionDynamicExist(By by, String text) {
+        smartWait(by);
+
+        try {
+            List<WindowsElement> elements = getWindowElements(by);
+
+            for (WindowsElement element : elements) {
+                WinAppLogUtils.info(element.getText());
+                if (element.getText().toLowerCase().trim().contains(text.toLowerCase().trim())) {
+                    return true;
+                }
+            }
+        } catch (Exception e) {
+            WinAppLogUtils.info(e.getMessage());
+            e.getMessage();
+        }
+        return false;
+    }
+    /**
      * Verify if the given web element is checked.
      *
      * @param by Represent a web element as the By object
@@ -268,13 +1139,156 @@ public class WinUI {
     public static boolean verifyElementChecked(By by) {
         smartWait(by);
 
-        boolean checked = getWebElement(by).isSelected();
+        boolean checked = getWindowElement(by).isSelected();
         if (checked == true) {
             return true;
         } else {
             Assert.assertTrue(false, "The element NOT checked.");
             return false;
         }
+    }
+    /**
+     * Verify if the given web element does present on DOM.
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean verifyElementPresent(By by) {
+        smartWait(by);
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            WinAppLogUtils.info("Verify element present " + by);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.info("Verify element present " + by);
+            }
+            addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.info("The element does NOT present. " + e.getMessage());
+            Assert.fail("The element does NOT present. " + e.getMessage());
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element does present on DOM.
+     *
+     * @param by      Represent a web element as the By object
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementPresent(By by, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            WinAppLogUtils.info("Verify element present " + by);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.info("Verify element present " + by);
+            }
+            addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+            return true;
+        } catch (Exception e) {
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("The element does NOT present. " + e.getMessage());
+                Assert.fail("The element does NOT present. " + e.getMessage());
+            } else {
+                WinAppLogUtils.error(message);
+                Assert.fail(message);
+            }
+
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element does present on DOM. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementPresent(By by, int timeout, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            WinAppLogUtils.info("Verify element present " + by);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.info("Verify element present " + by);
+            }
+            addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+            return true;
+        } catch (Exception e) {
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("The element does NOT present. " + e.getMessage());
+                Assert.fail("The element does NOT present. " + e.getMessage());
+            } else {
+                WinAppLogUtils.error(message);
+                Assert.fail(message);
+            }
+
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element does present on DOM. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @return true/false
+     */
+    public static boolean verifyElementPresent(By by, int timeout) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            WinAppLogUtils.info("Verify element present " + by);
+            if (WinAppExtentTestManagement.getExtentTest() != null) {
+                WinAppExtentReportManagement.info("Verify element present " + by);
+            }
+            addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.info("The element does NOT present. " + e.getMessage());
+            Assert.fail("The element does NOT present. " + e.getMessage());
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is checked.
+     *
+     * @param by      Represent a web element as the By object
+     * @param message the custom message if false
+     * @return true if the element is checked, otherwise false.
+     */
+    public static boolean verifyElementChecked(By by, String message) {
+        smartWait(by);
+        waitForElementVisible(by);
+
+        boolean checked = getWindowElement(by).isSelected();
+
+        if (checked == true) {
+            return true;
+        } else {
+            Assert.assertTrue(false, message);
+            return false;
+        }
+    }
+    /**
+     * Verify the number of options equals the specified total
+     *
+     * @param by    Represent a web element as the By object
+     * @param total the specified options total
+     */
+    public static void verifyOptionTotal(By by, int total) {
+        smartWait(by);
+        Select select = new Select(getWindowElement(by));
+        WinAppLogUtils.info("Verify Option Total equals: " + total);
+        Assert.assertEquals(total, select.getOptions().size());
     }
     /**
      * Verify files in the Download Directory contain the specified file (CONTAIN)
@@ -369,6 +1383,279 @@ public class WinUI {
             i++;
         }
         return check;
+    }
+    /**
+     * Verify if the given web element does NOT present on the DOM.
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean verifyElementNotPresent(By by) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            WinAppLogUtils.error("The element presents. " + by);
+            Assert.fail("The element presents. " + by);
+            return false;
+        } catch (Exception e) {
+            return true;
+        }
+    }
+    /**
+     * Verify if the given web element does NOT present on the DOM. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @return true/false
+     */
+    public static boolean verifyElementNotPresent(By by, int timeout) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            WinAppLogUtils.error("Element is present " + by);
+            Assert.fail("The element presents. " + by);
+            return false;
+        } catch (Exception e) {
+            return true;
+        }
+    }
+    /**
+     * Verify if the given web element does NOT present on the DOM.
+     *
+     * @param by      Represent a web element as the By object
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementNotPresent(By by, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("The element presents. " + by);
+                Assert.fail("The element presents. " + by);
+            } else {
+                WinAppLogUtils.error(message);
+                Assert.fail(message + " " + by);
+            }
+            return false;
+        } catch (Exception e) {
+            return true;
+        }
+    }
+    /**
+     * Verify if the given web element does NOT present on the DOM. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementNotPresent(By by, int timeout, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("The element presents. " + by);
+                Assert.fail("The element presents. " + by);
+            } else {
+                WinAppLogUtils.error(message + by);
+                Assert.fail(message + by);
+            }
+            return false;
+        } catch (Exception e) {
+            return true;
+        }
+    }
+    /**
+     * Verify if the given web element is visible.
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean verifyElementVisible(By by) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            WinAppLogUtils.info("Verify element visible " + by);
+            return true;
+        } catch (Exception e) {
+            Assert.fail("The element is NOT visible. " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is visible. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @return true/false
+     */
+    public static boolean verifyElementVisible(By by, int timeout) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            WinAppLogUtils.info("Verify element visible " + by);
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.error("The element is not visible. " + e.getMessage());
+            Assert.fail("The element is NOT visible. " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is visible.
+     *
+     * @param by      Represent a web element as the By object
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementVisible(By by, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            WinAppLogUtils.info("Verify element visible " + by);
+            return true;
+        } catch (Exception e) {
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("The element is not visible. " + by);
+                Assert.fail("The element is NOT visible. " + by);
+            } else {
+                WinAppLogUtils.error(message + by);
+                Assert.fail(message + by);
+            }
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is visible. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementVisible(By by, int timeout, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            WinAppLogUtils.info("Verify element visible " + by);
+            return true;
+        } catch (Exception e) {
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("The element is not visible. " + by);
+                Assert.fail("The element is NOT visible. " + by);
+            } else {
+                WinAppLogUtils.error(message + by);
+                Assert.fail(message + by);
+            }
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is NOT visible.
+     *
+     * @param by Represent a web element as the By object
+     * @return true/false
+     */
+    public static boolean verifyElementNotVisible(By by) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.error("FAILED. The element is visible " + by);
+            Assert.fail("FAILED. The element is visible " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is NOT visible. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @return true/false
+     */
+    public static boolean verifyElementNotVisible(By by, int timeout) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+            return true;
+        } catch (Exception e) {
+            WinAppLogUtils.error("FAILED. The element is visible " + by);
+            Assert.fail("FAILED. The element is visible " + by);
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is NOT visible.
+     *
+     * @param by      Represent a web element as the By object
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementNotVisible(By by, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+            return true;
+        } catch (Exception e) {
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("FAILED. The element is visible " + by);
+                Assert.fail("FAILED. The element is visible " + by);
+            } else {
+                WinAppLogUtils.error(message + " " + by);
+                Assert.fail(message + " " + by);
+            }
+            return false;
+        }
+    }
+    /**
+     * Verify if the given web element is NOT visible. (in seconds)
+     *
+     * @param by      Represent a web element as the By object
+     * @param timeout System will wait at most timeout (seconds) to return result
+     * @param message the custom message if false
+     * @return true/false
+     */
+    public static boolean verifyElementNotVisible(By by, int timeout, String message) {
+        smartWait(by);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+            return true;
+        } catch (Exception e) {
+            if (message.isEmpty() || message == null) {
+                WinAppLogUtils.error("FAILED. The element is visible " + by);
+                Assert.fail("FAILED. The element is visible " + by);
+            } else {
+                WinAppLogUtils.error(message + " " + by);
+                Assert.fail(message + " " + by);
+            }
+            return false;
+        }
     }
 }
 

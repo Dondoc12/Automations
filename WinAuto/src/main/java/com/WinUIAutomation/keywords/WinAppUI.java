@@ -778,7 +778,7 @@ public class WinAppUI {
         try {
             List<WindowsElement> elements = getWebElements(by);
 
-            for (WebElement element : elements) {
+            for (WindowsElement element : elements) {
                 WinAppLogUtils.info(element.getText());
                 if (element.getText().toLowerCase().trim().contains(text.toLowerCase().trim())) {
                     return true;
