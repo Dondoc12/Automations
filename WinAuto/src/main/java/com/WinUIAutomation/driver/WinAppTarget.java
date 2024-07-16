@@ -23,7 +23,7 @@ public class WinAppTarget {
         }
     }
 
-    public WebDriver createInstance(String app) throws MalformedURLException {
+    public WindowsDriver<WindowsElement> createInstance(String app) throws MalformedURLException {
         String appName = (WinAppConstants.APP_NAME != null && !WinAppConstants.APP_NAME.isEmpty()) ? WinAppConstants.APP_NAME : app;
         try {
             return winAppDriver = WinAppDriver.valueOf(appName.toUpperCase()).createDriver();

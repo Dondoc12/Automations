@@ -13,6 +13,7 @@ import io.appium.java_client.windows.WindowsElement;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -54,14 +55,37 @@ public class WinUI {
     }
     // Wait Control
     /**
-     * Smart Waits contains waitForPageLoaded and sleep functions
+     * Wait for the given element to be clickable.
+     *
+     * @param by an element of object type By
+     * @return a WebElement object ready to CLICK
      */
-    public static void smartWait(By by) {
-        if (WinAppConstants.ACTIVE_PAGE_LOADED.trim().toLowerCase().equals("true")) {
-            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(),WinAppConstants.WAIT_EXPLICIT);
-            wait.until(d -> WinAppDriverManagement.getDriver().findElement(by));
-        sleep(WinAppConstants.WAIT_SLEEP_STEP);
+    public static WebElement waitForElementClickable(By by) {
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            return wait.until(ExpectedConditions.elementToBeClickable(getWindowElement(by)));
+        } catch (Throwable error) {
+            WinAppLogUtils.error("Timeout waiting for the element ready to click. " + by.toString());
+            Assert.fail("Timeout waiting for the element ready to click. " + by.toString());
         }
+        return null;
+    }
+    /**
+     * Wait for the given element to be clickable within the given time (in seconds).
+     *
+     * @param by      an element of object type By
+     * @param timeOut maximum timeout as seconds
+     * @return a WebElement object ready to CLICK
+     */
+    public static WebElement waitForElementClickable(By by, long timeOut) {
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(),timeOut);
+            return wait.until(ExpectedConditions.elementToBeClickable(getWindowElement(by)));
+        } catch (Throwable error) {
+            Assert.fail("Timeout waiting for the element ready to click. " + by.toString());
+            WinAppLogUtils.error("Timeout waiting for the element ready to click. " + by.toString());
+        }
+        return null;
     }
     /**
      * Wait for the given element to present
@@ -70,8 +94,6 @@ public class WinUI {
      * @return an existing WebElement object
      */
     public static WebElement waitForElementPresent(By by) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             return wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -82,28 +104,21 @@ public class WinUI {
         return null;
     }
     /**
-     * Wait until the given web element is visible.
+     * Wait for the given element to present within the given time (in seconds).
      *
-     * @param by an element of object type By
-     * @return a WebElement object ready to be visible
+     * @param by      an element of object type By
+     * @param timeOut maximum timeout as seconds
+     * @return an existing WebElement object
      */
-    public static Boolean waitForElementInvisible(By by) {
-        smartWait(by);
-        waitForElementPresent(by);
-
+    public static WebElement waitForElementPresent(By by, long timeOut) {
         try {
-            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
-            boolean check = isElementVisible(by, 1);
-            if (check == true) {
-                return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
-            } else {
-                scrollToElementAtBottom(by);
-                return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
-            }
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeOut);
+            return wait.until(ExpectedConditions.presenceOfElementLocated(by));
         } catch (Throwable error) {
-            WinAppLogUtils.error("Timeout waiting for the element Invisible. " + by.toString());
-            Assert.fail("Timeout waiting for the element Invisible. " + by.toString());
+            WinAppLogUtils.error("Timeout waiting for the element to exist. " + by.toString());
+            Assert.fail("Timeout waiting for the element to exist. " + by.toString());
         }
+
         return null;
     }
     /**
@@ -112,10 +127,19 @@ public class WinUI {
      * @param by an element of object type By
      * @return a WebElement object ready to be visible
      */
+    public static void waitForElementInvisible(By by) {
+        WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+        WinAppLogUtils.info("Wait " + by.toString()+ " Invisible") ;
+    }
+    /**
+     * Wait until the given web element is visible.
+     *
+     * @param by an element of object type By
+     * @return a WebElement object ready to be visible
+     */
     public static WebElement waitForElementVisible(By by) {
-        smartWait(by);
         waitForElementPresent(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             boolean check = isElementVisible(by, 1);
@@ -128,6 +152,30 @@ public class WinUI {
         } catch (Throwable error) {
             WinAppLogUtils.error("Timeout waiting for the element Visible. " + by.toString());
             Assert.fail("Timeout waiting for the element Visible. " + by.toString());
+        }
+        return null;
+    }
+    /**
+     * Wait until the given web element is visible within the timeout.
+     *
+     * @param by      an element of object type By
+     * @param timeOut maximum timeout as second
+     * @return a WebElement object ready to be visible
+     */
+    public static WebElement waitForElementVisible(By by, int timeOut) {
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeOut);
+
+            boolean check = verifyElementVisible(by, timeOut);
+            if (check == true) {
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            } else {
+                scrollToElementAtTop(by);
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            }
+        } catch (Throwable error) {
+            Assert.fail("Timeout waiting for the element Visible. " + by.toString());
+            WinAppLogUtils.error("Timeout waiting for the element Visible. " + by.toString());
         }
         return null;
     }
@@ -168,7 +216,6 @@ public class WinUI {
      * @param by Represent a UI element as the By object
      */
     public static void scrollToElementAtTop(By by) {
-        smartWait(by);
         WebElement element = WinAppDriverManagement.getDriver().findElement(by);
 
         // Perform the scroll action
@@ -184,8 +231,6 @@ public class WinUI {
      * @param by Represent a UI element as the By object
      */
     public static void scrollToElementAtBottom(By by) {
-        smartWait(by);
-
         WindowsElement element = WinAppDriverManagement.getDriver().findElement(by);
         Dimension elementSize = element.getSize();
         Dimension windowSize = WinAppDriverManagement.getDriver().manage().window().getSize();
@@ -197,13 +242,74 @@ public class WinUI {
     }
     /* Element Control */
     /**
+     * Click on the specified element.
+     *
+     * @param by an element of object type By
+     */
+    public static void clickElement(By by) {
+        waitForElementClickable(by);
+        getWindowElement(by).click();
+        WinAppLogUtils.info("Clicked on the element " + by.toString());
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Clicked on the element " + by.toString());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Click on element with timeout
+     *
+     * @param by an element of object type By
+     */
+    public static void clickElement(By by, int timeout) {
+        waitForElementClickable(by, timeout);
+        getWindowElement(by).click();
+        WinAppLogUtils.info("Clicked on the element " + by.toString());
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Clicked on the element " + by.toString());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Click on the link on website with text
+     *
+     * @param linkText is the visible text of a link
+     */
+    public static void clickLinkText(String linkText) {
+        WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+        WebElement elementWaited = getWindowElement(By.linkText(linkText));
+        elementWaited.click();
+
+        WinAppLogUtils.info("Click on link text " + linkText);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Click on link text " + linkText);
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Right-click on the Element object on the web
+     *
+     * @param by an element of object type By
+     */
+    public static void rightClickElement(By by) {
+        Actions action = new Actions(WinAppDriverManagement.getDriver());
+        action.contextClick(waitForElementClickable(by)).build().perform();
+        WinAppLogUtils.info("Right click on element " + by);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Right click on element " + by);
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
      * Set the value of an input field
      *
      * @param by    an element of object type By
      * @param value the value to fill in the text box
      */
     public static void setText(By by, String value) {
-        waitForElementVisible(by).sendKeys(value);
+        waitForElementVisible(by);
+        getWindowElement(by).sendKeys(value);
         WinAppLogUtils.info("Set text " + value + " on " + by.toString());
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -219,7 +325,8 @@ public class WinUI {
      * @param keys  key on the keyboard to press
      */
     public static void setText(By by, String value, Keys keys) {
-        waitForElementVisible(by).sendKeys(value, keys);
+        waitForElementVisible(by);
+        getWindowElement(by).sendKeys(value, keys);
         WinAppLogUtils.info("Set text " + value + " on " + by + " and press key " + keys.name());
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -234,7 +341,8 @@ public class WinUI {
      * @param keys key on the keyboard to press
      */
     public static void sendKeys(By by, Keys keys) {
-        waitForElementVisible(by).sendKeys(keys);
+        waitForElementVisible(by);
+        getWindowElement(by).sendKeys( keys);
         WinAppLogUtils.info("Press key " + keys.name() + " on element " + by);
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -263,11 +371,27 @@ public class WinUI {
      * @param by an element of object type By
      */
     public static void clearText(By by) {
-        waitForElementVisible(by).clear();
+        waitForElementVisible(by);
+        Objects.requireNonNull(getWindowElement(by)).clear();
         WinAppLogUtils.info("Clear text in textbox " + by.toString());
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Clear text in textbox " + by.toString());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Clear all text of the element then set the text on that element.
+     *
+     * @param by    an element of object type By
+     * @param value the value to fill in the text box
+     */
+    public static void clearAndFillText(By by, String value) {
+        getWindowElement(by).clear();
+        getWindowElement(by).sendKeys(value);
+        WinAppLogUtils.info("Clear and Fill " + value + " on " + by.toString());
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Clear and Fill " + value + " on " + by.toString());
         }
         addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
     }
@@ -278,8 +402,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean hoverOnElement(By by) {
-        smartWait(by);
-
         try {
             Actions action = new Actions(WinAppDriverManagement.getDriver());
             action.moveToElement(getWindowElement(by)).perform();
@@ -297,8 +419,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean isElementVisible(By by, int timeout) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -315,8 +435,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean moveToElement(By toElement) {
-        smartWait(toElement);
-
         try {
             Actions action = new Actions(WinAppDriverManagement.getDriver());
             action.moveToElement(getWindowElement(toElement)).release(getWindowElement(toElement)).build().perform();
@@ -333,8 +451,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean mouseHover(By by) {
-        smartWait(by);
-
         try {
             Actions action = new Actions(WinAppDriverManagement.getDriver());
             action.moveToElement(getWindowElement(by)).perform();
@@ -352,8 +468,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean dragAndDrop(By fromElement, By toElement) {
-        smartWait(fromElement);
-        smartWait(toElement);
+        waitForElementVisible(fromElement);
         try {
             Actions action = new Actions(WinAppDriverManagement.getDriver());
             action.dragAndDrop(getWindowElement(fromElement), getWindowElement(toElement)).perform();
@@ -372,7 +487,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean dragAndDropToOffset(By fromElement, int X, int Y) {
-        smartWait(fromElement);
 
         try {
             Robot robot = new Robot();
@@ -404,7 +518,6 @@ public class WinUI {
      * @return text of a element
      */
     public static String getTextElement(By by) {
-        smartWait(by);
         WinAppLogUtils.info("Get text on element " + by);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Get text on element " + by);
@@ -413,13 +526,56 @@ public class WinUI {
         return waitForElementVisible(by).getText().trim();
     }
     /**
+     * Get the value from the element's attribute
+     *
+     * @param by            an element of object type By
+     * @param attributeName attribute name
+     * @return element's attribute value
+     */
+    public static String getAttributeElement(By by, String attributeName) {
+        WinAppLogUtils.info("Get attributeName on element " + by);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Get attributeName on element " + by);
+            WinAppExtentReportManagement.pass("The attributeName is: " + waitForElementVisible(by).getAttribute(attributeName));
+        }
+        return waitForElementVisible(by).getAttribute(attributeName);
+    }
+    /**
+     * Get CSS value of an element
+     *
+     * @param by      Represent a web element as the By object
+     * @param cssName is CSS attribute name
+     * @return value of CSS attribute
+     */
+    public static String getCssValueElement(By by, String cssName) {
+        WinAppLogUtils.info("Get attributeName on element " + by);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Get getCssValue on element " + by);
+            WinAppExtentReportManagement.pass("The getCssValue is: " + waitForElementVisible(by).getCssValue(cssName));
+        }
+        return waitForElementVisible(by).getCssValue(cssName);
+    }
+    /**
      * Convert the By object to the WebElement
      *
      * @param by is an element of type By
      * @return Returns a WebElement object
      */
-    public static WindowsElement getWindowElement(By by) {
-        return WinAppDriverManagement.getDriver().findElement(by);
+    public static WindowsElement getWindowElement( By by) {
+        for (String windowHandle : WinAppDriverManagement.getDriver().getWindowHandles()) {
+            WinAppDriverManagement.getDriver().switchTo().window(windowHandle);
+            try {
+                WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), 20);
+                WindowsElement element = wait.until(d -> WinAppDriverManagement.getDriver().findElement(by));
+
+                if (element != null) {
+                    return element;
+                }
+            } catch (Exception e) {
+                WinAppLogUtils.info("Get Element " + by + " Error");
+            }
+        }
+        return null;
     }
     /**
      * Find multiple elements with the locator By object
@@ -428,7 +584,48 @@ public class WinUI {
      * @return Returns a List of WebElement objects
      */
     public static List<WindowsElement> getWindowElements(By by) {
-        return WinAppDriverManagement.getDriver().findElements(by);
+        for (String windowHandle : WinAppDriverManagement.getDriver().getWindowHandles()) {
+            WinAppDriverManagement.getDriver().switchTo().window(windowHandle);
+            try {
+                WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+                wait.until(d -> WinAppDriverManagement.getDriver().findElements(by));
+                List<WindowsElement> element = WinAppDriverManagement.getDriver().findElements(by);
+                if (element != null) {
+                    return element;
+                }
+            } catch (Exception e) {
+                WinAppLogUtils.info("Get Elements " + by + " Error");
+            }
+        }
+        return null;
+    }
+    /**
+     * Get size of specified element
+     *
+     * @param by Represent a web element as the By object
+     * @return Dimension
+     */
+    public static Dimension getSizeElement(By by) {
+        WinAppLogUtils.info("Get element size on element " + by);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Get element size on " + by);
+            WinAppExtentReportManagement.pass("The element size is: " + waitForElementVisible(by).getSize());
+        }
+        return waitForElementVisible(by).getSize();
+    }
+    /**
+     * Get location of specified element
+     *
+     * @param by Represent a web element as the By object
+     * @return Point
+     */
+    public static Point getLocationElement(By by) {
+        WinAppLogUtils.info("Get Element Location on element" + by);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Get Element Location on " + by);
+            WinAppExtentReportManagement.pass("The element Element Location is: " + waitForElementVisible(by).getLocation());
+        }
+        return waitForElementVisible(by).getLocation();
     }
     /**
      * Select the options with the given label (displayed text).
@@ -437,10 +634,24 @@ public class WinUI {
      * @param text the specified text of option
      */
     public static void selectOptionByText(By by, String text) {
-        smartWait(by);
+        waitForElementVisible(by);
         Select select = new Select(getWindowElement(by));
         select.selectByVisibleText(text);
         WinAppLogUtils.info("Select Option " + by + "by text " + text);
+    }
+    /**
+     * Get tag name (HTML tag) of specified element
+     *
+     * @param by Represent a web element as the By object
+     * @return Tag name as String
+     */
+    public static String getTagNameElement(By by) {
+        WinAppLogUtils.info("Get Element TagName on element" + by);
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Get Element TagName on " + by);
+            WinAppExtentReportManagement.pass("The element Element TagName is: " + waitForElementVisible(by).getTagName());
+        }
+        return waitForElementVisible(by).getTagName();
     }
     /**
      * Select the options with the given value.
@@ -449,9 +660,8 @@ public class WinUI {
      * @param value the specified value of option
      */
     public static void selectOptionByValue(By by, String value) {
-        smartWait(by);
-
-        Select select = new Select(getWindowElement(by));
+        waitForElementVisible(by);
+        Select select = new Select(Objects.requireNonNull(getWindowElement(by)));
         select.selectByValue(value);
         WinAppLogUtils.info("Select Option " + by + "by value " + value);
     }
@@ -462,9 +672,8 @@ public class WinUI {
      * @param index the specified index of option
      */
     public static void selectOptionByIndex(By by, int index) {
-        smartWait(by);
-
-        Select select = new Select(getWindowElement(by));
+        waitForElementVisible(by);
+        Select select = new Select(Objects.requireNonNull(getWindowElement(by)));
         select.selectByIndex(index);
         WinAppLogUtils.info("Select Option " + by + "by index " + index);
     }
@@ -475,18 +684,17 @@ public class WinUI {
      * @return Text list of specified elements
      */
     public static List<String> getListElementsText(By by) {
-        smartWait(by);
+        waitForElementVisible(by);
 
         WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 
         List<WindowsElement> listElement = getWindowElements(by);
-        List<String> listText = new ArrayList<>();
 
+        List<String> listText = new ArrayList<>();
         for (WebElement e : listElement) {
             listText.add(e.getText());
         }
-
         return listText;
     }
     /**
@@ -496,8 +704,7 @@ public class WinUI {
      * @return total number of options
      */
     public static int getOptionDynamicTotal(By objectListItem) {
-        smartWait(objectListItem);
-
+        waitForElementVisible(objectListItem);
         WinAppLogUtils.info("Get total of Option Dynamic with list element. " + objectListItem);
         try {
             List<WindowsElement> elements = getWindowElements(objectListItem);
@@ -549,7 +756,7 @@ public class WinUI {
                 WinAppLogUtils.info("Folder created: " + file);
             }
 
-            File source = getWindowElement(by).getScreenshotAs(OutputType.FILE);
+            File source = Objects.requireNonNull(getWindowElement(by)).getScreenshotAs(OutputType.FILE);
             // result.getName() gets the name of the test case and assigns it to the screenshot file name
             FileUtils.copyFile(source, new File(path + "/" + screenName + "_" + dateFormat.format(new Date()) + ".png"));
             WinAppLogUtils.info("Screenshot taken: " + screenName);
@@ -595,7 +802,7 @@ public class WinUI {
      * @param elementName to name the .png image file
      */
     public static void screenshotElement(By by, String elementName) {
-        File scrFile = getWindowElement(by).getScreenshotAs(OutputType.FILE);
+        File scrFile = Objects.requireNonNull(getWindowElement(by)).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(scrFile, new File("./" + elementName + ".png"));
         } catch (IOException e) {
@@ -623,7 +830,7 @@ public class WinUI {
             String pathFolderDownload = getPathDownloadDirectory();
             File file = new File(pathFolderDownload);
             File[] listOfFiles = file.listFiles();
-            for (int i = 0; i < listOfFiles.length; i++) {
+            for (int i = 0; i < Objects.requireNonNull(listOfFiles).length; i++) {
                 if (listOfFiles[i].isFile()) {
                     new File(listOfFiles[i].toString()).delete();
                 }
@@ -641,7 +848,7 @@ public class WinUI {
         try {
             File file = new File(pathDirectory);
             File[] listOfFiles = file.listFiles();
-            for (int i = 0; i < listOfFiles.length; i++) {
+            for (int i = 0; i < Objects.requireNonNull(listOfFiles).length; i++) {
                 if (listOfFiles[i].isFile()) {
                     new File(listOfFiles[i].toString()).delete();
                 }
@@ -659,7 +866,7 @@ public class WinUI {
         String pathFolderDownload = getPathDownloadDirectory();
         File file = new File(pathFolderDownload);
         int i = 0;
-        for (File listOfFiles : file.listFiles()) {
+        for (File listOfFiles : Objects.requireNonNull(file.listFiles())) {
             if (listOfFiles.isFile()) {
                 i++;
             }
@@ -676,9 +883,9 @@ public class WinUI {
      * @return true if options given selected, else is false
      */
     public static boolean verifySelectedByText(By by, String text) {
-        smartWait(by);
+        waitForElementVisible(by);
 
-        Select select = new Select(getWindowElement(by));
+        Select select = new Select(Objects.requireNonNull(getWindowElement(by)));
         WinAppLogUtils.info("Verify Option Selected by text: " + select.getFirstSelectedOption().getText());
 
         if (select.getFirstSelectedOption().getText().equals(text)) {
@@ -696,9 +903,9 @@ public class WinUI {
      * @return true if options given selected, else is false
      */
     public static boolean verifySelectedByIndex(By by, int index) {
-        smartWait(by);
+        waitForElementVisible(by);
 
-        Select select = new Select(getWindowElement(by));
+        Select select = new Select(Objects.requireNonNull(getWindowElement(by)));
         int indexFirstOption = select.getOptions().indexOf(select.getFirstSelectedOption());
         WinAppLogUtils.info("The First Option selected by index: " + indexFirstOption);
         WinAppLogUtils.info("Expected index: " + index);
@@ -716,7 +923,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementExists(By by) {
-        smartWait(by);
+        waitForElementVisible(by);
 
         boolean res;
         List<WindowsElement> elementList = getWindowElements(by);
@@ -762,12 +969,8 @@ public class WinUI {
      * @return true if the element has the desired text, otherwise false.
      */
     public static boolean verifyElementTextEquals(By by, String text, WinAppFailureHandling flowControl) {
-        smartWait(by);
-
         waitForElementVisible(by);
-
         boolean result = getTextElement(by).trim().equals(text.trim());
-
         if (result == true) {
             WinAppLogUtils.info("Verify text of an element [Equals]: " + result);
         } else {
@@ -802,7 +1005,6 @@ public class WinUI {
      * @return true if the element has the desired text, otherwise false.
      */
     public static boolean verifyElementTextEquals(By by, String text) {
-        smartWait(by);
         waitForElementVisible(by);
 
         boolean result = getTextElement(by).trim().equals(text.trim());
@@ -831,7 +1033,6 @@ public class WinUI {
      * @return true if the element has the desired text, otherwise false.
      */
     public static boolean verifyElementTextContains(By by, String text, WinAppFailureHandling flowControl) {
-        smartWait(by);
         waitForElementVisible(by);
 
         boolean result = getTextElement(by).trim().contains(text.trim());
@@ -866,7 +1067,6 @@ public class WinUI {
      * @return true if the element has the desired text, otherwise false.
      */
     public static boolean verifyElementTextContains(By by, String text) {
-        smartWait(by);
         waitForElementVisible(by);
 
         boolean result = getTextElement(by).trim().contains(text.trim());
@@ -920,7 +1120,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementClickable(By by, int timeout, String message) {
-        smartWait(by);
+        waitForElementVisible(by);
 
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
@@ -945,7 +1145,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementClickable(By by, int timeout) {
-        smartWait(by);
+        waitForElementClickable(by);
 
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
@@ -969,7 +1169,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementClickable(By by) {
-        smartWait(by);
+        waitForElementClickable(by);
 
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
@@ -993,7 +1193,7 @@ public class WinUI {
      * @return true if options given selected, else is false
      */
     public static boolean verifySelectedByValue(By by, String value) {
-        smartWait(by);
+        waitForElementVisible(by);
 
         Select select = new Select(getWindowElement(by));
         WinAppLogUtils.info("Verify Option Selected by value: " + select.getFirstSelectedOption().getAttribute("value"));
@@ -1100,7 +1300,6 @@ public class WinUI {
      * @return true if the element has the desired text, otherwise false.
      */
     public static boolean verifyElementText(By by, String text) {
-        smartWait(by);
         waitForElementVisible(by);
 
         return getTextElement(by).trim().equals(text.trim());
@@ -1113,7 +1312,7 @@ public class WinUI {
      * @return true if all option contains the specified text
      */
     public static boolean verifyOptionDynamicExist(By by, String text) {
-        smartWait(by);
+        waitForElementVisible(by);
 
         try {
             List<WindowsElement> elements = getWindowElements(by);
@@ -1137,7 +1336,7 @@ public class WinUI {
      * @return true if the element is checked, otherwise false.
      */
     public static boolean verifyElementChecked(By by) {
-        smartWait(by);
+        waitForElementVisible(by);
 
         boolean checked = getWindowElement(by).isSelected();
         if (checked == true) {
@@ -1154,7 +1353,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementPresent(By by) {
-        smartWait(by);
+        waitForElementPresent(by);
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -1178,7 +1377,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementPresent(By by, String message) {
-        smartWait(by);
+        waitForElementPresent(by);
 
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
@@ -1210,7 +1409,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementPresent(By by, int timeout, String message) {
-        smartWait(by);
+        waitForElementPresent(by);
 
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
@@ -1241,7 +1440,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementPresent(By by, int timeout) {
-        smartWait(by);
+        waitForElementPresent(by);
 
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
@@ -1266,7 +1465,6 @@ public class WinUI {
      * @return true if the element is checked, otherwise false.
      */
     public static boolean verifyElementChecked(By by, String message) {
-        smartWait(by);
         waitForElementVisible(by);
 
         boolean checked = getWindowElement(by).isSelected();
@@ -1285,7 +1483,7 @@ public class WinUI {
      * @param total the specified options total
      */
     public static void verifyOptionTotal(By by, int total) {
-        smartWait(by);
+        waitForElementPresent(by);
         Select select = new Select(getWindowElement(by));
         WinAppLogUtils.info("Verify Option Total equals: " + total);
         Assert.assertEquals(total, select.getOptions().size());
@@ -1391,8 +1589,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotPresent(By by) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -1411,8 +1607,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotPresent(By by, int timeout) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -1431,8 +1625,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotPresent(By by, String message) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -1457,8 +1649,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotPresent(By by, int timeout, String message) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -1481,8 +1671,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementVisible(By by) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -1501,8 +1689,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementVisible(By by, int timeout) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -1522,7 +1708,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementVisible(By by, String message) {
-        smartWait(by);
 
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
@@ -1549,9 +1734,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementVisible(By by, int timeout, String message) {
-        smartWait(by);
-
-        try {
+         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
             WinAppLogUtils.info("Verify element visible " + by);
@@ -1574,8 +1757,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotVisible(By by) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
@@ -1594,8 +1775,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotVisible(By by, int timeout) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
             wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
@@ -1614,8 +1793,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotVisible(By by, String message) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
@@ -1640,8 +1817,6 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyElementNotVisible(By by, int timeout, String message) {
-        smartWait(by);
-
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeout);
             wait.until(ExpectedConditions.invisibilityOfElementLocated(by));

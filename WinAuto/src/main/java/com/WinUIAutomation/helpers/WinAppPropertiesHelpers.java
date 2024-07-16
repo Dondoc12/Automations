@@ -19,7 +19,7 @@ public class WinAppPropertiesHelpers {
     private static FileInputStream file;
     private static FileOutputStream out;
     private static String relPropertiesFilePathDefault = "src/test/resources/config/config.properties";
-    private static String mainModulePath = WinAppHelpers.getCurrentDir() + "WinAuto\\";
+    private static String mainModulePath = WinAppHelpers.getCurrentDir();
         public static Properties loadAllFiles() {
             LinkedList<String> files = new LinkedList<>();
             // Add all file Properties

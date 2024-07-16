@@ -1,6 +1,10 @@
 package org.example;
 
+import com.WinUIAutomation.constants.WinAppConstants;
+import com.WinUIAutomation.driver.WinAppDriver;
 import com.WinUIAutomation.driver.WinAppDriverManagement;
+import com.WinUIAutomation.driver.WinAppTarget;
+import com.WinUIAutomation.keywords.WinUI;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.apache.commons.io.FileUtils;
@@ -9,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ThreadGuard;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObject.pageObject;
@@ -23,26 +28,18 @@ public class demoAutomation {
     @Test
     void test(){
         try{
-            openLawSonApp();
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("platformName", "windows");
-            capabilities.setCapability("deviceName", "WindowsPC");
-            capabilities.setCapability("app", "C:\\Users\\david.le\\AppData\\Local\\Apps\\2.0\\87TZ2E13.BT2\\5PZCH2MX.3J7\\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\\LawsonClient.exe");
-            capabilities.setCapability("ms:waitForAppLaunch", "5");
-
-            driver = new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), capabilities);
+            WindowsDriver<WindowsElement> driver = WinAppDriver.valueOf(WinAppConstants.APP_NAME).createDriver();
+            WinAppDriverManagement.setDriver(driver);
             System.out.println("Driver initialized successfully");
             if(pageObject.getPasswordPrompt(driver) != null){
-                pageObject.getUsername(driver).clear();
-                pageObject.getUsername(driver).sendKeys(data.userName);
-                pageObject.getPassword(driver).clear();
-                pageObject.getPassword(driver).sendKeys(data.password);
-                pageObject.getLoginbtn(driver).click();
+                WinUI.clearAndFillText(pageObject.getUsername,data.userName);
+                WinUI.clearAndFillText(pageObject.getPassword,data.password);
+                WinUI.clickElement(pageObject.getLoginbtn);
             }
-
-            pageObject.getSearchField(driver).clear();
-            pageObject.getSearchField(driver).sendKeys(data.searchData);
-            pageObject.getSearchButton(driver).click();
+            WinUI.waitForElementInvisible(pageObject.getCopyRight);
+            System.out.println("login successfully");
+            WinUI.clearAndFillText(pageObject.getSearchField,data.searchData);
+            WinUI.clickElement(pageObject.getSearchButton);
 
             pageObject.getOKButton(driver).click();
             pageObject.getSearchField(driver).clear();

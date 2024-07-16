@@ -27,6 +27,10 @@ public class ByAccessibilityId extends By {
             throw new IllegalArgumentException("SearchContext must be an instance of WindowsDriver");
         }
     }
+    @Override
+    public String toString() {
+        return "By.accessibilityId: " + accessibilityId;
+    }
     public static By accessibilityId(String accessibilityId) {
         return new ByAccessibilityId(accessibilityId);
     }
