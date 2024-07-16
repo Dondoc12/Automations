@@ -3,24 +3,21 @@ package org.example;
 import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.driver.WinAppDriver;
 import com.WinUIAutomation.driver.WinAppDriverManagement;
-import com.WinUIAutomation.driver.WinAppTarget;
 import com.WinUIAutomation.keywords.WinUI;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ThreadGuard;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObject.pageObject;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.List;
 
 public class demoAutomation {
@@ -40,17 +37,16 @@ public class demoAutomation {
             System.out.println("login successfully");
             WinUI.clearAndFillText(pageObject.getSearchField,data.searchData);
             WinUI.clickElement(pageObject.getSearchButton);
-
-            pageObject.getOKButton(driver).click();
-            pageObject.getSearchField(driver).clear();
-            pageObject.getSearchField(driver).sendKeys(data.OpenVMIAPI);
-            pageObject.getSearchButton(driver).click();
-            List<WindowsElement> gribViewData = driver.findElementsByClassName("ListViewItem");
+            WinUI.waitForElementVisible(pageObject.getOKButton);
+            WinUI.clickElement(pageObject.getOKButton);
+            WinUI.clearAndFillText(pageObject.getSearchField,data.OpenVMIAPI);
+            WinUI.clickElement(pageObject.getSearchButton);
+            List<WindowsElement> gribViewData = WinUI.getWindowElements(By.className("ListViewItem"));
             if(gribViewData.isEmpty()){
-                pageObject.getDataset(driver).sendKeys(data.DatasetValue);
-                pageObject.getbudgVersion(driver).sendKeys(data.budgVersionValue);
-                pageObject.getYear(driver).sendKeys(data.YearValue);
-                pageObject.getApplyButton(driver).click();
+                WinUI.clearAndFillText(pageObject.getDataset,data.DatasetValue);
+                WinUI.clearAndFillText(pageObject.getbudgVersion,data.budgVersionValue);
+                WinUI.clearAndFillText(pageObject.getYear,data.YearValue);
+                WinUI.clickElement(pageObject.getApplyButton);
             }
             gribViewData.get(0).findElementByClassName("TextBox").sendKeys(data.WareHouseValue);
             gribViewData.get(1).findElementByClassName("TextBox").sendKeys(data.MainProductValue);
@@ -58,7 +54,7 @@ public class demoAutomation {
             pageObject.getApplyButton(driver).click();
             List<WindowsElement> gribViewDetailData = driver.findElementsByClassName("ListViewItem");
             Thread.sleep(1000);
-            performDoubleClick(driver, gribViewDetailData.get(0));
+            performDoubleClick(driver, gribViewDetailData.getFirst());
 
             List<WindowsElement> gribViewDetailData2 = driver.findElementsByClassName("ListViewItem");
             gribViewDetailData2.get(22).click();

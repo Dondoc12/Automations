@@ -82,8 +82,8 @@ public class WinUI {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(),timeOut);
             return wait.until(ExpectedConditions.elementToBeClickable(getWindowElement(by)));
         } catch (Throwable error) {
-            Assert.fail("Timeout waiting for the element ready to click. " + by.toString());
             WinAppLogUtils.error("Timeout waiting for the element ready to click. " + by.toString());
+            Assert.fail("Timeout waiting for the element ready to click. " + by.toString());
         }
         return null;
     }
@@ -143,7 +143,7 @@ public class WinUI {
         try {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
             boolean check = isElementVisible(by, 1);
-            if (check == true) {
+            if (check) {
                 return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
             } else {
                 scrollToElementAtBottom(by);
@@ -167,7 +167,7 @@ public class WinUI {
             WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), timeOut);
 
             boolean check = verifyElementVisible(by, timeOut);
-            if (check == true) {
+            if (check) {
                 return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
             } else {
                 scrollToElementAtTop(by);
@@ -248,7 +248,7 @@ public class WinUI {
      */
     public static void clickElement(By by) {
         waitForElementClickable(by);
-        getWindowElement(by).click();
+        Objects.requireNonNull(getWindowElement(by)).click();
         WinAppLogUtils.info("Clicked on the element " + by.toString());
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -263,7 +263,7 @@ public class WinUI {
      */
     public static void clickElement(By by, int timeout) {
         waitForElementClickable(by, timeout);
-        getWindowElement(by).click();
+        Objects.requireNonNull(getWindowElement(by)).click();
         WinAppLogUtils.info("Clicked on the element " + by.toString());
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -278,8 +278,7 @@ public class WinUI {
      */
     public static void clickLinkText(String linkText) {
         WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
-        WebElement elementWaited = getWindowElement(By.linkText(linkText));
-        elementWaited.click();
+        Objects.requireNonNull(getWindowElement(By.linkText(linkText))).click();
 
         WinAppLogUtils.info("Click on link text " + linkText);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -309,7 +308,7 @@ public class WinUI {
      */
     public static void setText(By by, String value) {
         waitForElementVisible(by);
-        getWindowElement(by).sendKeys(value);
+        Objects.requireNonNull(getWindowElement(by)).sendKeys(value);
         WinAppLogUtils.info("Set text " + value + " on " + by.toString());
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -326,7 +325,7 @@ public class WinUI {
      */
     public static void setText(By by, String value, Keys keys) {
         waitForElementVisible(by);
-        getWindowElement(by).sendKeys(value, keys);
+        Objects.requireNonNull(getWindowElement(by)).sendKeys(value, keys);
         WinAppLogUtils.info("Set text " + value + " on " + by + " and press key " + keys.name());
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -342,7 +341,7 @@ public class WinUI {
      */
     public static void sendKeys(By by, Keys keys) {
         waitForElementVisible(by);
-        getWindowElement(by).sendKeys( keys);
+        Objects.requireNonNull(getWindowElement(by)).sendKeys( keys);
         WinAppLogUtils.info("Press key " + keys.name() + " on element " + by);
 
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -387,8 +386,8 @@ public class WinUI {
      * @param value the value to fill in the text box
      */
     public static void clearAndFillText(By by, String value) {
-        getWindowElement(by).clear();
-        getWindowElement(by).sendKeys(value);
+        Objects.requireNonNull(getWindowElement(by)).clear();
+        Objects.requireNonNull(getWindowElement(by)).sendKeys(value);
         WinAppLogUtils.info("Clear and Fill " + value + " on " + by.toString());
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Clear and Fill " + value + " on " + by.toString());
@@ -491,8 +490,8 @@ public class WinUI {
         try {
             Robot robot = new Robot();
             robot.mouseMove(0, 0);
-            int X1 = getWindowElement(fromElement).getLocation().getX() + (getWindowElement(fromElement).getSize().getWidth() / 2);
-            int Y1 = getWindowElement(fromElement).getLocation().getY() + (getWindowElement(fromElement).getSize().getHeight() / 2);
+            int X1 = Objects.requireNonNull(getWindowElement(fromElement)).getLocation().getX() + (Objects.requireNonNull(getWindowElement(fromElement)).getSize().getWidth() / 2);
+            int Y1 = Objects.requireNonNull(getWindowElement(fromElement)).getLocation().getY() + (Objects.requireNonNull(getWindowElement(fromElement)).getSize().getHeight() / 2);
             System.out.println(X1 + " , " + Y1);
             sleep(1);
 
@@ -521,9 +520,9 @@ public class WinUI {
         WinAppLogUtils.info("Get text on element " + by);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Get text on element " + by);
-            WinAppExtentReportManagement.pass("The Text is: " + waitForElementVisible(by).getText().trim());
+            WinAppExtentReportManagement.pass("The Text is: " + Objects.requireNonNull(waitForElementVisible(by)).getText().trim());
         }
-        return waitForElementVisible(by).getText().trim();
+        return Objects.requireNonNull(waitForElementVisible(by)).getText().trim();
     }
     /**
      * Get the value from the element's attribute
@@ -536,9 +535,9 @@ public class WinUI {
         WinAppLogUtils.info("Get attributeName on element " + by);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Get attributeName on element " + by);
-            WinAppExtentReportManagement.pass("The attributeName is: " + waitForElementVisible(by).getAttribute(attributeName));
+            WinAppExtentReportManagement.pass("The attributeName is: " + Objects.requireNonNull(waitForElementVisible(by)).getAttribute(attributeName));
         }
-        return waitForElementVisible(by).getAttribute(attributeName);
+        return Objects.requireNonNull(waitForElementVisible(by)).getAttribute(attributeName);
     }
     /**
      * Get CSS value of an element
@@ -551,9 +550,9 @@ public class WinUI {
         WinAppLogUtils.info("Get attributeName on element " + by);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Get getCssValue on element " + by);
-            WinAppExtentReportManagement.pass("The getCssValue is: " + waitForElementVisible(by).getCssValue(cssName));
+            WinAppExtentReportManagement.pass("The getCssValue is: " + Objects.requireNonNull(waitForElementVisible(by)).getCssValue(cssName));
         }
-        return waitForElementVisible(by).getCssValue(cssName);
+        return Objects.requireNonNull(waitForElementVisible(by)).getCssValue(cssName);
     }
     /**
      * Convert the By object to the WebElement
@@ -609,9 +608,9 @@ public class WinUI {
         WinAppLogUtils.info("Get element size on element " + by);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Get element size on " + by);
-            WinAppExtentReportManagement.pass("The element size is: " + waitForElementVisible(by).getSize());
+            WinAppExtentReportManagement.pass("The element size is: " + Objects.requireNonNull(waitForElementVisible(by)).getSize());
         }
-        return waitForElementVisible(by).getSize();
+        return Objects.requireNonNull(waitForElementVisible(by)).getSize();
     }
     /**
      * Get location of specified element
@@ -623,9 +622,9 @@ public class WinUI {
         WinAppLogUtils.info("Get Element Location on element" + by);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Get Element Location on " + by);
-            WinAppExtentReportManagement.pass("The element Element Location is: " + waitForElementVisible(by).getLocation());
+            WinAppExtentReportManagement.pass("The element Element Location is: " + Objects.requireNonNull(waitForElementVisible(by)).getLocation());
         }
-        return waitForElementVisible(by).getLocation();
+        return Objects.requireNonNull(waitForElementVisible(by)).getLocation();
     }
     /**
      * Select the options with the given label (displayed text).
@@ -635,7 +634,7 @@ public class WinUI {
      */
     public static void selectOptionByText(By by, String text) {
         waitForElementVisible(by);
-        Select select = new Select(getWindowElement(by));
+        Select select = new Select(Objects.requireNonNull(getWindowElement(by)));
         select.selectByVisibleText(text);
         WinAppLogUtils.info("Select Option " + by + "by text " + text);
     }
@@ -649,9 +648,9 @@ public class WinUI {
         WinAppLogUtils.info("Get Element TagName on element" + by);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Get Element TagName on " + by);
-            WinAppExtentReportManagement.pass("The element Element TagName is: " + waitForElementVisible(by).getTagName());
+            WinAppExtentReportManagement.pass("The element Element TagName is: " + Objects.requireNonNull(waitForElementVisible(by)).getTagName());
         }
-        return waitForElementVisible(by).getTagName();
+        return Objects.requireNonNull(waitForElementVisible(by)).getTagName();
     }
     /**
      * Select the options with the given value.
@@ -692,7 +691,7 @@ public class WinUI {
         List<WindowsElement> listElement = getWindowElements(by);
 
         List<String> listText = new ArrayList<>();
-        for (WebElement e : listElement) {
+        for (WebElement e : Objects.requireNonNull(listElement)) {
             listText.add(e.getText());
         }
         return listText;
@@ -708,7 +707,7 @@ public class WinUI {
         WinAppLogUtils.info("Get total of Option Dynamic with list element. " + objectListItem);
         try {
             List<WindowsElement> elements = getWindowElements(objectListItem);
-            return elements.size();
+            return Objects.requireNonNull(elements).size();
         } catch (Exception e) {
             WinAppLogUtils.info(e.getMessage());
             e.getMessage();
@@ -946,7 +945,7 @@ public class WinUI {
      */
     public static boolean verifyEquals(Object value1, Object value2) {
         boolean result = value1.equals(value2);
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify Equals: " + value1 + " = " + value2);
             if (WinAppExtentTestManagement.getExtentTest() != null) {
                 WinAppExtentReportManagement.pass("Verify Equals: " + value1 + " = " + value2);
@@ -971,7 +970,7 @@ public class WinUI {
     public static boolean verifyElementTextEquals(By by, String text, WinAppFailureHandling flowControl) {
         waitForElementVisible(by);
         boolean result = getTextElement(by).trim().equals(text.trim());
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify text of an element [Equals]: " + result);
         } else {
             WinAppLogUtils.warn("Verify text of an element [Equals]: " + result);
@@ -982,7 +981,7 @@ public class WinUI {
         }
         if (flowControl.equals(WinAppFailureHandling.CONTINUE_ON_FAILURE)) {
             softAssert.assertEquals(getTextElement(by).trim(), text.trim(), "The actual text is '" + getTextElement(by).trim() + "' not equals '" + text.trim() + "'");
-            if (result == false) {
+            if (!result) {
                 WinAppExtentReportManagement.fail("The actual text is '" + getTextElement(by).trim() + "' not equals '" + text.trim() + "'");
             }
         }
@@ -1009,7 +1008,7 @@ public class WinUI {
 
         boolean result = getTextElement(by).trim().equals(text.trim());
 
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify text of an element [Equals]: " + result);
         } else {
             WinAppLogUtils.warn("Verify text of an element [Equals]: " + result);
@@ -1037,7 +1036,7 @@ public class WinUI {
 
         boolean result = getTextElement(by).trim().contains(text.trim());
 
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify text of an element [Contains]: " + result);
         } else {
             WinAppLogUtils.warn("Verify text of an element [Contains]: " + result);
@@ -1071,7 +1070,7 @@ public class WinUI {
 
         boolean result = getTextElement(by).trim().contains(text.trim());
 
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify text of an element [Contains]: " + result);
         } else {
             WinAppLogUtils.warn("Verify text of an element [Contains]: " + result);
@@ -1097,7 +1096,7 @@ public class WinUI {
      */
     public static boolean verifyEquals(Object value1, Object value2, String message) {
         boolean result = value1.equals(value2);
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify Equals: " + value1 + " = " + value2);
             if (WinAppExtentTestManagement.getExtentTest() != null) {
                 WinAppExtentReportManagement.pass("Verify Equals: " + value1 + " = " + value2);
@@ -1133,7 +1132,7 @@ public class WinUI {
         } catch (Exception e) {
             WinAppLogUtils.error(message);
             WinAppLogUtils.error(e.getMessage());
-            Assert.fail(message + "" + e.getMessage());
+            Assert.fail(message + " " + e.getMessage());
             return false;
         }
     }
@@ -1195,7 +1194,7 @@ public class WinUI {
     public static boolean verifySelectedByValue(By by, String value) {
         waitForElementVisible(by);
 
-        Select select = new Select(getWindowElement(by));
+        Select select = new Select(Objects.requireNonNull(getWindowElement(by)));
         WinAppLogUtils.info("Verify Option Selected by value: " + select.getFirstSelectedOption().getAttribute("value"));
         if (select.getFirstSelectedOption().getAttribute("value").equals(value)) {
             return true;
@@ -1213,7 +1212,7 @@ public class WinUI {
      */
     public static boolean verifyContains(String value1, String value2) {
         boolean result = value1.contains(value2);
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify Equals: " + value1 + " CONTAINS " + value2);
             if (WinAppExtentTestManagement.getExtentTest() != null) {
                 WinAppExtentReportManagement.pass("Verify Contains: " + value1 + " CONTAINS " + value2);
@@ -1237,7 +1236,7 @@ public class WinUI {
      */
     public static boolean verifyContains(String value1, String value2, String message) {
         boolean result = value1.contains(value2);
-        if (result == true) {
+        if (result) {
             WinAppLogUtils.info("Verify Equals: " + value1 + " CONTAINS " + value2);
             if (WinAppExtentTestManagement.getExtentTest() != null) {
                 WinAppExtentReportManagement.pass("Verify Contains: " + value1 + " CONTAINS " + value2);
@@ -1257,7 +1256,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyTrue(Boolean condition) {
-        if (condition == true) {
+        if (condition) {
             WinAppLogUtils.info("Verify TRUE: " + condition);
             if (WinAppExtentTestManagement.getExtentTest() != null) {
                 WinAppExtentReportManagement.pass("Verify TRUE: " + condition);
@@ -1278,7 +1277,7 @@ public class WinUI {
      * @return true/false
      */
     public static boolean verifyTrue(Boolean condition, String message) {
-        if (condition == true) {
+        if (condition) {
             WinAppLogUtils.info("Verify TRUE: " + condition);
             if (WinAppExtentTestManagement.getExtentTest() != null) {
                 WinAppExtentReportManagement.pass("Verify TRUE: " + condition);
@@ -1338,8 +1337,8 @@ public class WinUI {
     public static boolean verifyElementChecked(By by) {
         waitForElementVisible(by);
 
-        boolean checked = getWindowElement(by).isSelected();
-        if (checked == true) {
+        boolean checked = Objects.requireNonNull(getWindowElement(by)).isSelected();
+        if (checked) {
             return true;
         } else {
             Assert.assertTrue(false, "The element NOT checked.");
@@ -1467,9 +1466,9 @@ public class WinUI {
     public static boolean verifyElementChecked(By by, String message) {
         waitForElementVisible(by);
 
-        boolean checked = getWindowElement(by).isSelected();
+        boolean checked = Objects.requireNonNull(getWindowElement(by)).isSelected();
 
-        if (checked == true) {
+        if (checked) {
             return true;
         } else {
             Assert.assertTrue(false, message);
@@ -1484,7 +1483,7 @@ public class WinUI {
      */
     public static void verifyOptionTotal(By by, int total) {
         waitForElementPresent(by);
-        Select select = new Select(getWindowElement(by));
+        Select select = new Select(Objects.requireNonNull(getWindowElement(by)));
         WinAppLogUtils.info("Verify Option Total equals: " + total);
         Assert.assertEquals(total, select.getOptions().size());
     }
@@ -1503,7 +1502,7 @@ public class WinUI {
             if (files == null || files.length == 0) {
                 flag = false;
             }
-            for (int i = 0; i < files.length; i++) {
+            for (int i = 0; i < Objects.requireNonNull(files).length; i++) {
                 if (files[i].getName().contains(fileName)) {
                     flag = true;
                 }
@@ -1529,7 +1528,7 @@ public class WinUI {
             if (files == null || files.length == 0) {
                 flag = false;
             }
-            for (int i = 0; i < files.length; i++) {
+            for (int i = 0; i < Objects.requireNonNull(files).length; i++) {
                 if (files[i].getName().equals(fileName)) {
                     flag = true;
                 }
@@ -1552,7 +1551,7 @@ public class WinUI {
         int i = 0;
         while (i < timeoutSeconds) {
             boolean exist = verifyFileContainsInDownloadDirectory(fileName);
-            if (exist == true) {
+            if (exist) {
                 i = timeoutSeconds;
                 return check = true;
             }
@@ -1573,7 +1572,7 @@ public class WinUI {
         int i = 0;
         while (i < timeoutSeconds) {
             boolean exist = verifyFileEqualsInDownloadDirectory(fileName);
-            if (exist == true) {
+            if (exist) {
                 i = timeoutSeconds;
                 return check = true;
             }

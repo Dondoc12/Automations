@@ -111,3 +111,11 @@
 [INFO] 16-07-2024 15:48:53 [main] [WinAppLogUtils] - Loaded all properties files.
 [INFO] 16-07-2024 15:49:00 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
 [INFO] 16-07-2024 15:49:02 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 16-07-2024 17:11:24 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 16-07-2024 17:11:52 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 16-07-2024 17:12:02 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 16-07-2024 17:12:03 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 16-07-2024 17:12:04 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 16-07-2024 17:12:20 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 16-07-2024 17:12:24 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 16-07-2024 17:12:26 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
