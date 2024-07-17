@@ -1,14 +1,13 @@
 package com.WinUIAutomation.driver;
 
+import com.WinUIAutomation.constants.WinAppConstants;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import com.WinUIAutomation.constants.WinAppConstants;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 public enum WinAppDriver {
     LAWSON_CLIENT {

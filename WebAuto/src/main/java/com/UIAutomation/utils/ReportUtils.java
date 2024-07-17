@@ -1,7 +1,7 @@
 package com.UIAutomation.utils;
 
-import com.UIAutomation.exceptions.InvalidPathForExtentReportFileException;
 import com.UIAutomation.exceptions.Exception;
+import com.UIAutomation.exceptions.InvalidPathForExtentReportFileException;
 
 import java.awt.*;
 import java.io.File;

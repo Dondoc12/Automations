@@ -3,7 +3,6 @@ package com.WinUIAutomation.helpers;
 import com.WinUIAutomation.utils.WinAppLanguageUtils;
 import com.WinUIAutomation.utils.WinAppLogUtils;
 
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

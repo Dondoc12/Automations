@@ -1,7 +1,5 @@
 package com.WinUIAutomation.helpers;
 
-import org.testng.annotations.Test;
-
 import java.io.*;
 import java.nio.charset.Charset;
 import java.text.Normalizer;

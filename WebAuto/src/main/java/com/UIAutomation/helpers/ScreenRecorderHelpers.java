@@ -17,9 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static org.monte.media.FormatKeys.*;
-import static org.monte.media.FormatKeys.FrameRateKey;
 import static org.monte.media.VideoFormatKeys.*;
-import static org.monte.media.VideoFormatKeys.QualityKey;
 
 public class ScreenRecorderHelpers extends ScreenRecorder {
 

@@ -11,9 +11,9 @@ import com.WinUIAutomation.utils.WinAppLogUtils;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -26,8 +26,10 @@ import java.awt.event.InputEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 public class WinUI {
     /**
@@ -71,6 +73,23 @@ public class WinUI {
         return null;
     }
     /**
+     * Wait for the given element to be clickable.
+     *
+     * @param element an element of object
+     * @return a WebElement object ready to CLICK
+     */
+    public static WebElement waitForElementClickable(WebElement element) {
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            return wait.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (Throwable error) {
+            WinAppLogUtils.error("Timeout waiting for the element ready to click. " + element.toString());
+            Assert.fail("Timeout waiting for the element ready to click. " + element.toString());
+        }
+        return null;
+    }
+    /**
+     * Wait for the given element to be clickable within the given time (in seconds).
      * Wait for the given element to be clickable within the given time (in seconds).
      *
      * @param by      an element of object type By
@@ -231,7 +250,7 @@ public class WinUI {
      * @param by Represent a UI element as the By object
      */
     public static void scrollToElementAtBottom(By by) {
-        WindowsElement element = WinAppDriverManagement.getDriver().findElement(by);
+        WebElement element = WinAppDriverManagement.getDriver().findElement(by);
         Dimension elementSize = element.getSize();
         Dimension windowSize = WinAppDriverManagement.getDriver().manage().window().getSize();
         int scrollAmount = elementSize.getHeight() - windowSize.getHeight();
@@ -241,6 +260,11 @@ public class WinUI {
         WinAppLogUtils.info("Scroll to element " + by);
     }
     /* Element Control */
+    public static void performDoubleClick(WebElement element) {
+        Actions action = new Actions(WinAppDriverManagement.getDriver());
+        action.moveToElement(element).doubleClick().perform();
+        System.out.println("Double click performed on element: " + element);
+    }
     /**
      * Click on the specified element.
      *
@@ -250,9 +274,23 @@ public class WinUI {
         waitForElementClickable(by);
         Objects.requireNonNull(getWindowElement(by)).click();
         WinAppLogUtils.info("Clicked on the element " + by.toString());
-
         if (WinAppExtentTestManagement.getExtentTest() != null) {
             WinAppExtentReportManagement.pass("Clicked on the element " + by.toString());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
+    }
+    /**
+     * Click on the specified element.
+     *
+     * @param element an element of object
+     */
+    public static void clickElement(WebElement element) {
+        waitForElementClickable(element);
+        element.click();
+        WinAppLogUtils.info("Clicked on the element " + element.toString());
+
+        if (WinAppExtentTestManagement.getExtentTest() != null) {
+            WinAppExtentReportManagement.pass("Clicked on the element " + element.toString());
         }
         addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + WinAppDateUtils.getCurrentDateTime());
     }
@@ -560,12 +598,12 @@ public class WinUI {
      * @param by is an element of type By
      * @return Returns a WebElement object
      */
-    public static WindowsElement getWindowElement( By by) {
+    public static WebElement getWindowElement( By by) {
         for (String windowHandle : WinAppDriverManagement.getDriver().getWindowHandles()) {
             WinAppDriverManagement.getDriver().switchTo().window(windowHandle);
             try {
                 WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), 20);
-                WindowsElement element = wait.until(d -> WinAppDriverManagement.getDriver().findElement(by));
+                WebElement element = wait.until(d -> WinAppDriverManagement.getDriver().findElement(by));
 
                 if (element != null) {
                     return element;
@@ -582,15 +620,14 @@ public class WinUI {
      * @param by is an element of type By
      * @return Returns a List of WebElement objects
      */
-    public static List<WindowsElement> getWindowElements(By by) {
+    public static List<WebElement> getWindowElements(By by) {
         for (String windowHandle : WinAppDriverManagement.getDriver().getWindowHandles()) {
             WinAppDriverManagement.getDriver().switchTo().window(windowHandle);
             try {
                 WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
-                wait.until(d -> WinAppDriverManagement.getDriver().findElements(by));
-                List<WindowsElement> element = WinAppDriverManagement.getDriver().findElements(by);
+                Object element = wait.until(d -> WinAppDriverManagement.getDriver().findElements(by));
                 if (element != null) {
-                    return element;
+                    return (List<WebElement>) element;
                 }
             } catch (Exception e) {
                 WinAppLogUtils.info("Get Elements " + by + " Error");
@@ -688,7 +725,7 @@ public class WinUI {
         WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 
-        List<WindowsElement> listElement = getWindowElements(by);
+        List<WebElement> listElement = getWindowElements(by);
 
         List<String> listText = new ArrayList<>();
         for (WebElement e : Objects.requireNonNull(listElement)) {
@@ -706,7 +743,7 @@ public class WinUI {
         waitForElementVisible(objectListItem);
         WinAppLogUtils.info("Get total of Option Dynamic with list element. " + objectListItem);
         try {
-            List<WindowsElement> elements = getWindowElements(objectListItem);
+            List<WebElement> elements = getWindowElements(objectListItem);
             return Objects.requireNonNull(elements).size();
         } catch (Exception e) {
             WinAppLogUtils.info(e.getMessage());
@@ -730,7 +767,7 @@ public class WinUI {
     public static void uploadFileFromLocalFile(By by,String filePath){
         WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(),WinAppConstants.WAIT_EXPLICIT);
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-        WindowsElement windowsElement = WinAppDriverManagement.getDriver().findElement(by);
+        WebElement windowsElement = WinAppDriverManagement.getDriver().findElement(by);
         windowsElement.sendKeys(filePath);
         WinAppLogUtils.info("Upload File with Local Form: " + filePath);
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -925,7 +962,7 @@ public class WinUI {
         waitForElementVisible(by);
 
         boolean res;
-        List<WindowsElement> elementList = getWindowElements(by);
+        List<WebElement> elementList = getWindowElements(by);
         if (elementList.size() > 0) {
             res = true;
             WinAppLogUtils.info("Element existing");
@@ -1314,9 +1351,9 @@ public class WinUI {
         waitForElementVisible(by);
 
         try {
-            List<WindowsElement> elements = getWindowElements(by);
+            List<WebElement> elements = getWindowElements(by);
 
-            for (WindowsElement element : elements) {
+            for (WebElement element : elements) {
                 WinAppLogUtils.info(element.getText());
                 if (element.getText().toLowerCase().trim().contains(text.toLowerCase().trim())) {
                     return true;

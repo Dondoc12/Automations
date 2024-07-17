@@ -1,7 +1,7 @@
 package com.WinUIAutomation.utils;
 
-import com.WinUIAutomation.enums.WinAppDriverValue;
 import com.WinUIAutomation.constants.WinAppConstants;
+import com.WinUIAutomation.enums.WinAppDriverValue;
 
 public final class WinAppIconUtils {
 

@@ -5,7 +5,6 @@ import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.exceptions.WinAppTargetNotValidException;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
-import org.openqa.selenium.WebDriver;
 
 import java.net.MalformedURLException;
 

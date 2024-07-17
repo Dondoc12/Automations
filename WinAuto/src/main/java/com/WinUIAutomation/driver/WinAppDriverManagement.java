@@ -4,7 +4,6 @@ import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.utils.WinAppLogUtils;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
-import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
 

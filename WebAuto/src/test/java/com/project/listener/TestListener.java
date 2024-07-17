@@ -5,7 +5,6 @@ import com.UIAutomation.driver.DriverManagement;
 import com.UIAutomation.enums.AuthorValue;
 import com.UIAutomation.enums.CategoryValue;
 import com.UIAutomation.helpers.CaptureHelpers;
-import com.UIAutomation.helpers.FileHelpers;
 import com.UIAutomation.helpers.PropertiesHelpers;
 import com.UIAutomation.helpers.ScreenRecorderHelpers;
 import com.UIAutomation.keywords.WebUI;
