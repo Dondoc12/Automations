@@ -262,7 +262,7 @@ public class WinUI {
     /* Element Control */
     public static void performDoubleClick(WebElement element) {
         Actions action = new Actions(WinAppDriverManagement.getDriver());
-        action.moveToElement(element).doubleClick().perform();
+        action.doubleClick(element).perform();
         System.out.println("Double click performed on element: " + element);
     }
     /**

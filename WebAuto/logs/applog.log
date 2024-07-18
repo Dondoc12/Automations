@@ -126,3 +126,27 @@
 [INFO] 18-07-2024 13:29:20 [main] [LogUtils] - =====> End Suite: Default Suite
 [INFO] 18-07-2024 13:33:23 [main] [LogUtils] - Loaded all properties files.
 [INFO] 18-07-2024 13:33:37 [main] [LogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\18_07_2024_16_22_42_ExtentReports.html
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - Test case: end is starting...
+[ERROR] 18-07-2024 16:22:42 [main] [LogUtils] - FAILED !! Test case end is failed.
+[ERROR] 18-07-2024 16:22:42 [main] [LogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - Driver for Screenshot: null
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 18-07-2024 16:22:42 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 18-07-2024 16:27:42 [main] [LogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 16:27:42 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 18-07-2024 16:27:42 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 18-07-2024 16:27:42 [main] [LogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 16:27:43 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 18-07-2024 16:27:43 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\18_07_2024_16_27_43_ExtentReports.html
+[INFO] 18-07-2024 16:27:43 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 18-07-2024 16:27:43 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 18-07-2024 16:27:43 [main] [LogUtils] - =====> Starting Suite: Default Suite
