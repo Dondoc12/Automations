@@ -1,7 +1,9 @@
 package com.UIAutomation.utils;
 
+import com.UIAutomation.constants.Constants;
 import com.UIAutomation.exceptions.Exception;
 import com.UIAutomation.exceptions.InvalidPathForExtentReportFileException;
+import org.testng.annotations.Test;
 
 import java.awt.*;
 import java.io.File;
@@ -15,7 +17,6 @@ public class ReportUtils {
     private ReportUtils() {
 
     }
-
     public static String createExtentReportPath() {
         String link = "";
         if (OVERRIDE_REPORTS.trim().equals(NO)) {

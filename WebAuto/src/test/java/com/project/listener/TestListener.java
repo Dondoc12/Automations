@@ -49,25 +49,17 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
         // Before every method in the Test Class
-        //System.out.println(method.getTestMethod().getMethodName());
     }
 
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         // After every method in the Test Class
-        //System.out.println(method.getTestMethod().getMethodName());
     }
 
     @Override
     public void onStart(ISuite iSuite) {
         LogUtils.info("********** RUN STARTED **********");
         LogUtils.info("========= INSTALLING CONFIGURATION DATA =========");
-//        try {
-//            FileUtils.deleteDirectory(new File("target/allure-results"));
-//            System.out.println("Deleted Directory target/allure-results");
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
 
         PropertiesHelpers.loadAllFiles();
         ExtentReportManagement.initReports();

@@ -25,7 +25,6 @@ public class ExtentReportManagement {
     public static void initReports() {
         if (Objects.isNull(extentReports)) {
             extentReports = new ExtentReports();
-
             if (Constants.OVERRIDE_REPORTS.trim().equals(Constants.NO)) {
                 LogUtils.info("OVERRIDE EXTENT REPORTS = " + Constants.OVERRIDE_REPORTS);
                 link = Constants.EXTENT_REPORT_FOLDER_PATH + File.separator + DateUtils.getCurrentDateTimeCustom("_") + "_" + Constants.EXTENT_REPORT_FILE_NAME;
@@ -35,15 +34,6 @@ public class ExtentReportManagement {
                 link = Constants.EXTENT_REPORT_FILE_PATH;
                 LogUtils.info("Link Extent Report: " + link);
             }
-
-//            ExtentPDFReporter pdf = new ExtentPDFReporter("reports/ExtentReports/PdfReport.pdf");
-//            try {
-//                pdf.loadJSONConfig(new File("src/test/resources/pdf-config.json"));
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//            extentReports.attachReporter(pdf);
-
             ExtentSparkReporter spark = new ExtentSparkReporter(link);
             extentReports.attachReporter(spark);
             spark.config().setTheme(Theme.STANDARD);
@@ -54,6 +44,11 @@ public class ExtentReportManagement {
 
             LogUtils.info("Extent Reports is installed.");
         }
+    }
+    public static String getReportLinkPath(){
+        String reportLinkPath = link;
+        System.out.println("Link Extent Report: " + reportLinkPath);
+        return reportLinkPath;
     }
 
     public static void flushReports() {
@@ -66,7 +61,6 @@ public class ExtentReportManagement {
 
     public static void createTest(String testCaseName) {
         ExtentTestManagement.setExtentTest(extentReports.createTest(IconUtils.getBrowserIcon() + " " + testCaseName));
-        //ExtentTestManager.setExtentTest(extentReports.createTest(testCaseName));
     }
 
     public static void createTest(String testCaseName, String description) {
@@ -89,7 +83,7 @@ public class ExtentReportManagement {
         ExtentTestManagement.getExtentTest().log(Status.INFO, MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
 
         //File Path from Screenshot of Java
-        //ExtentTestManager.getExtentTest().log(Status.INFO, MediaEntityBuilder.createScreenCaptureFromPath(String.valueOf(CaptureHelpers.getScreenshotFile(message))).build());
+        //ExtentTestManagement.getExtentTest().log(Status.INFO, MediaEntityBuilder.createScreenCaptureFromPath(String.valueOf(CaptureHelpers.getScreenshotFile(message))).build());
 
     }
 
@@ -106,7 +100,7 @@ public class ExtentReportManagement {
         ExtentTestManagement.getExtentTest().log(status, MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
 
         //File Path from Screenshot of Java
-        //ExtentTestManager.getExtentTest().log(status, MediaEntityBuilder.createScreenCaptureFromPath(CaptureHelpers.getScreenshotAbsolutePath(message)).build());
+        //ExtentTestManagement.getExtentTest().log(status, MediaEntityBuilder.createScreenCaptureFromPath(CaptureHelpers.getScreenshotAbsolutePath(message)).build());
 
     }
 
@@ -134,8 +128,7 @@ public class ExtentReportManagement {
 
     synchronized public static void addDevices() {
         ExtentTestManagement.getExtentTest().assignDevice(BrowserInfoUtils.getBrowserInfo());
-//		ExtentReportManager.getExtentTest()
-//				.assignDevice(BrowserIconUtils.getBrowserIcon() + " : " + BrowserInfoUtils.getBrowserInfo());
+//		ExtentTestManagement.getExtentTest().assignDevice(BrowserIconUtils.getBrowserIcon() + " : " + BrowserInfoUtils.getBrowserInfo());
     }
 
     public static void logMessage(String message) {
@@ -151,7 +144,7 @@ public class ExtentReportManagement {
     }
 
     public static void pass(String message) {
-        //LogUtils.info("ExtentReportManager class: " + ExtentTestManager.getExtentTest());
+        //LogUtils.info("ExtentReportManagement class: " + ExtentTestManagement.getExtentTest());
         ExtentTestManagement.getExtentTest().pass(message);
     }
 
@@ -192,4 +185,3 @@ public class ExtentReportManagement {
     }
 
 }
-

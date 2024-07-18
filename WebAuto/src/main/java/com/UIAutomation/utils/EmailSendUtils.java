@@ -2,6 +2,7 @@ package com.UIAutomation.utils;
 
 import com.UIAutomation.constants.Constants;
 import com.UIAutomation.emails.EmailAttachmentsSender;
+import com.UIAutomation.report.ExtentReportManagement;
 
 import javax.mail.MessagingException;
 
@@ -21,13 +22,12 @@ public class EmailSendUtils {
             System.out.println("Send Email - START");
             System.out.println("****************************************");
 
-            System.out.println("File name: " + Constants.getExtentReportFilePath());
+            System.out.println("File name: " + ExtentReportManagement.getReportLinkPath());
 
             String messageBody = getTestCasesCountInFormat(count_totalTCs, count_passedTCs, count_failedTCs,
                     count_skippedTCs);
-            //System.out.println(messageBody);
 
-            String attachmentFile_ExtentReport = Constants.getExtentReportFilePath();
+            String attachmentFile_ExtentReport = ExtentReportManagement.getReportLinkPath();
 
             try {
                 EmailAttachmentsSender.sendEmailWithAttachments(SERVER, PORT, FROM, PASSWORD, TO, SUBJECT, messageBody,

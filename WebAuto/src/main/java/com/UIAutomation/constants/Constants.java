@@ -2,6 +2,8 @@ package com.UIAutomation.constants;
 
 import com.UIAutomation.helpers.Helpers;
 import com.UIAutomation.helpers.PropertiesHelpers;
+import com.UIAutomation.utils.DateUtils;
+import com.UIAutomation.utils.LogUtils;
 import com.UIAutomation.utils.ReportUtils;
 
 import java.io.File;

@@ -42,10 +42,6 @@ public class EmailAttachmentsSender {
             addressTo[i] = new InternetAddress(toAddress[i]);
         msg.setRecipients(Message.RecipientType.TO, addressTo);
 
-        /*
-         * InternetAddress[] toAddresses = { new InternetAddress(toAddress) };
-         * msg.setRecipients(Message.RecipientType.TO, toAddresses);
-         */
         msg.setSubject(subject);
         msg.setSentDate(new Date());
 
@@ -72,10 +68,8 @@ public class EmailAttachmentsSender {
             }
         }
 
-        // sets the multi-part as e-mail's content
         msg.setContent(multipart);
 
-        // sends the e-mail
         Transport.send(msg);
     }
 

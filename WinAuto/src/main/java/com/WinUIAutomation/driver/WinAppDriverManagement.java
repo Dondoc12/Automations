@@ -25,10 +25,6 @@ public class WinAppDriverManagement {
     }
 
     public static void quit() {
-        if(WinAppConstants.APP_NAME.equals("LAWSON_CLIENT") && WinAppDriverManagement.getDriver() != null){
-            killLawSonApp();
-            WinAppDriverManagement.getDriver().quit();
-        }
         if (WinAppDriverManagement.getDriver() != null){
             WinAppDriverManagement.getDriver().quit();
         }

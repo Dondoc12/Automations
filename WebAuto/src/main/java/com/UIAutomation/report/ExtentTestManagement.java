@@ -6,7 +6,6 @@ public class ExtentTestManagement {
     private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
     public static ExtentTest getExtentTest() {
-        //System.out.println("ExtentTestManager class: " + extentTest.get());
         return extentTest.get();
     }
 

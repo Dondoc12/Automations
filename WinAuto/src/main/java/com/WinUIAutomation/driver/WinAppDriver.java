@@ -28,7 +28,10 @@ public enum WinAppDriver {
             return capabilities;
         }
     };
-    public static void openLawSonApp() {
+    public abstract WindowsDriver<WindowsElement> createDriver() throws MalformedURLException;
+
+    public abstract DesiredCapabilities getOptions();
+    private static void openLawSonApp() {
         String lawSonAppDirect = WinAppConstants.LAWSON_DIRECT_LINK;
 
         ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "start", lawSonAppDirect);
@@ -46,7 +49,4 @@ public enum WinAppDriver {
             System.out.println("Failed to launch the application: InterruptedException");
         }
     }
-    public abstract WindowsDriver<WindowsElement> createDriver() throws MalformedURLException;
-
-    public abstract DesiredCapabilities getOptions();
 }

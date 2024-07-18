@@ -356,3 +356,65 @@
 [INFO] 17-07-2024 14:07:04 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
 [INFO] 17-07-2024 14:07:18 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
 [INFO] 17-07-2024 14:07:20 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 18-07-2024 12:04:55 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 12:04:56 [main] [WinAppLogUtils] - LawsonClient.exe is closed.
+[INFO] 18-07-2024 12:05:11 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 12:05:13 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 12:06:06 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 12:06:07 [main] [WinAppLogUtils] - LawsonClient.exe is closed.
+[INFO] 18-07-2024 12:06:15 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 12:06:16 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 13:50:11 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 13:50:12 [main] [WinAppLogUtils] - LawsonClient.exe is closed.
+[INFO] 18-07-2024 13:50:22 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 13:50:24 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 13:50:25 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 18-07-2024 13:50:38 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 18-07-2024 13:50:44 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 18-07-2024 13:50:47 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 18-07-2024 13:50:53 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 18-07-2024 13:50:59 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 18-07-2024 13:51:02 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 18-07-2024 13:51:05 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 18-07-2024 13:51:17 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 18-07-2024 13:51:20 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 18-07-2024 13:52:02 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 13:52:02 [main] [WinAppLogUtils] - LawsonClient.exe is closed.
+[INFO] 18-07-2024 13:52:10 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 13:52:12 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 13:52:13 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 18-07-2024 13:52:18 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 18-07-2024 13:52:24 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 18-07-2024 13:52:27 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 18-07-2024 13:52:33 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 18-07-2024 13:52:39 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 18-07-2024 13:52:42 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 18-07-2024 13:52:45 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 18-07-2024 13:52:57 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 18-07-2024 13:53:00 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 18-07-2024 14:56:52 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 14:58:49 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 14:59:08 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:01:15 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:02:39 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:03:42 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:03:50 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 15:03:52 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 15:20:28 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:20:36 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 15:20:38 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 15:21:54 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:22:01 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 15:22:03 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 15:33:54 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:34:02 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 15:34:03 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 15:34:41 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:34:49 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 15:34:50 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 15:37:33 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:37:41 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 15:37:43 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 18-07-2024 15:38:39 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 18-07-2024 15:38:47 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 18-07-2024 15:38:48 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
