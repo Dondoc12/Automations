@@ -272,6 +272,8 @@ public class WinUI {
      */
     public static void clickElement(By by) {
         waitForElementClickable(by);
+        Actions actions = new Actions(WinAppDriverManagement.getDriver());
+        actions.moveToElement( Objects.requireNonNull(getWindowElement(by))).perform();
         Objects.requireNonNull(getWindowElement(by)).click();
         WinAppLogUtils.info("Clicked on the element " + by.toString());
         if (WinAppExtentTestManagement.getExtentTest() != null) {
@@ -286,6 +288,8 @@ public class WinUI {
      */
     public static void clickElement(WebElement element) {
         waitForElementClickable(element);
+        Actions actions = new Actions(WinAppDriverManagement.getDriver());
+        actions.moveToElement(element).perform();
         element.click();
         WinAppLogUtils.info("Clicked on the element " + element.toString());
 

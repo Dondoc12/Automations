@@ -59,3 +59,135 @@ Session ID: 78606f5506e1f112eb36eb4a9673f766
 [INFO] 19-07-2024 13:13:05 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
 [INFO] 19-07-2024 13:13:05 [main] [LogUtils] - ********** RUN FINISHED **********
 [INFO] 19-07-2024 13:13:05 [main] [LogUtils] - =====> End Suite: Regression Tests CMS
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_13_31_01_ExtentReports.html
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 13:31:01 [main] [LogUtils] - =====> Starting Suite: Regression Tests CMS
+[INFO] 19-07-2024 13:31:09 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 13:31:09 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 13:31:09 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (ded3ac53ee4487d499f401b8d5c2cc95)
+[INFO] 19-07-2024 13:31:10 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 13:31:10 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 13:31:12 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 13:31:22 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 13:31:22 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 13:31:22 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (917f35ef43ca89a59fb2cc21f14dbf2c)
+[INFO] 19-07-2024 13:31:22 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 13:31:22 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 13:31:23 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 13:31:23 [main] [LogUtils] - =====> End Suite: Regression Tests CMS
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_13_42_46_ExtentReports.html
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 13:42:46 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 13:42:52 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 13:42:52 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 13:42:52 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (e0aee2e826421f8502719e75039b2d5c)
+[INFO] 19-07-2024 13:42:52 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 13:42:52 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 13:42:55 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 13:43:05 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 13:43:05 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 13:43:05 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (6685babfadd817515ba803fcf2dcdd8c)
+[INFO] 19-07-2024 13:43:05 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 13:43:05 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 13:43:06 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 13:43:06 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_14_29_19_ExtentReports.html
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:29:19 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 14:29:27 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 14:29:27 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 14:29:27 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (217608d4529ff29018aee498905e0ad4)
+[INFO] 19-07-2024 14:29:28 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 14:29:28 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 14:29:31 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 14:29:43 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:29:43 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 14:29:43 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (2ec114f80f196d50a92a74e671131916)
+[INFO] 19-07-2024 14:29:43 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 14:29:43 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:29:44 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:29:44 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_14_36_55_ExtentReports.html
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:36:55 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 14:37:01 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 14:37:01 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 14:37:01 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (b0869c4f988163fcc8f263d51a439f57)
+[INFO] 19-07-2024 14:37:01 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 14:37:01 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 14:37:06 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 14:37:15 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:37:15 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 14:37:15 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (3a5aae7287c38602c55ecbdfa4f0b374)
+[INFO] 19-07-2024 14:37:15 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 14:37:15 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:37:15 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:37:15 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_14_39_28_ExtentReports.html
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:39:28 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 14:39:33 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 14:39:33 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 14:39:33 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (db2f53fcc064099fdc7e930e29e73e21)
+[INFO] 19-07-2024 14:39:33 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 14:39:33 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 14:39:36 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 14:39:47 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:39:47 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 14:39:47 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (93007ac52eb3e3fd8f9f0d046851ea02)
+[INFO] 19-07-2024 14:39:47 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 14:39:47 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:39:48 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:39:48 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_14_40_31_ExtentReports.html
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:40:31 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 14:40:35 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 14:40:36 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 14:40:36 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (ebf1bbadb57c6c73bb8dce1a211a2e0a)
+[INFO] 19-07-2024 14:40:36 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 14:40:36 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 14:40:38 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 14:40:47 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:40:47 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 14:40:47 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (3129a1605003b8906f028e42c2e74b61)
+[INFO] 19-07-2024 14:40:47 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 14:40:47 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 14:40:48 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:40:48 [main] [LogUtils] - =====> End Suite: Web Tests

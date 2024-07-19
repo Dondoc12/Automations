@@ -1,4 +1,4 @@
-package org.example;
+package example;
 
 public class data {
     public static String userName = "techvify11";
