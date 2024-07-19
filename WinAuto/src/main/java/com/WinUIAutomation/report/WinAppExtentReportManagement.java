@@ -36,14 +36,6 @@ public class WinAppExtentReportManagement {
                 WinAppLogUtils.info("Link Extent Report: " + link);
             }
 
-//            ExtentPDFReporter pdf = new ExtentPDFReporter("reports/ExtentReports/PdfReport.pdf");
-//            try {
-//                pdf.loadJSONConfig(new File("src/test/resources/pdf-config.json"));
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//            extentReports.attachReporter(pdf);
-
             ExtentSparkReporter spark = new ExtentSparkReporter(link);
             extentReports.attachReporter(spark);
             spark.config().setTheme(Theme.STANDARD);
@@ -54,6 +46,11 @@ public class WinAppExtentReportManagement {
 
             WinAppLogUtils.info("Extent Reports is installed.");
         }
+    }
+    public static String getReportLinkPath(){
+        String reportLinkPath = link;
+        System.out.println("Link Extent Report: " + reportLinkPath);
+        return reportLinkPath;
     }
 
     public static void flushReports() {

@@ -301,7 +301,8 @@
                     <configuration>
                         <suiteXmlFiles>
                             <!--<suiteXmlFile>${suite.all}</suiteXmlFile>-->
-                            <suiteXmlFile>src/test/resources/suites/winsuite.xml</suiteXmlFile>
+<!--                            <suiteXmlFile>src/test/resources/suites/winsuite.xml</suiteXmlFile>-->
+<!--                            <suiteXmlFile>src/test/resources/suites/winsuite2.xml</suiteXmlFile>-->
                         </suiteXmlFiles>
                         <argLine>
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
@@ -309,8 +310,7 @@
                         <testFailureIgnore>${maven.test.failure.ignore}</testFailureIgnore>
                     </configuration>
                 </plugin>
-
-                <plugin>
+                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>3.6.3</version>

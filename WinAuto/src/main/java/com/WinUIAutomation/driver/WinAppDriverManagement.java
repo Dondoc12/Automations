@@ -29,17 +29,4 @@ public class WinAppDriverManagement {
             WinAppDriverManagement.getDriver().quit();
         }
     }
-    public static void killLawSonApp(){
-        String processName = "LawsonClient.exe";
-
-        try {
-            Process process = Runtime.getRuntime().exec("taskkill /IM " + processName + " /F");
-            process.waitFor();  // Chờ đợi tiến trình hoàn thành
-
-            WinAppLogUtils.info(processName + " is closed.");
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-            WinAppLogUtils.info(processName + " closed have error");
-        }
-    }
 }

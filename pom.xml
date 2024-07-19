@@ -17,10 +17,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
+        <maven-failsafe-plugin.version>3.0.0-M5</maven-failsafe-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
         <testng.version>7.10.2</testng.version>
         <java-compiler.version>21</java-compiler.version>
+        <aspectjweaver.version>1.9.22.1</aspectjweaver.version>
+        <maven.test.failure.ignore>true</maven.test.failure.ignore>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -28,6 +32,25 @@
             <version>${testng.version}</version>
         </dependency>
     </dependencies>
+    <profiles>
+        <profile>
+            <id>suite2</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>src/test/resources/suites/suite2.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
     <build>
         <plugins>
             <plugin>
@@ -39,13 +62,40 @@
                     <target>${java-compiler.version}</target>
                 </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${maven-failsafe-plugin.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${basedir}/WinAuto/src/test/resources/suites/winsuite2.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/WebAuto/src/test/resources/suites/suite2.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/WinAuto/src/test/resources/suites/winsuite.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/WebAuto/src/test/resources/suites/suite-functionename.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>integration-test</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>verify</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
             </plugin>
-
         </plugins>
     </build>
 </project>

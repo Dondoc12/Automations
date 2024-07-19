@@ -3,6 +3,7 @@ package com.WinUIAutomation.utils;
 import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.emails.WinAppEmailAttachmentsSender;
 import com.WinUIAutomation.emails.WinAppEmailConfigs;
+import com.WinUIAutomation.report.WinAppExtentReportManagement;
 
 import javax.mail.MessagingException;
 
@@ -19,13 +20,13 @@ public class WinAppEmailSendUtils {
             System.out.println("Send Email - START");
             System.out.println("****************************************");
 
-            System.out.println("File name: " + WinAppConstants.getExtentReportFilePath());
+            System.out.println("File name: " + WinAppExtentReportManagement.getReportLinkPath());
 
             String messageBody = getTestCasesCountInFormat(count_totalTCs, count_passedTCs, count_failedTCs,
                     count_skippedTCs);
             //System.out.println(messageBody);
 
-            String attachmentFile_ExtentReport = WinAppConstants.getExtentReportFilePath();
+            String attachmentFile_ExtentReport = WinAppExtentReportManagement.getReportLinkPath();
 
             try {
                 WinAppEmailAttachmentsSender.sendEmailWithAttachments(WinAppEmailConfigs.SERVER, WinAppEmailConfigs.PORT, WinAppEmailConfigs.FROM, WinAppEmailConfigs.PASSWORD, WinAppEmailConfigs.TO, WinAppEmailConfigs.SUBJECT, messageBody,

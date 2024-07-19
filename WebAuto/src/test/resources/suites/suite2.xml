@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Web Tests">
+
+    <test name="Tests Web">
+        <parameter name="BROWSER" value="firefox"/>
+        <classes>
+            <class name="com.project.testCase.thungheim2"/>
+        </classes>
+    </test>
+
+</suite>

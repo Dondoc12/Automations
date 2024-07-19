@@ -154,6 +154,35 @@ public class WinUI {
     /**
      * Wait until the given web element is visible.
      *
+     * @param element an element of object
+     * @return a WebElement object ready to be visible
+     */
+    public static void waitForElementVisible(WebElement element) {
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            wait.until(ExpectedConditions.visibilityOf(element));
+        } catch (Throwable error) {
+            WinAppLogUtils.error("Timeout waiting for the element Visible. " + element.toString());
+            Assert.fail("Timeout waiting for the element Visible. " + element.toString());
+        }
+
+    }
+    public static void checkForElementVisible(By by) {
+        try {
+            WebDriverWait wait = new WebDriverWait(WinAppDriverManagement.getDriver(), WinAppConstants.WAIT_EXPLICIT);
+            Actions actions = new Actions(WinAppDriverManagement.getDriver());
+            actions.moveToElement(getWindowElement(by)).perform();
+            wait.until(ExpectedConditions.visibilityOf(getWindowElement(by)));
+        } catch (Throwable error) {
+            WinAppLogUtils.error("Timeout waiting for the element Visible. " + getWindowElement(by).toString());
+            Assert.fail("Timeout waiting for the element Visible. " + getWindowElement(by).toString());
+        }
+
+    }
+
+    /**
+     * Wait until the given web element is visible.
+     *
      * @param by an element of object type By
      * @return a WebElement object ready to be visible
      */
@@ -259,6 +288,15 @@ public class WinUI {
                 .perform();
         WinAppLogUtils.info("Scroll to element " + by);
     }
+    public static void scrollToElementAtBottom(WebElement element) {
+        Dimension elementSize = element.getSize();
+        Dimension windowSize = WinAppDriverManagement.getDriver().manage().window().getSize();
+        int scrollAmount = elementSize.getHeight() - windowSize.getHeight();
+        new Actions(WinAppDriverManagement.getDriver())
+                .moveToElement(element, 0, scrollAmount)
+                .perform();
+        WinAppLogUtils.info("Scroll to element " + element.toString());
+    }
     /* Element Control */
     public static void performDoubleClick(WebElement element) {
         Actions action = new Actions(WinAppDriverManagement.getDriver());
@@ -272,8 +310,7 @@ public class WinUI {
      */
     public static void clickElement(By by) {
         waitForElementClickable(by);
-        Actions actions = new Actions(WinAppDriverManagement.getDriver());
-        actions.moveToElement( Objects.requireNonNull(getWindowElement(by))).perform();
+
         Objects.requireNonNull(getWindowElement(by)).click();
         WinAppLogUtils.info("Clicked on the element " + by.toString());
         if (WinAppExtentTestManagement.getExtentTest() != null) {

@@ -1,7 +1,6 @@
 package com.winProject.testCase;
 
 import com.WinUIAutomation.driver.WinAppDriverManagement;
-import com.WinUIAutomation.keywords.ByAccessibilityId;
 import com.WinUIAutomation.keywords.WinUI;
 import com.winProject.common.BaseTest;
 import io.appium.java_client.windows.WindowsDriver;
@@ -9,12 +8,10 @@ import io.appium.java_client.windows.WindowsElement;
 import example.data;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObject.pageObject;
-
 import java.util.List;
-import java.util.Objects;
+
 
 
 public class demoAutomation extends BaseTest {
@@ -49,6 +46,7 @@ public class demoAutomation extends BaseTest {
             List<WebElement> gribViewDetailData = WinUI.getWindowElements(By.className("ListViewItem"));
             WinUI.clickElement(gribViewDetailData.get(2));
             WinUI.performDoubleClick(gribViewDetailData.get(2));
+            WinUI.waitForElementVisible(WinUI.getWindowElements(By.className("ListViewItem")).get(23));
         }
         catch (Exception e){
             if(WinAppDriverManagement.getDriver() != null){

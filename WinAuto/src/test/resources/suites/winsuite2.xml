@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Win Tests">
+
+    <test name="Tests">
+        <classes>
+            <class name="com.winProject.testCase.suiteThu2"/>
+        </classes>
+    </test>
+
+</suite>

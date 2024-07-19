@@ -191,3 +191,248 @@ Session ID: 78606f5506e1f112eb36eb4a9673f766
 [INFO] 19-07-2024 14:40:47 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
 [INFO] 19-07-2024 14:40:48 [main] [LogUtils] - ********** RUN FINISHED **********
 [INFO] 19-07-2024 14:40:48 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_15_03_27_ExtentReports.html
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:03:27 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 15:03:35 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 15:03:35 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 15:03:35 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (b0df7c7300323c1e47e8946f444a4562)
+[INFO] 19-07-2024 15:03:35 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 15:03:35 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 15:03:39 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 15:03:50 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 15:03:50 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 15:03:50 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (eeb41cdc24949002a4c875498eaf8653)
+[INFO] 19-07-2024 15:03:50 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 15:03:50 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 15:03:50 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:03:50 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 15:03:55 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:03:55 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:03:55 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:03:55 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:03:55 [main] [LogUtils] - =====> Starting Suite: Web Tests (0)
+[INFO] 19-07-2024 15:04:06 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 15:04:06 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 15:04:06 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (b0708a42-91a4-4b86-b0e2-f1b56b73780f)
+[INFO] 19-07-2024 15:04:06 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 15:04:06 [main] [LogUtils] - Screenshot taken current URL: about:blank
+[INFO] 19-07-2024 15:04:15 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 15:04:23 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 15:04:23 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 15:04:23 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (6ddadb28-3187-4417-9a1d-656dad7fcbb3)
+[INFO] 19-07-2024 15:04:23 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 15:04:23 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 15:04:24 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:04:24 [main] [LogUtils] - =====> End Suite: Web Tests (0)
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_15_20_29_ExtentReports.html
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:20:29 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 19-07-2024 15:20:35 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 19-07-2024 15:20:37 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[ERROR] 19-07-2024 15:20:37 [main] [LogUtils] - FAILED !! Test case end111 is failed.
+[ERROR] 19-07-2024 15:20:37 [main] [LogUtils] - java.lang.AssertionError: expected [5] but found [1]
+[INFO] 19-07-2024 15:20:37 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (188294b3b774cc822330d8ddeb66cc53)
+[INFO] 19-07-2024 15:20:37 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 19-07-2024 15:20:37 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 15:20:37 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:20:37 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_15_21_28_ExtentReports.html
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:21:28 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 19-07-2024 15:21:30 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 19-07-2024 15:21:32 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[ERROR] 19-07-2024 15:21:32 [main] [LogUtils] - FAILED !! Test case end111 is failed.
+[ERROR] 19-07-2024 15:21:32 [main] [LogUtils] - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\david.le\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59953/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+[INFO] 19-07-2024 15:21:32 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (null)
+[ERROR] 19-07-2024 15:21:32 [main] [LogUtils] - FAILED !! Test case end111 is failed.
+[ERROR] 19-07-2024 15:21:32 [main] [LogUtils] - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\david.le\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59953/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+[INFO] 19-07-2024 15:21:32 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (null)
+[INFO] 19-07-2024 15:21:32 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:21:32 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 19-07-2024 15:28:36 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:28:36 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:28:36 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:28:36 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:28:36 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:28:36 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_15_28_36_ExtentReports.html
+[INFO] 19-07-2024 15:28:37 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:28:37 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:28:37 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 15:28:41 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 19-07-2024 15:28:43 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 15:28:43 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 19-07-2024 15:28:43 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (6c887330-e87d-4f04-98f5-de5511ebb24e)
+[INFO] 19-07-2024 15:28:43 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 19-07-2024 15:28:43 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 15:28:44 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:28:44 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_15_35_55_ExtentReports.html
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:35:55 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 15:36:05 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 15:36:05 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 15:36:05 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (a8babe294b0bef53d909335b789ed97e)
+[INFO] 19-07-2024 15:36:05 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 15:36:05 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 15:36:08 [main] [LogUtils] - Test case: end is starting...
+[INFO] 19-07-2024 15:36:17 [main] [LogUtils] - Open website with URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 15:36:17 [main] [LogUtils] - Test case: end is passed.
+[INFO] 19-07-2024 15:36:17 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (af152c2d054a4dd70cd294fe49c16963)
+[INFO] 19-07-2024 15:36:18 [main] [LogUtils] - Screenshot taken: end
+[INFO] 19-07-2024 15:36:18 [main] [LogUtils] - Screenshot taken current URL: https://the-internet.herokuapp.com/
+[INFO] 19-07-2024 15:36:18 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:36:18 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 15:36:23 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:36:23 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:36:23 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:36:23 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:36:23 [main] [LogUtils] - =====> Starting Suite: Web Tests (0)
+[INFO] 19-07-2024 15:36:27 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 19-07-2024 15:36:29 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 15:36:29 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 19-07-2024 15:36:29 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (c49b76c3-fa16-4db3-80b9-9a4d3035795f)
+[INFO] 19-07-2024 15:36:29 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 19-07-2024 15:36:29 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 15:36:30 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:36:30 [main] [LogUtils] - =====> End Suite: Web Tests (0)
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_15_37_41_ExtentReports.html
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:37:41 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 15:37:46 [main] [LogUtils] - Test case: en is starting...
+[INFO] 19-07-2024 15:37:46 [main] [LogUtils] - Test case: en is passed.
+[INFO] 19-07-2024 15:37:46 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (b12e685915a996d9be4453368c86d5ec)
+[INFO] 19-07-2024 15:37:47 [main] [LogUtils] - Screenshot taken: en
+[INFO] 19-07-2024 15:37:47 [main] [LogUtils] - Screenshot taken current URL: data:,
+[INFO] 19-07-2024 15:37:49 [main] [LogUtils] - Test case: end is starting...
+[ERROR] 19-07-2024 15:37:51 [main] [LogUtils] - FAILED !! Test case end is failed.
+[ERROR] 19-07-2024 15:37:51 [main] [LogUtils] - org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.128)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [134b496a79a9369986d97e5a360ecd60, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\david.le\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61487/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 134b496a79a9369986d97e5a360ecd60
+[INFO] 19-07-2024 15:37:51 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (134b496a79a9369986d97e5a360ecd60)
+[ERROR] 19-07-2024 15:37:51 [main] [LogUtils] - FAILED !! Test case end is failed.
+[ERROR] 19-07-2024 15:37:51 [main] [LogUtils] - org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.128)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [134b496a79a9369986d97e5a360ecd60, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\david.le\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61487/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 134b496a79a9369986d97e5a360ecd60
+[INFO] 19-07-2024 15:37:51 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (134b496a79a9369986d97e5a360ecd60)
+[INFO] 19-07-2024 15:37:51 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:37:51 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_16_00_16_ExtentReports.html
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - =====> Starting Suite: Surefire suite
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 16:00:16 [main] [LogUtils] - =====> End Suite: Surefire suite
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_16_00_57_ExtentReports.html
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - =====> Starting Suite: Surefire suite
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 16:00:57 [main] [LogUtils] - =====> End Suite: Surefire suite
+[INFO] 19-07-2024 16:01:22 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:01:22 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 16:01:22 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:01:22 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:01:22 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 16:01:22 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_16_01_22_ExtentReports.html
+[INFO] 19-07-2024 16:01:23 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 16:01:23 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:01:23 [main] [LogUtils] - =====> Starting Suite: Surefire suite
+[INFO] 19-07-2024 16:01:23 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 16:01:23 [main] [LogUtils] - =====> End Suite: Surefire suite
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_16_09_04_ExtentReports.html
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:09:04 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 16:09:14 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 19-07-2024 16:09:17 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 16:09:17 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 19-07-2024 16:09:17 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (ce50c546-cf73-4192-8899-51084eb659eb)
+[INFO] 19-07-2024 16:09:17 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 19-07-2024 16:09:17 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 16:09:18 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 16:09:18 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\19_07_2024_16_11_52_ExtentReports.html
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:11:52 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 19-07-2024 16:11:58 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 19-07-2024 16:12:00 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 16:12:00 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 19-07-2024 16:12:00 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (813dce81-5260-40ca-a15f-27f4ddb064fa)
+[INFO] 19-07-2024 16:12:00 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 19-07-2024 16:12:00 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 19-07-2024 16:12:01 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 16:12:01 [main] [LogUtils] - =====> End Suite: Web Tests
