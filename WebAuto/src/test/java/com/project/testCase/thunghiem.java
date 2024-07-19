@@ -1,8 +1,9 @@
-package com.project.common;
+package com.project.testCase;
 
 import com.UIAutomation.constants.Constants;
 import com.UIAutomation.driver.DriverManagement;
 import com.UIAutomation.keywords.WebUI;
+import com.project.common.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
