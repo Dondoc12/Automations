@@ -68,3 +68,128 @@
 [INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - Driver for Screenshot: null
 [INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
 [INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_11_20_33_ExtentReports.html
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - Test case: the is starting...
+[ERROR] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - FAILED !! Test case the is failed.
+[ERROR] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 22-07-2024 11:20:34 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_11_21_40_ExtentReports.html
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Test case: the is starting...
+[INFO] 22-07-2024 11:21:40 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_11_23_41_ExtentReports.html
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Test case: the is starting...
+[INFO] 22-07-2024 11:23:41 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Test case: the is passed.
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[ERROR] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - FAILED !! Test case the is failed.
+[ERROR] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because the return value of "com.WinUIAutomation.driver.WinAppDriverManagement.getDriver()" is null
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_07_29_ExtentReports.html
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 22-07-2024 12:07:36 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_08_29_ExtentReports.html
+[INFO] 22-07-2024 12:08:30 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 12:08:30 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:08:30 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 22-07-2024 12:08:36 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_09_10_ExtentReports.html
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 22-07-2024 12:09:15 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_28_28_ExtentReports.html
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 22-07-2024 12:28:35 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_28_45_ExtentReports.html
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 22-07-2024 12:28:54 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
