@@ -78,10 +78,10 @@ public class BaseTest {
             WinAppLogUtils.info("WinAppDriver is started");
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("Can not start IOException");
+            WinAppLogUtils.info("Can not start IOException");
         } catch (InterruptedException e) {
             e.printStackTrace();
-            System.out.println("Can not start InterruptedException");
+            WinAppLogUtils.info("Can not start InterruptedException");
         }
     }
 

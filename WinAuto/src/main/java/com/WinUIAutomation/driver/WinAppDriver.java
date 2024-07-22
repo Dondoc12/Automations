@@ -3,6 +3,7 @@ package com.WinUIAutomation.driver;
 import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.helpers.WinAppHelpers;
 import com.WinUIAutomation.keywords.WinUI;
+import com.WinUIAutomation.utils.WinAppLogUtils;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,6 +17,7 @@ public enum WinAppDriver {
         @Override
         public WindowsDriver<WindowsElement> createDriver() throws MalformedURLException {
             openLawSonApp();
+            WinAppLogUtils.info("Start create driver");
             return new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), getOptions());
         }
 
@@ -42,13 +44,13 @@ public enum WinAppDriver {
         try {
             Process process = processBuilder.start();
             process.waitFor();
-            System.out.println("Application launched successfully");
+            WinAppLogUtils.info("Application launched successfully");
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("Failed to launch the application: IOException");
+            WinAppLogUtils.info("Failed to launch the application: IOException");
         } catch (InterruptedException e) {
             e.printStackTrace();
-            System.out.println("Failed to launch the application: InterruptedException");
+            WinAppLogUtils.info("Failed to launch the application: InterruptedException");
         }
     }
 }
