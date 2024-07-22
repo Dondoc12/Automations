@@ -2,6 +2,7 @@ package com.winProject.testCase;
 
 import com.WinUIAutomation.driver.WinAppDriverManagement;
 import com.WinUIAutomation.keywords.WinUI;
+import com.WinUIAutomation.utils.WinAppLogUtils;
 import com.winProject.common.BaseTest;
 import example.data;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ public class suiteThu2 extends BaseTest {
     @Test
     void test(){
         try{
+            WinAppLogUtils.info("Starting test........");
             if(WinUI.getWindowElement(pageObject.getPasswordPrompt) != null){
                 WinUI.clearAndFillText(pageObject.getUsername, data.userName);
                 WinUI.clearAndFillText(pageObject.getPassword,data.password);
