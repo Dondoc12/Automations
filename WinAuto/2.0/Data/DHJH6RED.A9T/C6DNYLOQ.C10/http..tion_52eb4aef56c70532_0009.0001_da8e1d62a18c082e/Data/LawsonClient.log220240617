@@ -1,0 +1,589 @@
+2024-06-17 15:06:38,291 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,291 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,322 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,322 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,323 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,324 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,324 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,324 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,451 [4] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:06:38,511 [4] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,511 [4] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,511 [4] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,511 [4] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:06:38,625 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:07:13,989 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 15:21:25,325 [Mango.Main] WARN  Mango.UI.Access.NamedPipeServer.Start - Failed to start the named pipe server. Named pipe integration will not be available.
+System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at Mango.UI.Access.NamedPipeServer.StartService()
+   at Mango.UI.Access.NamedPipeServer.Start()
+2024-06-17 15:21:26,877 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:26,878 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:26,878 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:26,878 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:26,877 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:26,878 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:26,878 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:26,878 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:27,014 [7] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:21:27,083 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:27,083 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:27,083 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:27,083 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:21:27,192 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:21:37,177 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 15:26:52,592 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,592 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,621 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,621 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,621 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,622 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,622 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,623 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,723 [7] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:26:52,801 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,801 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,801 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:52,801 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:26:55,565 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:27:02,778 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 15:31:06,203 [5] FATAL Mango.Services.Helper.VerifyServer.VerifyUserWithBasic - [COR0017] Unknown error when connecting to the LWS server https://SDCUM3SO1.talgroup.com:10002/lws_lso01.
+System.ServiceModel.CommunicationException: An error (The request was aborted: The request was canceled.) occurred while transmitting data over the HTTP channel. ---> System.Net.WebException: The request was aborted: The request was canceled. ---> System.NotSupportedException: This method is not supported by this class.
+   at System.Net.BasicClient.EncodingRightGetBytes(String rawString)
+   at System.Net.BasicClient.Lookup(HttpWebRequest httpWebRequest, ICredentials credentials)
+   at System.Net.AuthenticationManager.Authenticate(String challenge, WebRequest request, ICredentials credentials)
+   at System.Net.AuthenticationState.AttemptAuthenticate(HttpWebRequest httpWebRequest, ICredentials authInfo)
+   at System.Net.HttpWebRequest.CheckResubmitForAuth()
+   at System.Net.HttpWebRequest.CheckResubmit(Exception& e)
+   at System.Net.HttpWebRequest.DoSubmitRequestProcessing(Exception& exception)
+   at System.Net.HttpWebRequest.ProcessResponse()
+   at System.Net.HttpWebRequest.SetResponse(CoreResponseData coreResponseData)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.Services.WS.MangoProfileManager.VerifyVersion(VerifyVersionRequest request)
+   at Mango.Services.WS.MangoProfileManagerClient.Mango.Services.WS.MangoProfileManager.VerifyVersion(VerifyVersionRequest request)
+   at Mango.Services.Helper.VerifyServer.VerifyUser()
+   at Mango.Services.Helper.VerifyServer.VerifyUserWithBasic(Boolean& callFailed_BailOut)
+2024-06-17 15:31:06,249 [Mango.Main] WARN  Mango.Core.Storage.FileStorageRoaming.FullFilePath - Error getting full file path for: DialogControl.xml
+System.InvalidOperationException: Username is not configured yet
+   at Mango.Core.Storage.FileStorage.get_UserBasePath()
+   at Mango.Core.Storage.FileStorageRoaming.FullFilePath(String filename)
+2024-06-17 15:31:26,082 [Mango.Main] WARN  Mango.UI.Access.NamedPipeServer.Start - Failed to start the named pipe server. Named pipe integration will not be available.
+System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at Mango.UI.Access.NamedPipeServer.StartService()
+   at Mango.UI.Access.NamedPipeServer.Start()
+2024-06-17 15:31:32,041 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,043 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,043 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,043 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,044 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,045 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,045 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,045 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,195 [7] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:31:32,255 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,255 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,255 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:32,255 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:31:34,886 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:40:48,629 [Mango.Main] WARN  Mango.UI.Access.NamedPipeServer.Start - Failed to start the named pipe server. Named pipe integration will not be available.
+System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at Mango.UI.Access.NamedPipeServer.StartService()
+   at Mango.UI.Access.NamedPipeServer.Start()
+2024-06-17 15:40:54,569 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,569 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,577 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,577 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,577 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,578 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,579 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,579 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,680 [12] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:40:54,799 [10] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,800 [10] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,800 [10] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:54,800 [10] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:40:57,588 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:41:02,895 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 15:53:35,076 [Mango.Main] WARN  Mango.UI.Access.NamedPipeServer.Start - Failed to start the named pipe server. Named pipe integration will not be available.
+System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at Mango.UI.Access.NamedPipeServer.StartService()
+   at Mango.UI.Access.NamedPipeServer.Start()
+2024-06-17 15:53:41,071 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,072 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,078 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,078 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,078 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,078 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,078 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,078 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:53:41,389 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:53:42,819 [14] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:53:49,412 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 15:54:30,585 [Mango.Main] WARN  Mango.UI.Access.NamedPipeServer.Start - Failed to start the named pipe server. Named pipe integration will not be available.
+System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at Mango.UI.Access.NamedPipeServer.StartService()
+   at Mango.UI.Access.NamedPipeServer.Start()
+2024-06-17 15:54:32,944 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:32,945 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:32,948 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:32,949 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:32,949 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:32,953 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:32,953 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:32,953 [5] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:33,096 [13] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:54:33,182 [13] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:33,182 [13] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:33,182 [13] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:33,182 [13] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:54:33,261 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:55:27,657 [Mango.Main] WARN  Mango.UI.Access.NamedPipeServer.Start - Failed to start the named pipe server. Named pipe integration will not be available.
+System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/Mango/NamedPipe' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeSharedMemory.Create(List`1 allowedSids, Uri pipeUri, String sharedMemoryName)
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at Mango.UI.Access.NamedPipeServer.StartService()
+   at Mango.UI.Access.NamedPipeServer.Start()
+2024-06-17 15:55:29,170 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,171 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,174 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,174 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,174 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,174 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,174 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,175 [15] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,321 [7] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 15:55:29,383 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,383 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,383 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,383 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 15:55:29,466 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 15:55:39,327 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 15:55:48,438 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 16:32:34,968 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:34,968 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,004 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,005 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,005 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,007 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,007 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,008 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,097 [14] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 16:32:35,191 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,192 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,192 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:35,192 [14] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:32:38,009 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 16:32:43,029 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 16:36:03,533 [5] FATAL Mango.Services.Helper.VerifyServer.VerifyUserWithBasic - [COR0017] Unknown error when connecting to the LWS server https://SDCUM3SO1.talgroup.com:10002/lws_lso01.
+System.ServiceModel.CommunicationException: An error (The request was aborted: The request was canceled.) occurred while transmitting data over the HTTP channel. ---> System.Net.WebException: The request was aborted: The request was canceled. ---> System.NotSupportedException: This method is not supported by this class.
+   at System.Net.BasicClient.EncodingRightGetBytes(String rawString)
+   at System.Net.BasicClient.Lookup(HttpWebRequest httpWebRequest, ICredentials credentials)
+   at System.Net.AuthenticationManager.Authenticate(String challenge, WebRequest request, ICredentials credentials)
+   at System.Net.AuthenticationState.AttemptAuthenticate(HttpWebRequest httpWebRequest, ICredentials authInfo)
+   at System.Net.HttpWebRequest.CheckResubmitForAuth()
+   at System.Net.HttpWebRequest.CheckResubmit(Exception& e)
+   at System.Net.HttpWebRequest.DoSubmitRequestProcessing(Exception& exception)
+   at System.Net.HttpWebRequest.ProcessResponse()
+   at System.Net.HttpWebRequest.SetResponse(CoreResponseData coreResponseData)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.Services.WS.MangoProfileManager.VerifyVersion(VerifyVersionRequest request)
+   at Mango.Services.WS.MangoProfileManagerClient.Mango.Services.WS.MangoProfileManager.VerifyVersion(VerifyVersionRequest request)
+   at Mango.Services.Helper.VerifyServer.VerifyUser()
+   at Mango.Services.Helper.VerifyServer.VerifyUserWithBasic(Boolean& callFailed_BailOut)
+2024-06-17 16:36:03,594 [Mango.Main] WARN  Mango.Core.Storage.FileStorageRoaming.FullFilePath - Error getting full file path for: DialogControl.xml
+System.InvalidOperationException: Username is not configured yet
+   at Mango.Core.Storage.FileStorage.get_UserBasePath()
+   at Mango.Core.Storage.FileStorageRoaming.FullFilePath(String filename)
+2024-06-17 16:36:31,543 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,543 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,572 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,572 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,572 [17] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,572 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,572 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,572 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,688 [7] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 16:36:31,769 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,769 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,770 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,770 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:31,874 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 16:36:59,045 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,045 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,083 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,083 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,083 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,087 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,087 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,087 [16] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,177 [14] ERROR Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync - [SVC0078] Error updating user data on the Channels server
+System.ServiceModel.FaultException: CHANNELS0025: The user could not be updated since the requesting user did not match the input user: Requesting user: (cn=techvify11,ou=Extranet Vendor Users,ou=HKDC-Users,ou=HKDC,ou=TAL,DC=proxy,DC=ldap), Input user: (techvify11)
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.WS.MangoChannelsManagerClient.Mango.UI.Services.WS.MangoChannelsManager.PublishChannel(PublishChannelRequest request)
+   at Mango.UI.Services.Collaboration.CollaborationManager.PublishUserDataAsync(PublishChannelRequest request)
+2024-06-17 16:36:59,280 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,281 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,281 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,281 [18] ERROR MForms.M3Menu.MenuHandler.Find - [MFS0021] Could not get root of M3 Menu. The menu has not been fetched.
+2024-06-17 16:36:59,356 [Mango.Main] WARN  Mango.UI.Services.Applications.Net.MainController.UnloadNetApplication - The Net application has been unloaded: no SSO applications were detected.
+2024-06-17 16:37:09,770 [Mango.Main] WARN  Mango.Core.Persistance.UserEventHistoryDataBase.AddValue - Add entry  with profile PILT in UserEventHistory database failed.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at System.Data.SqlServerCe.SqlCeType.FromClrType(Object value)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetClrTypeValue(Int32 ordinal, Object value, String method)
+   at System.Data.SqlServerCe.SqlCeUpdatableRecord.SetString(Int32 ordinal, String value)
+   at Mango.Core.Persistance.UserEventHistoryDataBase.AddValue(Int32 uid, String profile, Int32 type, String header, String message, String id, DateTime timeStamp, String response, String commandId)
+2024-06-17 16:39:05,011 [5] FATAL Mango.Services.Helper.VerifyServer.VerifyUserWithBasic - [COR0017] Unknown error when connecting to the LWS server https://SDCUM3SO1.talgroup.com:10002/lws_lso01.
+System.ServiceModel.CommunicationException: An error (The request was aborted: The request was canceled.) occurred while transmitting data over the HTTP channel. ---> System.Net.WebException: The request was aborted: The request was canceled. ---> System.NotSupportedException: This method is not supported by this class.
+   at System.Net.BasicClient.EncodingRightGetBytes(String rawString)
+   at System.Net.BasicClient.Lookup(HttpWebRequest httpWebRequest, ICredentials credentials)
+   at System.Net.AuthenticationManager.Authenticate(String challenge, WebRequest request, ICredentials credentials)
+   at System.Net.AuthenticationState.AttemptAuthenticate(HttpWebRequest httpWebRequest, ICredentials authInfo)
+   at System.Net.HttpWebRequest.CheckResubmitForAuth()
+   at System.Net.HttpWebRequest.CheckResubmit(Exception& e)
+   at System.Net.HttpWebRequest.DoSubmitRequestProcessing(Exception& exception)
+   at System.Net.HttpWebRequest.ProcessResponse()
+   at System.Net.HttpWebRequest.SetResponse(CoreResponseData coreResponseData)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Mango.Services.WS.MangoProfileManager.VerifyVersion(VerifyVersionRequest request)
+   at Mango.Services.WS.MangoProfileManagerClient.Mango.Services.WS.MangoProfileManager.VerifyVersion(VerifyVersionRequest request)
+   at Mango.Services.Helper.VerifyServer.VerifyUser()
+   at Mango.Services.Helper.VerifyServer.VerifyUserWithBasic(Boolean& callFailed_BailOut)
+2024-06-17 16:39:05,070 [Mango.Main] WARN  Mango.Core.Storage.FileStorageRoaming.FullFilePath - Error getting full file path for: DialogControl.xml
+System.InvalidOperationException: Username is not configured yet
+   at Mango.Core.Storage.FileStorage.get_UserBasePath()
+   at Mango.Core.Storage.FileStorageRoaming.FullFilePath(String filename)

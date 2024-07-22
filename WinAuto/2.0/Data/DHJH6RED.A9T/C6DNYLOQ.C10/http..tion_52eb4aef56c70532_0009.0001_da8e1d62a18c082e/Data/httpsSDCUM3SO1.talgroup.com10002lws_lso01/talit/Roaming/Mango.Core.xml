@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mp:Properties xmlns:mp="http://schemas.intentia.net/Mango/Settings/Properties">
+  <mp:Settings>
+    <mp:UserSettings>
+      <mp:Property Name="SelectedProfile">
+        <mp:DefaultValue>PILT</mp:DefaultValue>
+        <mp:Value>DEVL</mp:Value>
+      </mp:Property>
+      <mp:Property Name="EnableSystemProfileSelector">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>True</mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisplayName">
+        <mp:DefaultValue />
+        <mp:Value>TALIT</mp:Value>
+      </mp:Property>
+    </mp:UserSettings>
+    <mp:ApplicationSettings>
+      <mp:Property Name="IsRoamingProfiles">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="AllowedApplications">
+        <mp:DefaultValue />
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="AllowedWidgets">
+        <mp:DefaultValue />
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="WebServiceTimeout">
+        <mp:DefaultValue>2</mp:DefaultValue>
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="WebServiceConnectTimeout">
+        <mp:DefaultValue>2</mp:DefaultValue>
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="CanvasHelpUrl">
+        <mp:DefaultValue />
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="DisableDisplayName">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="DisableLdapServer">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="LdapServer">
+        <mp:DefaultValue />
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="LdapBase">
+        <mp:DefaultValue />
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="LdapFilter">
+        <mp:DefaultValue>(&amp;(objectclass=user)(sAMAccountName=%s))</mp:DefaultValue>
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="LdapReturnAttributes">
+        <mp:DefaultValue>displayName</mp:DefaultValue>
+        <mp:Value />
+      </mp:Property>
+      <mp:Property Name="Industry">
+        <mp:DefaultValue />
+        <mp:Value />
+      </mp:Property>
+    </mp:ApplicationSettings>
+  </mp:Settings>
+  <mp:Hash>+0HsDSg35d2HJNtIfLEezy/hXWSRiTZxjhPBWyUuMaQ=</mp:Hash>
+  <mp:LastServerChange>2016-11-23T06:24:58</mp:LastServerChange>
+</mp:Properties>

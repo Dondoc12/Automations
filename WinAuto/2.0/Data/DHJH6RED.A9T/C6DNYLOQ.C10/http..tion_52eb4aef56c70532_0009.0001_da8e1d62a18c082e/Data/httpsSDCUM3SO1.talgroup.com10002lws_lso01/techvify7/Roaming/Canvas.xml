@@ -1,0 +1,39 @@
+<Widgets ScreenWidth="1920" ScreenHeight="1017">
+  <leftmagnetic>
+    <Widget Scheme="Mango.Widgets.Menu.NavigatorWidget" Top="0" Left="0" Height="405" Width="218" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="4E1D3547054D470F9336A2AD0E079C29" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="SelectedTabIndex" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>0</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+  </leftmagnetic>
+  <rightmagnetic>
+    <Widget Scheme="Mango.Widgets.CalendarWidget" Top="0" Left="-5" MiniMode="False" UniqueId="764C282F8D504862A03FFB992ECFFA8F" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="AlwaysOnTop" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>False</Value>
+        </PropertyType>
+        <PropertyType Name="ShowHidePicture" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>false</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+  </rightmagnetic>
+</Widgets>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest package="S3">
+	<RequiresVersion></RequiresVersion>
+	<Author>Lawson Software</Author>
+	<Url>http://www.lawson.com</Url>
+	<Title>S3 - Staff, Source Serve</Title>
+	<Description>S3 for Lawson Smart Office</Description>
+	<Version>9.1.2.0</Version>
+	<BuildDate>6/10/2010 9:45:06 PM</BuildDate>
+	<File name="S3.Client.dll" size="2457600" />
+	<File name="S3.Runtime.dll" size="364544" />
+	<Dependencies>
+		<Assembly name="DocumentArchive" />
+		<Assembly name="LBI.Runtime" />
+	</Dependencies>
+	<SettingsFile assembly="S3.Client" />
+	<LanguageFile assembly="S3.Client" />
+	<ApplicationGroup type="S3" description="S3 Application group" assemblyScheme="sforms" />
+	<Application scheme="sclient" applicationGroup="S3" assemblyName="S3.Client" factoryClass="S3.Client.Application.MainController" profileSettingsClass="S3.Client.Application.ProfileSettingsProvider" canSupplyTasks="true" metaTags="S3,Apps" />
+	<Application scheme="sforms" applicationGroup="S3" assemblyName="S3.Client" factoryClass="S3.Client.Forms.MainController" canSupplyTasks="false" metaTags="S3,SForms" />
+	<Application scheme="sjobs" applicationGroup="S3" assemblyName="S3.Client" factoryClass="S3.Client.Jobs.MainController" canSupplyTasks="false" metaTags="" />
+	<Application scheme="sdrill" applicationGroup="S3" assemblyName="S3.Client" factoryClass="S3.Client.Select.DrillAround.MainController" canSupplyTasks="false" metaTags="S3,DrillAround,Navigator" />
+	<Widget scheme="S3.Client.Widgets.DataWidget.DataBrowser" applicationGroup="S3" assemblyName="S3.Client" factoryClass="S3.Client.Widgets.DataWidget.DataBrowserFactory" />
+	<Profile group="S3" enabled="false">
+		<SForms>
+			<AuthMode>Lawson SSO</AuthMode>
+			<Host></Host>
+			<Protocol>http</Protocol>
+			<Port>80</Port>
+		</SForms>
+		<Companion>
+			<Url></Url>
+			<Language>en-us</Language>
+			<ProductLine></ProductLine>
+		</Companion>
+	</Profile>
+	<Profile group="EnterpriseSearch" enabled="false">
+		<S3 enabled="false">
+			<Type>S3</Type>
+			<ProductId>S3</ProductId>
+			<Host></Host>
+			<AuthMode>Basic</AuthMode>
+			<Protocol>http</Protocol>
+			<Port></Port>
+			<OverrideInstanceName></OverrideInstanceName>
+			<BaseFolder>/les/</BaseFolder>
+		</S3>
+	</Profile>
+	<Size>2822144</Size>
+</Manifest>

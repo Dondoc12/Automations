@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly name="DocumentArchive">
+	<area name="Document Archive Client">
+		<entry name="DocumentArchiveApp" type="Common" comment="">Document Archive</entry>
+		<entry name="RemoveArgument1" type="ToolTip" comment="">Close document</entry>
+		<entry name="MenuNewDocument" type="ToolTip" comment="">Add a new document</entry>
+		<entry name="AddNewDocument" type="Menu" comment="">Add Document</entry>
+		<entry name="Button_1" type="ToolTip" comment="">Close Document</entry>
+		<entry name="tabResult" type="Common" comment="">Search Result</entry>
+		<entry name="MenuDetails" type="MenuItem" comment="Viewmode for result list">Details</entry>
+		<entry name="MenuCard" type="MenuItem" comment="Viewmode for result list">Card</entry>
+		<entry name="MenuThumbnails" type="MenuItem" comment="Viewmode for result list">Thumbnails</entry>
+	</area>
+	<area name="Item ViewEdit Area">
+		<entry name="EditItemButton" type="ToolTip" comment="">Check out and Edit the current item</entry>
+		<entry name="EditItem" type="Button" comment="">Edit</entry>
+		<entry name="Finish" type="Button" comment="">Finish</entry>
+		<entry name="FinishButton" type="ToolTip" comment="">Check in the current item</entry>
+		<entry name="ForceFinish" type="Button" comment="">Force Finish</entry>
+		<entry name="ForceFinishButton" type="ToolTip" comment="">Check in an item checked out by another user</entry>
+		<entry name="SaveItemButton" type="ToolTip" comment="">Save the current item</entry>
+		<entry name="SaveItem" type="Button" comment="">Save</entry>
+		<entry name="DeleteItemButton" type="ToolTip" comment="">Delete the current item</entry>
+		<entry name="DeleteItem" type="Button" comment="">Delete</entry>
+		<entry name="Download" type="ToolTip" comment="">Download</entry>
+		<entry name="Acls" type="ToolTip" comment="">The access control lists</entry>
+		<entry name="RemoveCollectionButton" type="ToolTip" comment="">Removes the specified collection</entry>
+		<entry name="AddCollection" type="ToolTip" comment="">Adds a new collection</entry>
+		<entry name="AddCollection2" type="Button" comment="">Add Row</entry>
+		<entry name="DocumentNew1" type="ToolTip" comment="">Open file in new window</entry>
+		<entry name="DocumentSaveAs1" type="ToolTip" comment="">Open file in external application</entry>
+		<entry name="TextBlock_41" type="" comment=""></entry>
+		<entry name="TextBlock_43" type="" comment=""></entry>
+		<entry name="tabSummary" type="Heading" comment="">Summary</entry>
+		<entry name="tabAdvanced" type="Heading" comment="">Advanced</entry>
+		<entry name="tabProperties" type="Heading" comment="">Properties</entry>
+		<entry name="tabAttributes" type="Heading" comment="">Attributes</entry>
+		<entry name="tabLanguageAttributes" type="Heading" comment="">Language attributes</entry>
+		<entry name="capLanguage" type="Label" comment="">Language</entry>
+		<entry name="tabCollections" type="Heading" comment="">Collections</entry>
+		<entry name="tabFile" type="Heading" comment="">File</entry>
+		<entry name="File" type="Label" comment="">File</entry>
+		<entry name="DocumentNew2" type="ToolTip" comment="">Open file in new window</entry>
+		<entry name="DocumentSaveAs2" type="ToolTip" comment="">Open file in external application</entry>
+		<entry name="Filename" type="Label" comment="">File Name</entry>
+		<entry name="Size" type="Label" comment="">Size</entry>
+		<entry name="MIMEType" type="Label" comment="">MIME Type</entry>
+		<entry name="Filetype" type="Label" comment="">File Type</entry>
+		<entry name="TextSearchable" type="Label" comment="">Text Searchable</entry>
+		<entry name="ConvertedImages" type="Label" comment="">Converted Images:</entry>
+		<entry name="colImageType" type="ColumnLabel" comment="">Image Type</entry>
+		<entry name="colSize" type="ColumnLabel" comment="">Size</entry>
+		<entry name="colWidth" type="ColumnLabel" comment="">Width</entry>
+		<entry name="colHeight" type="ColumnLabel" comment="">Height</entry>
+		<entry name="GroupBox_19" type="Heading" comment="">Set File</entry>
+		<entry name="cap_File" type="Label" comment="">File</entry>
+		<entry name="cap_MIMEType" type="Label" comment="">MIME Type</entry>
+		<entry name="MimeTypes" type="ToolTip" comment="">The MIME Types</entry>
+		<entry name="cap_FileType" type="Label" comment="">File Type</entry>
+		<entry name="FileTypes" type="ToolTip" comment="">The File Types</entry>
+		<entry name="tabExtended" type="Heading" comment="">Extended</entry>
+		<entry name="AccessControlList" type="Label" comment="">Access Control List</entry>
+		<entry name="Links" type="Label" comment="">Links</entry>
+		<entry name="colID" type="ColumnLabel" comment="">ID</entry>
+		<entry name="colLinkType" type="ColumnLabel" comment="">Link Type</entry>
+		<entry name="colDocumentType" type="ColumnLabel" comment="">Document Type</entry>
+		<entry name="errorUpdatingItem" type="Message" comment="">The document could not be updated</entry>
+		<entry name="errorSearching" type="Message" comment="">The search request could not be performed</entry>
+		<entry name="errorCheckInItem" type="Message" comment="">The document could not be checked in</entry>
+		<entry name="errorCheckOutItem" type="Message" comment="">The document could not be checked out</entry>
+		<entry name="errorRetrievingItem" type="Message" comment="">The document could not be retrieved</entry>
+		<entry name="errorDeletingItem" type="Message" comment="">The document could not be deleted</entry>
+		<entry name="errorCreatingItem" type="Message" comment="">The document could not be created</entry>
+		<entry name="errorRetrievingFile" type="Message" comment="">The document file could not be retrieved</entry>
+		<entry name="textRangeValidationError" type="Message" comment="">The value contains too many characters</entry>
+		<entry name="maxLengthOfAttribute" type="Message" comment="">The maximum size of this attribute is specified to {0} characters</entry>
+		<entry name="menuPaste" type="MenuItem" comment="">Paste</entry>
+	</area>
+	<area name="Smart Links">
+		<entry name="TipRemoveParameter" type="ToolTip" comment="">Removes the specified mapping</entry>
+		<entry name="DisplayThumbnailsCheckBox" type="ToolTip" comment="">Display thumbnails of the items, whenever possible</entry>
+		<entry name="Attributes" type="Label" comment="">Attributes</entry>
+		<entry name="Attribute" type="cap" comment="">Attribute</entry>
+		<entry name="Operators" type="Label" comment="">Operators</entry>
+		<entry name="Value" type="Label" comment="">Value</entry>
+		<entry name="Add" type="Button" comment="">Add</entry>
+		<entry name="SummaryLinkRelations" type="Label" comment="">Summary Link Relations</entry>
+	</area>
+	<area name="Result Area">
+		<entry name="OpenFile" type="ToolTip" comment="">Opens the default file for this item</entry>
+		<entry name="colDisplayNameColumn_1" type="ColumnLabel" comment="">Display Name</entry>
+		<entry name="colDisplayNameColumn_2" type="ColumnLabel" comment="">Display Name</entry>
+		<entry name="colModifiedDateColumn" type="ColumnLabel" comment="">Modified Date</entry>
+		<entry name="Begin" type="ToolTip" comment="">Go to the first page</entry>
+		<entry name="Back" type="ToolTip" comment="">Go back one page</entry>
+		<entry name="PageNumber" type="ToolTip" comment="">The current page number</entry>
+		<entry name="PageCount" type="ToolTip" comment="">The page count</entry>
+		<entry name="Forward" type="ToolTip" comment="">Go forward one page</entry>
+		<entry name="End" type="ToolTip" comment="">Go to the last page</entry>
+		<entry name="Page" type="Label" comment="">Page</entry>
+		<entry name="Of" type="Label" comment="Used between current page number and maximum numer of pages">of</entry>
+	</area>
+	<area name="Widget">
+		<entry name="w_WidgetBase_1" type="WidgetTitle" comment="">Document Archive</entry>
+		<entry name="CBItemValue" type="ComboBox" comment="">&lt;Select Value&gt;</entry>
+		<entry name="MenuItemClose" type="Menu" comment="">Close</entry>
+		<entry name="EntitiesMetadata" type="ToolTip" comment="">The available document types</entry>
+		<entry name="CBItemDocumentType" type="ComboBox" comment="">&lt;Select Document Type&gt;</entry>
+		<entry name="SignIn" type="Button" comment="">Log In</entry>
+	</area>
+	<area name="Searcharea">
+		<entry name="ComboBoxItem_1" type="ComboBox" comment="">&lt;Select Value&gt;</entry>
+		<entry name="RemoveSearchCondition" type="ToolTip" comment="">Remove search condition</entry>
+		<entry name="tabMetadata" type="Heading" comment="">Attribute Search</entry>
+		<entry name="capDocumentTypes1" type="Label" comment="">Document Types</entry>
+		<entry name="capAttributes" type="Label" comment="">Attributes</entry>
+		<entry name="capOperators" type="Label" comment="">Operators</entry>
+		<entry name="capValue1" type="Label" comment="">Value</entry>
+		<entry name="CheckBox_111" type="CheckBox" comment="">Display Thumbnails</entry>
+		<entry name="AddSearchCondition" type="ToolTip" comment="">Add search condition</entry>
+		<entry name="AddArgument6" type="Button" comment="">Add Condition</entry>
+		<entry name="ArgumentsExpander" type="ToolTip" comment="">Show or hide the search arguments</entry>
+		<entry name="ArgumentsExpander7" type="Label" comment="">Added search arguments</entry>
+		<entry name="capSearchConditions" type="Label" comment="">Search conditions</entry>
+		<entry name="tabFreetext" type="Heading" comment="">Search</entry>
+		<entry name="capDocumentTypes2" type="Label" comment="">Document Types</entry>
+		<entry name="AllDocumentTypes" type="ComboBox" comment="">All Document Types</entry>
+		<entry name="Freetext" type="ToolTip" comment="">The value to search for in the content of files</entry>
+		<entry name="CheckBox_1111" type="CheckBox" comment="">Display Thumbnails</entry>
+		<entry name="IncludeAttributes" type="CheckBox" comment="">Search in Attributes</entry>
+		<entry name="MyCheckedout" type="Link" comment="clickable link">My checked out</entry>
+		<entry name="IncludeAttributesTT" type="ToolTip" comment="">If attributes should be included in the content search, if not checked only the contents of the documents will be searched</entry>
+		<entry name="tabXQuery" type="Heading" comment="Translators: Definition: 'An advanced search that allows the user to search within the XML structure of text objects. Search criteria are formulated as XQuery expressions. This type of search yields best results if all text objects of the collections comply to the default XML schema of the collection. Searches across collections are likely to produce poor results due to the fact of different XML schema definitions. The same applies to virtual collections. The following steps are required to run an XQuery Search:
+1. The user enters an XQuery expression into the input box of the XQuery Search.
+2. The user chooses the scope of the search: collection, institute, or system-wide and triggers the search functionality.
+3. The system starts the search.
+4. The system presents the user the first 10 matching objects (hits), ordered by relevance.'">Advanced</entry>
+		<entry name="capQuery" type="Label" comment="">Query</entry>
+		<entry name="xquery" type="ToolTip" comment="">XQuery Search (for advanced users)</entry>
+		<entry name="CheckBox_11111" type="CheckBox" comment="">Display Thumbnails</entry>
+	</area>
+	<area name="Common">
+		<entry name="Search" type="Button" comment="">Search</entry>
+		<entry name="CheckedOutBy" type="Label" comment="">Checked Out By</entry>
+		<entry name="CheckedOutTS" type="Label" comment="">Checked Out Date</entry>
+		<entry name="CreatedBy" type="Label" comment="">Created By</entry>
+		<entry name="CreatedTS" type="Label" comment="">Created Date</entry>
+		<entry name="EntityName" type="Label" comment="">Document Type</entry>
+		<entry name="Document" type="Label" comment="">Document</entry>
+		<entry name="ID" type="Label" comment="">ID</entry>
+		<entry name="LastChangedBy" type="Label" comment="">Modified By</entry>
+		<entry name="LastChangedTS" type="Label" comment="">Modified Date</entry>
+		<entry name="DisplayName" type="Label" comment="">Display Name</entry>
+		<entry name="Version" type="Label" comment="">Version</entry>
+		<entry name="InboundLinks" type="Label" comment="">Inbound</entry>
+		<entry name="OutboundLinks" type="Label" comment="">Outbound</entry>
+		<entry name="NoDisplayName" type="Common" comment="Translators: Used in lists to show that the item has not been given a name or the name has not been translated to the requested language">&lt;no name&gt;</entry>
+		<entry name="SelectValue" type="Label" comment="Translators: Used as the first option in a combobox in order to encourage the user to select something">&lt;Select Value&gt;</entry>
+		<entry name="SelectACL" type="Label" comment="Translators: Used as the first option in a combobox in order to encourage the user to select something">&lt;Select Access Control List&gt;</entry>
+		<entry name="SelectMimeType" type="Label" comment="Translators: Used as the first option in a combobox in order to encourage the user to select something">&lt;Select MIME Type&gt;</entry>
+		<entry name="SelectFileType" type="Label" comment="Translators: Used as the first option in a combobox in order to encourage the user to select something">&lt;Select File Type&gt;</entry>
+		<entry name="SelectAttribute" type="Label" comment="Translators: Used as the first option in a combobox in order to encourage the user to select something">&lt;Select Attribute&gt;</entry>
+		<entry name="ItemAdded" type="Message" comment="">Item Added</entry>
+		<entry name="ItemAddSuccess" type="Message" comment="">The item was added successfully</entry>
+		<entry name="ItemUpdateSuccess" type="Message" comment="">The item was updated successfully</entry>
+		<entry name="ItemDeleteSuccess" type="Message" comment="">The item was deleted successfully</entry>
+		<entry name="OpenAddedItem_Question" type="Message" comment="">Do you want to open the added item?</entry>
+		<entry name="UserCredNotLoaded" type="Message" comment="">The user's credentials could not be loaded.</entry>
+		<entry name="CouldNotLogon" type="Message" comment="">Could not log on to Document Archive.</entry>
+		<entry name="SelectMimeAndFileType" type="Message" comment="">Please select a MIME type and a file type for the specified file.</entry>
+		<entry name="FileNotFound" type="Message" comment="">The file could not be found.</entry>
+		<entry name="ItemAlreadyChanged" type="Message" comment="">The item has already been changed in the database. Please reload the item and try again.</entry>
+		<entry name="DeleteItem_Question" type="Message" comment="">Do you want to delete the selected item?</entry>
+		<entry name="EntityNotFound" type="Message" comment="">The specified document type could not be found</entry>
+		<entry name="DocumentArchive" type="Common" comment="">Document Archive Client</entry>
+		<entry name="DocumentArchiveToolTip" type="ToolTip" comment="">Document Archive Client</entry>
+		<entry name="DocumentArchiveViewer" type="Common" comment="">Document Archive Viewer</entry>
+		<entry name="DocumentArchiveViewerToolTip" type="ToolTip" comment="">Document Archive Viewer Client</entry>
+		<entry name="UnknownLogonError" type="Message" comment="">An unknown return value was received during logon.</entry>
+		<entry name="NotSupportingResources" type="Message" comment="">This item does not support resources.</entry>
+		<entry name="OfTotal" type="Description" comment="Translators: used in the context: 1-100 of total 500">of total</entry>
+		<entry name="NoMatchingItems" type="Message" comment="">Your search did not match any items</entry>
+		<entry name="DocumentTypes" type="Label" comment="">Document Types</entry>
+		<entry name="DocumentTypesTooltip" type="ToolTip" comment="">The available document types</entry>
+		<entry name="SelectDocumentType" type="Label" comment="">Select Document Type</entry>
+		<entry name="AttributesTooltip" type="ToolTip" comment="">The available attributes for the current document type</entry>
+		<entry name="OperatorsTooltip" type="ToolTip" comment="">The available operators for the current attribute</entry>
+		<entry name="AutoOpenFile" type="CheckBox" comment="">Auto open file</entry>
+		<entry name="DisplayThumbnails" type="CheckBox" comment="">Display thumbnails</entry>
+		<entry name="TryChangeConditions" type="Message" comment="">Try changing the search conditions.</entry>
+		<entry name="hdrSaveItem" type="Header" comment="">Save Item</entry>
+		<entry name="hdrForceCheckIn" type="Title" comment="">Force Check in</entry>
+		<entry name="ForceCheckInQuestion" type="Message" comment="">The current item is checked out by another user but will be forced checked in if you have the necessary privileges. Do you want to proceed?</entry>
+		<entry name="hdrCheckIn" type="Title" comment="">Check in item</entry>
+		<entry name="CheckInQuestion" type="Message" comment="">The current item is checked out. Do you want to check in the item?</entry>
+		<entry name="SaveItemAttributesQuestion" type="Message" comment="">The item has unsaved changes in the attribute information. Do you want to save the changes?</entry>
+		<entry name="SaveItemDocumentQuestion" type="Message" comment="">The item has unsaved changes in the document. Do you want to save the changes?</entry>
+	</area>
+	<area name="Annotations">
+		<entry name="AnnotationsNotes" type="" comment="">Notes</entry>
+		<entry name="AnnotationsMenuTooltip" type="ToolTip" comment="">Shows a list of all notes in this context</entry>
+		<entry name="AnnotationsLoading" type="" comment="">Loading...</entry>
+		<entry name="AnnotationsError" type="" comment="">An error occurred</entry>
+		<entry name="AnnotationsDisplayNotes" type="" comment="">Display notes in Toolbox area</entry>
+		<entry name="AnnotationsProgram" type="" comment="">Program</entry>
+		<entry name="AnnotationsView" type="" comment="">View</entry>
+		<entry name="AnnotationsKeyField" type="" comment="">Key Field</entry>
+		<entry name="AnnotationsFieldSpecificNotes" type="" comment="">Field Specific Notes</entry>
+		<entry name="AnnotationsAddNote" type="" comment="">Add Note</entry>
+		<entry name="AnnotationsAddComment" type="" comment="">Add Comment</entry>
+		<entry name="AnnotationsAddNoteTooltip" type="ToolTip" comment="">Opens the add note area</entry>
+		<entry name="AnnotationsAddFile" type="" comment="">Add File</entry>
+		<entry name="AnnotationsAddFileTooltip" type="ToolTip" comment="">Attaches a file to the note</entry>
+		<entry name="AnnotationsAddNotePermanent" type="" comment="">Add</entry>
+		<entry name="AnnotationsAddNotePermanentTooltip" type="" comment="">Adds a note to the specified category</entry>
+		<entry name="AnnotationsPrivate" type="ComboBox" comment="">Private</entry>
+		<entry name="AnnotationsShared" type="ComboBox" comment="">Shared</entry>
+		<entry name="AnnotationsPrivateSharedTooltip" type="ToolTip" comment="">If the note should only be visible for you or if it should be visible for everyone</entry>
+		<entry name="AnnotationsCancelNote" type="" comment="">Cancel</entry>
+		<entry name="AnnotationsSaveNote" type="" comment="">Save</entry>
+		<entry name="AnnotationsCancelNoteTooltip" type="ToolTip" comment="">Close the note without adding it</entry>
+		<entry name="AnnotationsDeleteNote" type="" comment="">Delete</entry>
+		<entry name="AnnotationsDeleteNoteTooltip" type="ToolTip" comment="">Delete the note</entry>
+		<entry name="AnnotationsEditNote" type="" comment="">Edit</entry>
+		<entry name="AnnotationsEditNoteTooltip" type="ToolTip" comment="">Edit the note</entry>
+		<entry name="AnnotationsDeleteHeader" type="" comment="">Delete Note</entry>
+		<entry name="AnnotationsDeleteQuestion" type="" comment="">Do you want to delete the selected note?</entry>
+		<entry name="AnnotationsErrorAddNote" type="" comment="">The note could not be added</entry>
+		<entry name="AnnotationsErrorUpdateNote" type="" comment="">The note could not be updated</entry>
+		<entry name="AnnotationsErrorDeleteNote" type="" comment="">The note could not be deleted</entry>
+		<entry name="AnnotationsExceptionAddNote" type="" comment="">The metadata could not be found so the note can not be added</entry>
+		<entry name="AnnotationsExceptionEditNote" type="" comment="">The metadata could not be found so the note can not be updated</entry>
+		<entry name="AnnotationsExceptionMissingMimeType" type="" comment="">A mimetype could not be found for the specified extension. Extension: {0}</entry>
+		<entry name="AnnotationsExceptionNoText" type="" comment="">A text must be specified</entry>
+		<entry name="AnnotationsDisplayThisItem" type="" comment="">Display for this item only</entry>
+		<entry name="AnnotationsDisplayAllItems" type="" comment="">Display for all items</entry>
+		<entry name="AnnotationsShowHide" type="Menu" comment="">Show/Hide</entry>
+		<entry name="AnnotationsAdd" type="Menu" comment="">Add</entry>
+		<entry name="AnnotationsEnable" type="Menu" comment="">Enable</entry>
+		<entry name="AnnotationsSearchError" type="Header" comment="">Could not search for notes</entry>
+		<entry name="AnnotationsUnavailable" type="Message" comment="">There was a problem searching for notes. The notes server might be unavailable.</entry>
+		<entry name="AnnotationNewlyAdded" type="Message" comment="">Newly added</entry>
+	</area>
+	<area name="Mashup">
+		<entry name="MashupExceptionInvalidPID" type="" comment="">A PID must be specified for an item in Document Archive</entry>
+		<entry name="MashupExceptionInvalidQuery" type="" comment="">A search query must be specified for the search to work in Document Archive</entry>
+	</area>
+</assembly>

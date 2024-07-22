@@ -1,0 +1,472 @@
+<Widgets ScreenWidth="1920" ScreenHeight="1017">
+  <dashboard>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.130776794493594" Left="0.161197916666665" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="210C7810980C4905B56B1F230B60442E" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>CMP 500, Blank DIVI</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>mforms://cmp500</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconM3</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.212881022615522" Left="0.162239583333332" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="936E0097C31440B39E767D1464A6EDD1" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>CMP 500, 503 DIVI</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>mforms://cmp500503</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconM3</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.302359882005873" Left="0.0653645833333333" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="6E121C0C7B0148C1A0F25CAA9BFB24C4" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Attribute Control</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>companion://m3/doc/001267.xml</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconHelp</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.382497541789535" Left="0.0653645833333335" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="99485057B6244A7A974A3D65A2F69421" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Register Operations in a Routing</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>companion://m3/doc/001736.xml</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconHelp</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.206489675516221" Left="0.0135416666666667" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="D1FA8DE6C16146B2BEDBB2F29E1F412C" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Customer Order. Print Confirmation</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>mforms://ois605/</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconM3</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.462143559488646" Left="0.06796875" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="AF531E1F5106486EB9A51CBA45700A20" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Create a Maintenance Customer Order Header</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>companion://m3/doc/001721.xml</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconHelp</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.207472959685347" Left="0.0682291666666667" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="946B6388F6EA4B1F85FC550F6E4D66EB" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Define Alternate Unit of Measure</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>companion://m3/doc/000524.xml</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconHelp</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.129793510324472" Left="0.0739583333333333" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="75D7D1C9E3254DD3A0364B661958A373" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Managing Advance Invoice</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>companion://m3/doc/001487.xml</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconHelp</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.120943952802351" Left="0.0182291666666667" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="6D025D22CD494EA6B06D4FA32AA0EB0C" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Purchase Order. Open</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>mforms://pps200/</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconM3</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.141592920353979" Left="0.121614583333333" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="84F5559E98434565A344E73E6E0E2A11" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>test</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>https://uat-m3x-so.talgroup.com/standard-garment-finishing-list.html</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconWWW</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.303834808259553" Left="0.0143229166666667" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="050E42A23D6E474ABB2F3FA6A365BF57" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>Facility. Open</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>mforms://crs008/</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconM3</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.133147187095759" Left="0.721875" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="9DC716198E45459EBFF522F6BE247811" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>CMP 100, Blank DIVI</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>mforms://cmp100</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconM3</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ShortcutNote" Top="0.22969518190757" Left="0.719791666666667" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="78D129998B7A4129B5F9A46AC26C0F85" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="name" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>CMP 100, 141 DIVI</Value>
+        </PropertyType>
+        <PropertyType Name="link" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>mforms://cmp100141</Value>
+        </PropertyType>
+        <PropertyType Name="resourceKey" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>imageShortcutIconM3</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+  </dashboard>
+  <leftmagnetic>
+    <Widget Scheme="Mango.Widgets.Menu.NavigatorWidget" Top="0" Left="0" Height="278" Width="218" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="0E37EDD9899F480D8F42411E19A62069" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="SelectedTabIndex" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>0</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Companion.CompanionWidget" Top="278" Left="0" Height="278" Width="218" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="31AD8FD8DA4F4C1ABA11CA3C3EC1D384" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>false</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+  </leftmagnetic>
+  <rightmagnetic>
+    <Widget Scheme="Mango.Widgets.QuickNote" Top="0" Left="-5" Height="150" Width="218" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="431CA67A2381474AA818AD6A596D844D" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="AlwaysOnTop" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>False</Value>
+        </PropertyType>
+        <PropertyType Name="ShowCreationDate" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+        <PropertyType Name="WrapText" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>False</Value>
+        </PropertyType>
+        <PropertyType Name="ViewAsLink" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.BrowseLauncher" Top="150" Left="-5" Height="196" Width="218" ToggleWidth="559.4" ToggleHeight="405" MiniMode="False" UniqueId="DCDBB19D2BD94F018F1784EFA2CD0D81" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="BrowseField" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>CUNO</Value>
+        </PropertyType>
+        <PropertyType Name="BrowseVariant" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>
+          </Value>
+        </PropertyType>
+        <PropertyType Name="BrowseUser" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>
+          </Value>
+        </PropertyType>
+        <PropertyType Name="Function" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>CRS610</Value>
+        </PropertyType>
+        <PropertyType Name="FieldName" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>
+          </Value>
+        </PropertyType>
+        <PropertyType Name="InquiryType" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>
+          </Value>
+        </PropertyType>
+        <PropertyType Name="PanelVersion" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>
+          </Value>
+        </PropertyType>
+        <PropertyType Name="InquiryTypeField" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>
+          </Value>
+        </PropertyType>
+        <PropertyType Name="PanelVersionField" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>
+          </Value>
+        </PropertyType>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+    <Widget Scheme="Mango.Widgets.ProfileInfoWidget" Top="346" Left="-5" Height="154.8" Width="218" ToggleWidth="218" ToggleHeight="405" MiniMode="False" UniqueId="6B81F0F791A1448A99D549BDAF4811D4" AlwaysOnTop="False" Version="1.0">
+      <Properties>
+        <PropertyType Name="EnableSettings" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>true</Value>
+        </PropertyType>
+        <PropertyType Name="SystemProfile" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+        <PropertyType Name="Company" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+        <PropertyType Name="Division" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+        <PropertyType Name="Version" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+        <PropertyType Name="ProfileFontSize" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>12</Value>
+        </PropertyType>
+        <PropertyType Name="ShowIBrixInfo" ReadOnly="False">
+          <DefaultValue>
+          </DefaultValue>
+          <Value>True</Value>
+        </PropertyType>
+      </Properties>
+    </Widget>
+  </rightmagnetic>
+</Widgets>

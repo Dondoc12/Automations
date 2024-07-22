@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly name="Mango.Skin">
+	<area name="Common">
+		<entry name="Close" type="Button" comment="">Close</entry>
+		<entry name="Apply" type="Button" comment="">Apply</entry>
+		<entry name="Cancel" type="Button" comment="">Cancel</entry>
+		<entry name="Save" type="Button" comment="">Save</entry>
+		<entry name="Default" type="Button" comment="">Default</entry>
+		<entry name="OK" type="Button" comment="">OK</entry>
+		<entry name="Yes" type="Button" comment="">Yes</entry>
+		<entry name="No" type="Button" comment="">No</entry>
+		<entry name="Minimize" type="ToolTip" comment="">Minimize</entry>
+		<entry name="Maximize" type="ToolTip" comment="">Maximize</entry>
+	</area>
+	<area name="resources/frogpond/globalstyles/datecontrols">
+		<entry name="capDateFormat" type="" comment="">Date format:</entry>
+	</area>
+	<area name="Logon dialog">
+		<entry name="capsLockOn" type="Message" comment="logon screen">Caps Lock is On</entry>
+		<entry name="capsLockOnMessage" type="Message" comment="logon screen">Caps Lock On may cause you to enter your password incorrectly.</entry>
+	</area>
+
+	<area name="resources/frogpond/namedstyles/styleusereventhistory">
+		<entry name="capSystem" type="Button" comment="Can be a link or a textblock">System</entry>
+		<entry name="capUser" type="Button" comment="Can be a link or a textblock">User</entry>
+		<entry name="capLatestEvent" type="TextBlock" comment="Title the Latest Event popup">Latest Event</entry>
+		<entry name="UndoButton" type="ToolTip" comment="">Undo this action</entry>
+		<entry name="capUndo" type="Button" comment="">Undo</entry>
+		<entry name="RedoButton" type="ToolTip" comment="">Redo this action</entry>
+		<entry name="capRedo" type="Button" comment="">Redo</entry>
+		<entry name="capClearDay" type="Button" comment="">Clear Day</entry>
+		<entry name="capShowEventHistory" type="Link" comment="">Show Event History...</entry>
+	</area>
+
+	<area name="resources/frogpond/namedstyles/searchtextbox">
+		<entry name="startAndSearch" type="ToolTip" comment="Text that will be visible as tooltip for a search and start entry field">Search and Start</entry>
+		<entry name="clearEntry" type="ToolTip" comment="">Clear Entry</entry>
+	</area>
+	<area name="resources/frogpond/controltemplates/confirmdialoguecontroltemplate">
+		<entry name="MenuItemCopyToClipboard" type="Menu" comment="">Copy to Clipboard</entry>
+		<entry name="capHideDialog" type="Menu" comment="">Hide this Dialog</entry>
+		<entry name="capSignatureUserName" type="" comment="">User name</entry>
+		<entry name="capSignaturePassword" type="" comment="">Password</entry>
+		<entry name="capSignatureReason" type="" comment="">Reason</entry>
+		<entry name="capHideInFuture" type="CheckBox" comment="">In the future, do not show this dialog</entry>
+		<entry name="SupportButton" type="Button" comment="">Support...</entry>
+		<entry name="capSignature" type="Button" comment="">Sign</entry>
+		<entry name="capRestartNow" type="Button" comment="">Restart Now</entry>
+		<entry name="capRestartLater" type="Button" comment="">Restart Later</entry>
+	</area>
+	<area name="WidgetControls">
+		<entry name="refresh" type="MenuItem" comment="Context menu for a widget">Refresh</entry>
+		<entry name="closeWidget" type="MenuItem" comment="Context menu for close of widget">Close</entry>
+		<entry name="AlwaysOnTop" type="MenuItem" comment="">Always on Top</entry>
+	</area>
+	<area name="resources/frogpond/namedstyles/instrument">
+		<entry name="noDataAvailable" type="ToolTip" comment="">There is no data available</entry>
+		<entry name="displayValueOutOfRange" type="ToolTip" comment="">The display value is outside the Min/Max range</entry>
+		<entry name="noDataForField" type="ToolTip" comment="">There is no data available for this field</entry>
+	</area>
+	<area name="Task bar">
+		<entry name="MenuItemClose" type="Menu" comment="">Close</entry>
+		<entry name="MenuItemCloseOthers" type="Menu" comment="">Close Others</entry>
+		<entry name="MenuItemCloseAll" type="Menu" comment="">Close All</entry>
+		<entry name="LaunchAtStartup" type="Menu" comment="">Launch at Startup</entry>
+	</area>
+	<area name="resources/frogpond/namedstyles/flowdocumentreader">
+		<entry name="find" type="ToolTip" comment="">Find</entry>
+		<entry name="previousPage" type="ToolTip" comment="">Previous Page</entry>
+		<entry name="PageNumber_Of" type="" comment=""> of </entry>
+		<entry name="nextPage" type="ToolTip" comment="">Next Page</entry>
+		<entry name="pageMode" type="ToolTip" comment="">Page Mode</entry>
+		<entry name="twoPageMode" type="ToolTip" comment="">Two Page Mode</entry>
+		<entry name="scrollMode" type="ToolTip" comment="">Scroll Mode</entry>
+		<entry name="decreaseZoom" type="ToolTip" comment="">Decrease Zoom</entry>
+		<entry name="increaseZoom" type="ToolTip" comment="">Increase Zoom</entry>
+	</area>
+	<area name="resources/frogpond/controltemplates/progressdialoguecontroltemplate" />
+	<area name="resources/frogpond/controltemplates/dashboardwindow">
+		<entry name="minimizeApplication" type="ToolTip" comment="">Minimize Application</entry>
+		<entry name="restoreSize" type="ToolTip" comment="">Mini-Mode (Disabled)</entry>
+		<entry name="closeApplication" type="ToolTip" comment="">Close Application</entry>
+		<entry name="currentUser" type="ToolTip" comment="">Current User</entry>
+		<entry name="UserName" type="" comment="">User Name</entry>
+		<entry name="Shutdown" type="ToolTip" comment="">Provides options for logging off or closing Lawson Smart Office</entry>
+		<entry name="logOff" type="" comment="">Log Off</entry>
+		<entry name="showCanvas" type="ToolTip" comment="">Show Canvas</entry>
+		<entry name="findWindow" type="ToolTip" comment="">Find Window</entry>
+		<entry name="showMenu" type="Menu" comment="">Show</entry>
+		<entry name="help" type="ToolTip" comment="">Help</entry>
+		<entry name="versionDisplay" type="" comment="Lawson Smart Office a product name. Do not translate.">- Lawson Smart Office Version -</entry>
+	</area>
+	<area name="resources/frogpond/namedstyles/smarttabcontrol">
+		<entry name="scrollLeft" type="ToolTip" comment="">Scroll the tabs to the left</entry>
+		<entry name="scrollRight" type="ToolTip" comment="">Scroll the tabs to the right</entry>
+	</area>
+	<area name="resources/frogpond/controltemplates/dataentrydialoguecontroltemplate" />
+	<area name="resources/frogpond/namedstyles/applicationstartandsearch">
+		<entry name="capMoreResult" type="Button" comment="">More Results...</entry>
+	</area>
+	<area name="resources/frogpond/namedstyles/s3combobox">
+		<entry name="FilterSearchString" type="" comment="Inline text in search field">Search...</entry>
+	</area>
+
+</assembly>

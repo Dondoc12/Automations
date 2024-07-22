@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly name="MForms">
+	<area name="Hot Keys">
+		<!-- MForms Common -->
+		<entry name="HotKeyHelpMForms" type="Header" comment="">Hotkey Help for MForms</entry>
+		<entry name="KeyHeaderMforms" type="Description" comment="Keyboard shortcut header">MForms</entry>
+		<entry name="KeyAltA" type="Mnemonic" comment="Keyboard shortcut. Replace A with the first letter of the Actions menu text.">Alt+A</entry>
+		<entry name="KeyAltAText" type="Description" comment="Keyboard shortcut">Opens the Actions menu</entry>
+		<entry name="KeyAltO" type="Mnemonic" comment="Keyboard shortcut. Replace O with the first letter of the Options menu text.">Alt+O</entry>
+		<entry name="KeyAltOText" type="Description" comment="Keyboard shortcut">Opens the Options menu</entry>
+		<entry name="KeyAltR" type="Mnemonic" comment="Keyboard shortcut. Replace R with the first letter of the Related menu text.">Alt+R</entry>
+		<entry name="KeyAltRText" type="Description" comment="Keyboard shortcut">Opens the Related menu</entry>
+		<entry name="KeyAltT" type="Mnemonic" comment="Keyboard shortcut. Replace T with the first letter of the Tools menu text.">Alt+T</entry>
+		<entry name="KeyAltTText" type="Description" comment="Keyboard shortcut">Opens the Tools menu</entry>
+		<entry name="KeyCtrlC" type="Mnemonic" comment="Keyboard shortcut">Ctrl+C</entry>
+		<entry name="KeyCtrlCText" type="Description" comment="Keyboard shortcut">Copies text</entry>
+		<entry name="KeyCtrlV" type="Mnemonic" comment="Keyboard shortcut">Ctrl+V</entry>
+		<entry name="KeyCtrlVText" type="Description" comment="Keyboard shortcut">Pastes text</entry>
+		<entry name="KeyCtrlX" type="Mnemonic" comment="Keyboard shortcut">Ctrl+X</entry>
+		<entry name="KeyCtrlXText" type="Description" comment="Keyboard shortcut">Cuts text</entry>
+		<entry name="KeyCtrlD" type="Mnemonic" comment="Keyboard shortcut">Ctrl+D</entry>
+		<entry name="KeyCtrlDText" type="Description" comment="Keyboard shortcut">Changes the panel sequence</entry>
+		<entry name="KeyCtrlQ" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Q</entry>
+		<entry name="KeyCtrlQText" type="Description" comment="Keyboard shortcut">Opens the context menu for area in focus</entry>
+		<entry name="KeyCtrlShiftF10" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Shift+F10</entry>
+		<entry name="KeyF1" type="Mnemonic" comment="Keyboard shortcut">F1</entry>
+		<entry name="KeyF1Text" type="Description" comment="Keyboard shortcut">Displays the Help tool</entry>
+		<entry name="KeyF3" type="Mnemonic" comment="Keyboard shortcut">F3</entry>
+		<entry name="KeyF3Text" type="Description" comment="Keyboard shortcut">Closes the application</entry>
+		<entry name="KeyF4" type="Mnemonic" comment="Keyboard shortcut">F4</entry>
+		<entry name="KeyF4Text" type="Description" comment="Keyboard shortcut">Displays the browse dialog</entry>
+		<entry name="KeyF5" type="Mnemonic" comment="Keyboard shortcut">F5</entry>
+		<entry name="KeyF5Text" type="Description" comment="Keyboard shortcut">Refreshes the form</entry>
+		<entry name="KeyF6" type="Mnemonic" comment="Keyboard shortcut">F6</entry>
+		<entry name="KeyF6Text" type="Description" comment="Keyboard shortcut">Enables text entry</entry>
+		<entry name="KeyF9" type="Mnemonic" comment="Keyboard shortcut">F9</entry>
+		<entry name="KeyF9Text" type="Description" comment="Keyboard shortcut">Open Field Audit Trail</entry>
+		<entry name="KeyF12" type="Mnemonic" comment="Keyboard shortcut">F12</entry>
+		<entry name="KeyF12Text" type="Description" comment="Keyboard shortcut">Returns to the previous panel</entry>
+		<entry name="KeyAltDown" type="Mnemonic" comment="Keyboard shortcut">Alt+Down Arrow</entry>
+		<entry name="KeyAltUp" type="Mnemonic" comment="Keyboard shortcut">Alt+Up Arrow</entry>
+		<entry name="KeyAltUpDownText" type="Description" comment="Keyboard shortcut">Opens or closes a selected combo box</entry>
+		<entry name="KeyCtrlPlusMinus" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Plus/Minus</entry>
+		<entry name="KeyCtrlPlusMinusText" type="Description" comment="Keyboard shortcut">Zooms the program window in and out</entry>
+		<entry name="KeyCtrlLeftArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Left Arrow</entry>
+		<entry name="KeyCtrlLeftArrowText" type="Description" comment="Keyboard shortcut">Moves the cursor before the first character or the previous word in the field</entry>
+		<entry name="KeyCtrlRightArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Right Arrow</entry>
+		<entry name="KeyCtrlRightArrowText" type="Description" comment="Keyboard shortcut">Moves the cursor to the last character or the next word in the field</entry>
+		<entry name="KeyF13" type="Mnemonic" comment="Keyboard shortcut">F13</entry>
+		<entry name="KeyF13Text" type="Description" comment="Keyboard shortcut">Displays the settings panel</entry>
+
+		<!-- MForms list -->
+		<entry name="KeyHeaderMformsList" type="Description" comment="Keyboard shortcut header">Mforms list</entry>
+		<entry name="KeyCtrlLetter" type="Mnemonic" comment="Keyboard shortcut">Ctrl+{Letter}</entry>
+		<entry name="KeyCtrlLetterText" type="Description" comment="Keyboard shortcut">Opens the menu in the menu bar</entry>
+		<entry name="KeyCtrlNumber" type="Mnemonic" comment="Keyboard shortcut">Ctrl+{Number}</entry>
+		<entry name="KeyCtrlNumberText" type="Description" comment="Keyboard shortcut">Selects an Option or Related Option</entry>
+		<entry name="KeyDelete" type="Mnemonic" comment="Keyboard shortcut">Delete</entry>
+		<entry name="KeyDeleteText" type="Description" comment="Keyboard shortcut">Deletes the current object</entry>
+		<entry name="KeyEnter" type="Mnemonic" comment="Keyboard shortcut">Enter</entry>
+		<entry name="KeyEnterText" type="Description" comment="Keyboard shortcut">Carries out the action for the active panel, field or button</entry>
+		<entry name="KeyT" type="Description" comment="Keyboard shortcut">t</entry>
+		<entry name="KeyTText" type="Description" comment="Keyboard shortcut">Select todays date from the date picker</entry>
+		<entry name="KeyCtrlLeft" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Left Arrow</entry>
+		<entry name="KeyCtrlLeftText" type="Description" comment="Keyboard shortcut">Moves the cursor to the first character or the previous word in the field</entry>
+		<entry name="KeyCtrlRight" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Right Arrow</entry>
+		<entry name="KeyCtrlRightText" type="Description" comment="Keyboard shortcut">Moves the cursor to the last character or the next word in the field</entry>
+		<entry name="KeyCtrlLeftMouse" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Left Mouse Button</entry>
+		<entry name="KeyCtrlLeftMouseText" type="Description" comment="Keyboard shortcut">Selects multiple rows that are not next to each other in a list (After you select a row, hold down Ctrl and select more rows)</entry>
+		<entry name="KeyShiftLeftMouse" type="Mnemonic" comment="Keyboard shortcut">Shift+Left Mouse Button</entry>
+		<entry name="KeyShiftPageDown" type="Mnemonic" comment="Keyboard shortcut">Shift+Page Down</entry>
+		<entry name="KeyShiftPageDownText" type="Description" comment="Keyboard shortcut">Selects the cells on the page below the cell in focus</entry>
+		<entry name="KeyShiftPageUp" type="Mnemonic" comment="Keyboard shortcut">Shift+Page Up</entry>
+		<entry name="KeyShiftPageUpText" type="Description" comment="Keyboard shortcut">Selects the cells on the page above the cell in focus</entry>
+		<entry name="KeyHome" type="Description" comment="Keyboard shortcut">Home</entry>
+		<entry name="KeyHomeText" type="Description" comment="Keyboard shortcut">Selects the first record</entry>
+		<entry name="KeyEnd" type="Description" comment="Keyboard shortcut">End</entry>
+		<entry name="KeyEndText" type="Description" comment="Keyboard shortcut">Selects the last record</entry>
+		<entry name="KeyShiftDownArrow" type="Mnemonic" comment="Keyboard shortcut">Shift+Down Arrow</entry>
+		<entry name="KeyShiftDownArrowText" type="Description" comment="Keyboard shortcut">Includes the next row in the selection</entry>
+		<entry name="KeyShiftUpArrow" type="Mnemonic" comment="Keyboard shortcut">Shift+Up Arrow</entry>
+		<entry name="KeyShiftUpArrowText" type="Description" comment="Keyboard shortcut">Includes the previous row in the selection</entry>
+		<entry name="KeyCtrlL" type="Mnemonic" comment="Keyboard shortcut">Ctrl+L</entry>
+		<entry name="KeyCtrlLText" type="Description" comment="Keyboard shortcut">Highlights pre-selected items in the list</entry>
+		<entry name="KeyCtrlDownArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Down Arrow</entry>
+		<entry name="KeyCtrlDownArrowText" type="Description" comment="Keyboard shortcut">Keeps the selection and moves the cursor one row down</entry>
+		<entry name="KeyCtrlUpArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Up Arrow</entry>
+		<entry name="KeyCtrlUpArrowText" type="Description" comment="Keyboard shortcut">Keeps the selection and moves the cursor one row up</entry>
+		<entry name="KeyCtrlSpace" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Space</entry>
+		<entry name="KeyCtrlSpaceText" type="Description" comment="Keyboard shortcut">Includes the row in focus in the selection (to get a split selection)</entry>
+		<entry name="KeyCtrlNumberUpDown" type="Mnemonic" comment="Keyboard shortcut">Ctrl+{Number}+Up/Down Arrow</entry>
+		<entry name="KeyCtrlNumberUpDownText" type="Description" comment="Keyboard shortcut">Moves the cursor to the next/previous valid option</entry>
+		<entry name="KeyCtrlNumberBackSpace" type="Mnemonic" comment="Keyboard shortcut">Ctrl+{Number}+Backspace</entry>
+		<entry name="KeyCtrlNumberBackSpaceText" type="Description" comment="Keyboard shortcut">Cancels the last number entered</entry>
+		<entry name="KeyCtrlAltUpArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Alt+Up Arrow</entry>
+		<entry name="KeyCtrlAltUpArrowText" type="Description" comment="Keyboard shortcut">Moves focus to the editable cell above in an editable list</entry>
+		<entry name="KeyCtrlAltDownArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Alt+Down Arrow</entry>
+		<entry name="KeyCtrlAltDownArrowText" type="Description" comment="Keyboard shortcut">Moves focus to the editable cell below in an editable list</entry>
+		<entry name="KeyCtrlAltLeftArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Alt+Left Arrow</entry>
+		<entry name="KeyCtrlAltRightArrow" type="Mnemonic" comment="Keyboard shortcut">Ctrl+Alt+Right Arrow</entry>
+		<entry name="KeyCtrlF11" type="Mnemonic" comment="Keyboard shortcut">Ctrl+F11</entry>
+		<entry name="KeyCtrlF11Text" type="Description" comment="Keyboard shortcut">Shows or hides the extra row in an expandable list</entry>
+		<entry name="KeyPageDown" type="Mnemonic" comment="Keyboard shortcut">Page Down</entry>
+		<entry name="KeyPageDownText" type="Description" comment="Keyboard shortcut">Scrolls one page down</entry>
+		<entry name="KeyPageUp" type="Mnemonic" comment="Keyboard shortcut">Page Up</entry>
+		<entry name="KeyPageUpText" type="Description" comment="Keyboard shortcut">Scrolls one page up</entry>
+		<entry name="KeyUpArrow" type="Mnemonic" comment="Keyboard shortcut">Up Arrow</entry>
+		<entry name="KeyUpArrowText" type="Description" comment="Keyboard shortcut">Moves the cursor upwards</entry>
+		<entry name="KeyDownArrow" type="Mnemonic" comment="Keyboard shortcut">Down Arrow</entry>
+		<entry name="KeyDownArrowText" type="Description" comment="Keyboard shortcut">Moves the cursor downwards</entry>
+		<entry name="KeyLeftArrow" type="Mnemonic" comment="Keyboard shortcut">Left Arrow</entry>
+		<entry name="KeyLeftArrowText" type="Description" comment="Keyboard shortcut">Scrolls to the left</entry>
+		<entry name="KeyRightArrow" type="Mnemonic" comment="Keyboard shortcut">Right Arrow</entry>
+		<entry name="KeyRightArrowText" type="Description" comment="Keyboard shortcut">Scrolls to the right</entry>
+		<entry name="KeyF2" type="Mnemonic" comment="Keyboard shortcut">F2</entry>
+		<entry name="KeyF2Text" type="Description" comment="Keyboard shortcut">Opens or closes a cell in an editable list</entry>
+		<entry name="KeyTabListText" type="Description" comment="Keyboard shortcut">Moves focus to the next editable cell in an editable list</entry>
+		<entry name="KeyShiftTabListText"  type="Description" comment="Keyboard shortcut">Moves focus to the previous editable cell in an editable list</entry>
+	</area>
+
+	<area name="M3 Info Browser Widget">
+		<entry name="WidgetTitleBrowseLauncher" type="WidgetTitle" comment="">M3 Info Browser</entry>
+		<entry name="WidgetSettingsBrowseLauncher" type="DialogTitle" comment="">Settings for M3 Info Browser</entry>
+		<entry name="M3InfoWidgetDescription" type="Description" comment="">Browse customers, supplier, items, and other M3 information you use frequently.</entry>
+		<entry name="MangoBrowseLauncher" type="" comment="">Position in list</entry>
+		<entry name="capLabelsearch" type="" comment="">Position on {0}</entry>
+		<entry name="msgErrorReadingList" type="Message" comment="">Error reading list</entry>
+		<entry name="msgBlank" type="Message" comment="">*Blank</entry>
+		<entry name="msgErrorNoHeaders" type="Message" comment="">The browse definition for field {0}, variant {1}, user {2} could not be read.</entry>
+		<entry name="msgErrNoField" type="Message" comment="">Please enter field</entry>
+		<entry name="titleSettings" type="DialogTitle" comment="">M3 Info Browser '{0}'</entry>
+		<entry name="msgLoadingWidgetContent" type="Message" comment="">Loading...</entry>
+		<entry name="capM3BrowseFieldMNS185" type="Label" comment="">Field:</entry>
+		<entry name="M3BrowseFieldTooltip" type="Tooltip" comment="">This field indicates the field name according to the reference file. The available values are found in Browse Definition. Open (MNS185)</entry>
+		<entry name="capM3VariantMNS185" type="Label" comment="">Variant:</entry>
+		<entry name="capSettingsVariant" type="Tooltip" comment="">Optional variant for the browse field</entry>
+		<entry name="capUserVariationMNS185" type="Label" comment="">User:</entry>
+		<entry name="SettingsUserTooltip" type="Tooltip" comment="">Optional user-specific browse configuration</entry>
+		<entry name="hdrM3Section" type="" comment="">Launch M3</entry>
+		<entry name="hdrM3SectionTooltip" type="Tooltip" comment="">Specify settings to launch M3 using key value from the list to a program with a specified sorting order and view.</entry>
+		<entry name="capFunctionMNS185" type="Label" comment="">Function:</entry>
+		<entry name="FunctionMNS185Tooltip" type="Tooltip" comment="">Specify the master program for the browse variant</entry>
+		<entry name="capSettingsFunction" type="Tooltip" comment="">Specify the master program for the browse definition</entry>
+		<entry name="capFieldName" type="Label" comment="">Field name:</entry>
+		<entry name="FieldNameTooltip" type="Tooltip" comment="">Specify the field name for the key field that will be sent to Mforms.</entry>
+		<entry name="capSettingsFieldName" type="Tooltip" comment="">Specify the field name for the key field that will be sent to Mforms.</entry>
+		<entry name="capInqTypeKey" type="" comment="">Sorting order field name:</entry>
+		<entry name="capSortOrderKey" type="" comment="">Sorting order field name:</entry>
+		<entry name="InqTypeKeyTooltip" type="Tooltip" comment="">Specify the field name for the sorting order if you want to launch to a specific sorting order</entry>
+		<entry name="SortOrderKeyTooltip" type="Tooltip" comment="">Specify the field name for the sorting order if you want to launch to a specific sorting order</entry>
+		<entry name="capSettingsInqTypeKey" type="Tooltip" comment="">Specify the sorting order field. Use F1 on the sorting order to see the field name.</entry>
+		<entry name="capInqType" type="" comment="">Sorting order:</entry>
+		<entry name="InqTypeTooltip" type="Tooltip" comment="">Specify the sorting order for the function that has the key field as a position field</entry>
+		<entry name="capSettingsInqType" type="Tooltip" comment="">Specify the sorting order for the function that has the key field as a position field (use F1 on the field in the function)</entry>
+		<entry name="capPanelVerKey" type="" comment="">View field name:</entry>
+		<entry name="PanelVerKeyTooltip" type="Tooltip" comment="">Specify the field name of the view field. Use F1 to see the field name in the lower corner.</entry>
+		<entry name="capSettingsPanelVerKey" type="Tooltip" comment="">Specify the field name of the view field. Use F1 to see the field name in the lower corner.</entry>
+		<entry name="capPanelVer" type="" comment="">View:</entry>
+		<entry name="panelVerTooltip" type="Tooltip" comment="">Specify the view the function should be opened with</entry>
+	</area>
+	<area name="Text Copy Dialog">
+		<entry name="capFrom" type="Label" comment="">From</entry>
+		<entry name="capFromTextBlock" type="Label" comment="">Text block</entry>
+		<entry name="capFromLanguage" type="Label" comment="">Language</entry>
+		<entry name="capTo" type="Label" comment="">To</entry>
+		<entry name="capToTextBlock" type="Label" comment="">Text block</entry>
+		<entry name="capToLanguage" type="Label" comment="">Language</entry>
+		<entry name="Previous" type="Button" comment="">&lt;&lt; Previous</entry>
+		<entry name="Next" type="Button" comment="">Next &gt;&gt;</entry>
+		<entry name="Exit" type="Button" comment="">Exit</entry>
+	</area>
+	<area name="M3 Group Settings">
+		<entry name="hdrGeneral" type="Label" comment="Header on tab">General</entry>
+		<entry name="capSystemLanguage" type="Label" comment="">System Language</entry>
+		<entry name="capCompany" type="Label" comment="">Company</entry>
+		<entry name="capDivision" type="Label" comment="">Division</entry>
+	</area>
+	<area name="Panel Navigator">
+		<entry name="RepeatButtonText" type="Button" comment="Label on the small scroll buttons in the panel sequence navigator">...</entry>
+		<entry name="DirectChange" type="Menu" comment="">Direct Change</entry>
+		<entry name="AddPanel" type="Menu" comment="">Add Panel</entry>
+		<entry name="PanelView" type="Menu" comment="">Panel View</entry>
+		<entry name="SmallView" type="Menu" comment="">Small</entry>
+		<entry name="LargeView" type="Menu" comment="">Large</entry>
+		<entry name="DeletePanel" type="Menu" comment="">Delete Panel</entry>
+	</area>
+	<area name="Profile Info Widget">
+		<entry name="ProfileInfoWidget" type="WidgetTitle" comment="">Profile Information</entry>
+		<entry name="WidgetSettingsProfileInfo" type="DialogTitle" comment="">Settings for Profile Information</entry>
+		<entry name="ProfileInfoWidgetDescription" type="Description" comment="">View the current profile setup for Lawson Smart Office.</entry>
+		<entry name="capVersion" type="Label" comment="">Version</entry>
+		<entry name="capProfile" type="Label" comment="">Profile</entry>
+		<entry name="capIBrix" type="Label" comment="">IBrix:</entry>
+		<entry name="IBrixTooltip" type="Tooltip" comment="Do not translate IBrix">Displays the company and division that is used by IBrix. The company and division will not chnage for IBrixs during the session.</entry>
+		<entry name="profileNotLoaded" type="Message" comment="">Could not load all system information</entry>
+		<entry name="capApplicationGroup" type="Label" comment="">Application group:</entry>
+		<entry name="capApplicationType" type="Label" comment="">Application type:</entry>
+		<entry name="capFontSize" type="Label" comment="">Profile information text size</entry>
+		<entry name="DefaultFontSize" type="Button" comment="">Default size</entry>
+		<entry name="NotAvailableLabel" type="Label" comment="Default text instead of company / division when cono and divi can not be retrieved">Not available</entry>
+	</area>
+	<area name="Search">
+		<entry name="EnterpriseSearch" type="Label" comment="">Search</entry>
+		<entry name="PoweredBy" type="Label" comment="">POWERED BY</entry>
+		<entry name="LawsonEnterpriseSearch" type="Label" comment="">Lawson Enterprise Search</entry>
+		<entry name="ClickForMoreResults" type="Hyperlink" comment="">Click here for more results</entry>
+		<entry name="ShowMoreResults" type="Menu" comment="">Show More Results...</entry>
+		<entry name="StandardMenuItem" type="Menu" comment="">Standard Search</entry>
+		<entry name="ExtendedMenuItem" type="Menu" comment="">Extended Search</entry>
+		<entry name="SaveSearchQuery" type="Heading" comment="">Save Search Query</entry>
+		<entry name="SaveSearchQueryMenu" type="Menu" comment="">Save Search Query...</entry>
+		<entry name="InfoSelectOption" type="Description" comment="">Please select where the search query should be saved.</entry>
+		<entry name="NoteSaveQuery" type="Description" comment="">Note! This action will save the search query performed. It will not save the list of search results.</entry>
+		<entry name="SearchFieldSave" type="CheckBox" comment="">Save in Search Field Menu</entry>
+		<entry name="ShortcutCanvasSave" type="CheckBox" comment="">Save as Shortcut on the Canvas</entry>
+		<entry name="ShortcutToolboxSave" type="CheckBox" comment="">Save as Shortcut in the Toolbox Area</entry>
+		<entry name="QueryName" type="Label" comment="">Query Name</entry>
+		<entry name="SearchResultMaxHits" type="Message" comment="">Maximum hits reached.</entry>
+		<entry name="SearchResultMessage" type="Message" comment="">Showing {0} hits on search for {1}</entry>
+		<entry name="SearchResultFilteredMessage" type="Message" comment="">Showing {0} filtered hits on search for {1}</entry>
+		<entry name="FindInSearch" type="Menu" comment="Top menu item for the different search types">Find in Enterprise Search</entry>
+		<entry name="SearchTypeGlobal" type="Menu" comment="Start a global search using Enterprise search">Global...</entry>
+		<entry name="SearchTypeField" type="Menu" comment="Start a field context search using Enterprise search">In Field Context...</entry>
+		<entry name="SearchTypeFieldAndTable" type="Menu" comment="Start a program context search using Enterprise search">In Program Context...</entry>
+		<entry name="AddToSearch" type="Menu" comment="">Add To Search</entry>
+	</area>
+	<area name="Text Detail Dialog">
+		<entry name="capTextBlock" type="Label" comment="">Text block</entry>
+		<entry name="capLanguage" type="Label" comment="">Language</entry>
+		<entry name="Name" type="Label" comment="">Name</entry>
+		<entry name="capIntExt" type="Label" comment="">Internal/External</entry>
+		<entry name="ComboBoxItemIntExt" type="ComboBox" comment="">Internal/External</entry>
+		<entry name="ComboBoxItemExt" type="ComboBox" comment="">External</entry>
+		<entry name="ComboBoxItemInt" type="ComboBox" comment="">Internal</entry>
+		<entry name="TextBlock" type="Button" comment="">Text block</entry>
+	</area>
+	<area name="User Settings Window">
+		<entry name="capDisplayMessagesInDialog" type="CheckBox" comment="">Display system messages in dialog window</entry>
+		<entry name="capDisplayCompanyAndVersion" type="CheckBox" comment="">Display company and division in program window</entry>
+		<entry name="capDisplayCaptionTooltips" type="CheckBox" comment="">Display label tooltips</entry>
+		<entry name="capDisplayHelpTooltip" type="CheckBox" comment="">Display help tooltips</entry>
+		<entry name="capRightAlignLabels" type="CheckBox" comment="">Right-align labels</entry>
+		<entry name="capUsePlusKeyAsTab" type="CheckBox" comment="">Use plus key as tab</entry>
+		<entry name="capCursorAtEndOfEntryFields" type="CheckBox" comment="">Position cursor in end of input fields</entry>
+		<entry name="capShowGridLinesInListView" type="CheckBox" comment="">Show grid lines in list view</entry>
+		<entry name="capStandardOption" type="Label" comment="">Standard option</entry>
+		<entry name="capEnableToolbox" type="CheckBox" comment="">Enable toolbox</entry>
+		<entry name="capDisplayProgramStack" type="CheckBox" comment="">Display navigation history</entry>
+		<entry name="capExpandLists" type="CheckBox" comment="">Expand list</entry>
+		<entry name="capEnableKeyboardBuffer" type="CheckBox" comment="">Enable keyboard buffer</entry>
+		<entry name="hdrProgramOptions" type="Heading" comment="Header on tab">Program Options</entry>
+		<entry name="capAddProgramOptions" type="Heading" comment="Group box label.">Add Program Options</entry>
+		<entry name="capProgramName" type="Label" comment="">Program ID</entry>
+		<entry name="capOption" type="Label" comment="">Option</entry>
+		<entry name="capAddProgramOption" type="Button" comment="">Add</entry>
+		<entry name="capAvailProgramOptions" type="Heading" comment="Group box label.">Available Program Options</entry>
+		<entry name="capProgramHeader" type="Label" comment="">Program</entry>
+		<entry name="capOptionHeader" type="Label" comment="">Option</entry>
+		<entry name="capOptionDescriptionHeader" type="Label" comment="">Description</entry>
+		<entry name="DeleteProgramOption" type="Button" comment="">Delete</entry>
+	</area>
+	<area name="Visualizer">
+		<entry name="AddColumn" type="Tooltip" comment="">Add a column</entry>
+		<entry name="RemoveColumn" type="Tooltip" comment="">Remove a column</entry>
+		<entry name="SaveAs" type="Menu" comment="">Save As...</entry>
+		<entry name="PNGFiles" type="Description" comment="Do not translate file extension PNG">PNG Files</entry>
+		<entry name="expanderSettings" type="Label" comment="">Settings</entry>
+		<entry name="chartType" type="Label" comment="">Chart type</entry>
+		<entry name="pieItem" type="ComboBoxItem" comment="Pie chart type">Pie</entry>
+		<entry name="barItem" type="ComboBoxItem" comment="Bar chart type">Bar</entry>
+		<entry name="LineItem" type="ComboBoxItem" comment="Line chart type">Line</entry>
+		<entry name="labelColumn" type="Label" comment="">Label column</entry>
+		<entry name="valueColumns" type="Label" comment="">Value columns</entry>
+		<entry name="groupByColumn" type="Label" comment="For a ComboBox where the group-by column can be selected">Group by column</entry>
+		<entry name="groupByType" type="Label" comment="For a ComboBox where the group type can be selected, Count or Sum">Group by type</entry>
+		<entry name="Count" type="ComboBoxItem" comment="Group by count">Count</entry>
+		<entry name="Sum" type="ComboBoxItem" comment="Group by sum">Sum</entry>
+		<entry name="checkBoxSave" type="CheckBox" comment="The visualization will be saved if the CheckBox is checked">Save visualization</entry>
+		<entry name="CheckBoxVisualizeAll" type="CheckBox" comment="If checked displays all list rows, otherwise display selected list rows">Visualize all list rows</entry>
+	</area>
+	<area name="Gantt Chart">
+		<entry name="Snap" type="Menu" comment="">Snap</entry>
+		<entry name="Hour" type="Menu" comment="">Hour</entry>
+		<entry name="Minute" type="Menu" comment="">Minute</entry>
+		<entry name="Minutes" type="Menu" comment="">Minutes</entry>
+		<entry name="Day" type="Menu" comment="">Day</entry>
+		<entry name="Quarter" type="Menu" comment="">Q</entry>
+		<entry name="MainTimeScale" type="Menu" comment="">Main TimeScale</entry>
+		<entry name="OtherTimeScale" type="Menu" comment="">Secondary TimeScale</entry>
+		<entry name="HourExtraLarge" type="Menu" comment="">Hour - Extra Large</entry>
+		<entry name="HourLarge" type="Menu" comment="">Hour - Large</entry>
+		<entry name="HourNormal" type="Menu" comment="">Hour - Normal</entry>
+		<entry name="HourSmall" type="Menu" comment="">Hour - Small</entry>
+		<entry name="DayNormal" type="Menu" comment="">Day - Normal</entry>
+		<entry name="DaySmall" type="Menu" comment="">Day - Small</entry>
+		<entry name="Month" type="Menu" comment="">Month</entry>
+		<entry name="Quarter2" type="Menu" comment="">Quarter</entry>
+		<entry name="CollapseAll" type="Menu" comment="">Collapse All</entry>
+		<entry name="ExpandAll" type="Menu" comment="">Expand All</entry>
+		<entry name="daylabel0" type="Label" comment="">Day</entry>
+		<entry name="daylabel1" type="Label" comment="">Monday</entry>
+		<entry name="daylabel2" type="Label" comment="">Tuesday</entry>
+		<entry name="daylabel3" type="Label" comment="">Wednesday</entry>
+		<entry name="daylabel4" type="Label" comment="">Thursday</entry>
+		<entry name="daylabel5" type="Label" comment="">Friday</entry>
+		<entry name="daylabel6" type="Label" comment="">Saturday</entry>
+		<entry name="daylabel7" type="Label" comment="">Sunday</entry>
+		<entry name="daylabel02" type="Label" comment="">Work Day</entry>
+		<entry name="daylabel03" type="Label" comment="">Working Hours</entry>
+		<entry name="delimiterDash" type="Label" comment="">-</entry>
+		<entry name="checkHideNonWork" type="CheckBox" comment="">Compress Non-Work Hours</entry>
+		<entry name="NonWorkSettings" type="HeadingOrMenu" comment="">Non-Work Settings</entry>
+	</area>
+	<area name="Hyperlink Window">
+		<entry name="msgHyperLinkDesc" type="Description" comment="">Hyperlinks are used to navigate directly from a value in a table to a specified location.</entry>
+		<entry name="msgHyperLinkCreateDesc" type="Description" comment="">To create a hyperlink, select a field and the action you want to perform and click Add.</entry>
+		<entry name="msgHyperLinkListDesc" type="Description" comment="">The created hyperlinks are displayed in the list.</entry>
+		<entry name="capAddHyperlinks" type="Heading" comment="">Link to</entry>
+		<entry name="capField" type="Label" comment="">Field</entry>
+		<entry name="capRelatedOption" type="Label" comment="">Related option</entry>
+		<entry name="capDocumentLink" type="Label" comment="">Smart Link</entry>
+		<entry name="capCreatedHyperlinks" type="Heading" comment="">Created hyperlinks</entry>
+		<entry name="GVC1" type="ColumnLabel" comment="">Field</entry>
+		<entry name="GVC2" type="ColumnLabel" comment="">Related option</entry>
+	</area>
+	<area name="Browse Dialog">
+		<entry name="BrowseInformationView" type="Button" comment="">...</entry>
+		<entry name="SelectEqualPrevious" type="Button" comment="A single character indicating previous"> &lt; </entry>
+		<entry name="SelectEqualNext" type="Button" comment="A single character indicating next"> &gt; </entry>
+		<entry name="WorkWith" type="Button" comment="">Work With...</entry>
+		<entry name="Selection" type="Button" comment="">Selection...</entry>
+		<entry name="NextView" type="Button" comment="">Next View</entry>
+		<entry name="Select" type="Button" comment="Verb">Select</entry>
+	</area>
+	<area name="User Defined Views">
+		<entry name="ViewFilter" type="Label" comment="">Filter...</entry>
+		<entry name="ViewMatchingFields" type="Label" comment="">{0} Matching Fields</entry>
+		<entry name="ViewSaveTitle" type="DialogTitle" comment="">Save view</entry>
+		<entry name="ViewSaveHeading" type="Heading" comment="">Save view</entry>
+		<entry name="ViewPersonal" type="RadioButton" comment="">Personal</entry>
+		<entry name="ViewShared" type="RadioButton" comment="">Shared</entry>
+		<entry name="ViewSaveInfo" type="Description" comment="">Name and describe the view you want to save.</entry>
+		<entry name="ViewRadioButtonInfo" type="Description" comment="Description of the radio button with the option to make a view personal or shared.">Make the view</entry>
+		<entry name="ViewAdminRights" type="Description" comment="">(administrative rights are necessary)</entry>
+		<entry name="ViewPositionsUsed" type="Label" comment="">{0}% of {1} positions used</entry>
+		<entry name="ViewColumnsUsed" type="Label" comment="">{0} columns of {1} used</entry>
+		<entry name="ViewNoColumns" type="Heading" comment="">No columns</entry>
+		<entry name="ViewNoColumnsMessage" type="Message" comment="">Your view must have at least one column</entry>
+		<entry name="ViewEditFailed" type="Heading" comment="">Edit failed</entry>
+		<entry name="ViewEditFailedMessage" type="Message" comment="">The view could not be edited.</entry>
+		<entry name="ViewSaveFailed" type="Heading" comment="">Save failed</entry>
+		<entry name="ViewSaveFailedMessage" type="Message" comment="">The view could not be saved.</entry>
+		<entry name="ViewDeleteFailed" type="Heading" comment="">Delete failed</entry>
+		<entry name="ViewDeleteFailedMessage" type="Message" comment="">The view could not be deleted.</entry>
+		<entry name="ViewDelete" type="Heading" comment="">Delete view</entry>
+		<entry name="ViewDeleteMessage" type="Message" comment="">Do you want to delete this view?</entry>
+		<entry name="ViewSaveChanges" type="Heading" comment="">Save view</entry>
+		<entry name="ViewSaveChangesMessage" type="Message" comment="">Do you want to save the changes you made in the view?</entry>
+		<entry name="ViewExists" type="Heading" comment="">View {0} already exists</entry>
+		<entry name="ViewExistsMessage" type="Message" comment="">Choose a different name or edit the existing view.</entry>
+		<entry name="ViewDuplicateColumnMessage" type="Message" comment="">The view contains the same column more than once. You must use CRS020 to edit this view.</entry>
+	</area>
+	<area name="Related Information Viewer">
+		<entry name="RelatedInformation" type="Heading" comment="">Related Information</entry>
+		<entry name="RelatedInformationMenu" type="Menu" comment="">Related Information...</entry>
+		<entry name="RelatedLink" type="Label" comment="">Link:</entry>
+		<entry name="SyncWithList" type="CheckBox" comment="">Sync with list</entry>
+		<entry name="KeepFromPanel" type="CheckBox" comment="">Keep information from current panel</entry>
+		<entry name="NoInformationAvailable" type="Message" comment="">No information available</entry>
+	</area>
+	<area name="IBrix">
+		<entry name="FailedToLoadIBrix" type="Message" comment="Do not translate IBrix">The IBrix could not be started.</entry>
+		<entry name="NoMWPUrl" type="Message" comment="">Your profile does not contain an M3 Workplace URL.</entry>
+		<entry name="NoMWPApplicationServer" type="Message" comment="">Your profile does not contain an M3 Workplace Application Server name.</entry>
+		<entry name="NoUserCono" type="Message" comment="">Your company cannot be retreived from the Business Engine.</entry>
+		<entry name="NoBEContact" type="Message" comment="">The connection to the Business Engine seems to be broken.</entry>
+	</area>
+	<area name="Bookmarks">
+		<entry name="BookmarkDefaultName" type="Label" comment="Default bookmark name. The {0} will be replaced by the program and panel name, ex MMS001/E Bookmark.">{0} Bookmark</entry>
+		<entry name="Bookmarks" type="Menu" comment="A menu that contains items for creating different bookmarks.">Bookmarks</entry>
+		<entry name="BookmarkShortcut" type="Menu" comment="">Create Canvas Shortcut...</entry>
+		<entry name="BookmarkFavorite" type="Menu" comment="">Add to Navigator Favorites...</entry>
+		<entry name="EnterBookmarkName" type="Heading" comment="">Enter Bookmark Name</entry>
+		<entry name="BookmarkError" type="Heading" comment="">Bookmark Error</entry>
+		<entry name="BookmarkFailed" type="Message" comment="">Failed to create a bookmark for the current panel.</entry>
+		<entry name="BookmarkInvalid" type="Message" comment="">The bookmark was invalid and could not be started.</entry>
+	</area>
+	<area name="Profile">
+		<entry name="WebServiceUrl" type="Label" comment="">URL to Lawson Web Services</entry>
+		<entry name="BEEnvironment" type="Label" comment="">BE Environment</entry>
+		<entry name="BEServer" type="Label" comment="">BE Server</entry>
+		<entry name="WorkplaceUrl" type="Label" comment="">Workplace Url</entry>
+		<entry name="WorkplaceApplicationServer" type="Label" comment="">Workplace Application Server</entry>
+		<entry name="CompanionUrl" type="Label" comment="">Companion Url</entry>
+		<entry name="hdrWebServices" type="Heading" comment="">Web Services</entry>
+		<entry name="hdrBusinessEngine" type="Heading" comment="">Business Engine</entry>
+		<entry name="hdrWorkplace" type="Heading" comment="">Workplace</entry>
+		<entry name="hdrCompanion" type="Heading" comment="">Companion</entry>
+		<entry name="DebitCreditSettings" type="Label" comment="">Debit/Credit settings</entry>
+	</area>
+	<area name="Personalization tool">
+		<entry name="PersonalizationTool" type="DialogTitle" comment="">Personalization Tool</entry>
+		<entry name="SelectEntity" type="Description" comment="">Select the entity you want to work with and click select.</entry>
+		<entry name="FilterTextDotted" type="Label" comment="">Filter...</entry>
+		<entry name="CopyToDotted" type="Button" comment="">Copy to...</entry>
+		<entry name="CopyToExcel" type="Button" comment="">Copy to Excel</entry>
+		<entry name="RefreshLists" type="Button" comment="">Refresh Lists</entry>
+		<entry name="RoleUser" type="ColumnHeader" comment="">Role/User</entry>
+		<entry name="Application" type="ColumnHeader" comment="">Application</entry>
+		<entry name="Global" type="Label" comment="">Global</entry>
+		<entry name="PersonalizationFolder" type="DialogTitle" comment="">Personalization Folder</entry>
+		<entry name="SelectFolder" type="Description" comment="">Select a folder containing the personalizations you want to manage.</entry>
+		<entry name="Folder" type="Label" comment="">Folder:</entry>
+		<entry name="capCopy" type="Label" comment="">Copy:</entry>
+		<entry name="ComboInfo" type="Label" comment="">Select one</entry>
+		<entry name="SelectUser" type="Description" comment="">Select to whom you want to make the copy.</entry>
+		<entry name="capApplication" type="Label" comment="">Application:</entry>
+		<entry name="capRoleUser" type="Label" comment="">Role/User:</entry>
+		<entry name="capPersonalization" type="Label" comment="">Personalization:</entry>
+		<entry name="CopyTo" type="Label" comment="">Copy to:</entry>
+		<entry name="PersonalizationCopy" type="DialogTitle" comment="">Copy Personalization</entry>
+		<entry name="hdrDeletePersonalization" type="Heading" comment="">Delete Personalization</entry>
+		<entry name="DeletePersonalization" type="Message" comment="">Are you sure you want to delete the selected personalization?</entry>
+		<entry name="msgOverridePersonalization" type="Message" comment="">Copying a personalization to a role or user might overwrite any existing personalizations for this role or user.</entry>
+		<entry name="msgCopyPersonalization" type="Message" comment="">Are you sure you want to copy the selected personalization to the selected roles?</entry>
+	</area>
+	<area name="Common">
+		<entry name="SortingOrder" type="Label" comment="Noun. Previously know as Inquiry type.">Sorting order</entry>
+		<entry name="View" type="Label" comment="Noun. Previously known as Panel version.">View</entry>
+		<entry name="Description" type="Label" comment="">Description</entry>
+		<entry name="CreateHyperlinksMenuItem" type="Menu" comment="">Hyperlinks...</entry>
+		<entry name="ConditionalStylesWizardMenuItem" type="Menu" comment="">Conditional Styles...</entry>
+		<entry name="SetupToolboxMenuItem" type="Menu" comment="">Shortcuts...</entry>
+		<entry name="EditLabelsMenuItem" type="Menu" comment="">Labels...</entry>
+		<entry name="EditTabOrderMenuItem" type="Menu" comment="">Tab Order...</entry>
+		<entry name="EditPanelVersionMenuItem" type="Menu" comment="">Views...</entry>
+		<entry name="ShowHideFieldsMenuItem" type="Menu" comment="">Show/Hide Fields...</entry>
+		<entry name="CustomScriptsMenuItem" type="Menu" comment="">Scripts...</entry>
+		<entry name="ClearLog" type="Button" comment="">Clear log</entry>
+		<entry name="EnableCustomizationsMenuItem" type="Menu" comment="">Hide All Personalizations</entry>
+		<entry name="FailedToLogonUser" type="Message" comment="">Failed to log on user {0}</entry>
+		<entry name="Authenticating" type="Description" comment="Shown when a user is being logged in.">Authenticating...</entry>
+		<entry name="Starting" type="Description" comment="Shown when a program is starting.">Starting...</entry>
+		<entry name="Hyperlink" type="Menu" comment="">Hyperlink</entry>
+		<entry name="Function" type="Label" comment="">Function</entry>
+		<entry name="Panel" type="Label" comment="">Panel</entry>
+		<entry name="TipLinkFunction" type="Tooltip" comment="">Specify the function where the Smart Link will be available</entry>
+		<entry name="TipLinkPanel" type="Tooltip" comment="">Specify the panel where the Smart Link will be available</entry>
+		<entry name="RestoreColumns" type="Menu" comment="">Restore Columns</entry>
+		<entry name="KeyIsNotValid" type="Message" comment="{0} is replaced by the invalid key">{0} is not valid here.</entry>
+		<entry name="FailedToRender" type="Message" comment="">Failed to render panel.</entry>
+		<entry name="FailedToExecute" type="Message" comment="">Failed to execute request.</entry>
+		<entry name="NotVisible" type="ListBoxItem" comment="Only translate the text">&lt;Not Visible&gt;</entry>
+		<entry name="OptionDoesNotExist" type="Message" comment="">The option does not exist.</entry>
+		<entry name="NoMoreOptions" type="Message" comment="">There are no more options.</entry>
+		<entry name="OptionShortcut" type="Mnemonic" comment="{0} will be replaced with an option number">CTRL+{0}</entry>
+		<entry name="PanelToolBoxExpandToolTip" type="Tooltip" comment="">Expand Toolbox</entry>
+		<entry name="PanelToolBoxCollapseToolTip" type="Tooltip" comment="">Collapse Toolbox</entry>
+		<entry name="PanelsequenceLargeMode" type="Menu" comment="A checkable menu item for the size of the panel sequence letters">Large</entry>
+		<entry name="PanelsequenceSmallMode" type="Menu" comment="A checkable menu item for the size of the panel sequence letters">Small</entry>
+		<entry name="PanelLetterSelect" type="Label" comment="A panel">Select</entry>
+		<entry name="PanelLetterBrowse" type="Label" comment="B panel">Browse</entry>
+		<entry name="PanelLetterCopy" type="Label" comment="C panel">Copy</entry>
+		<entry name="PanelLetterDelete" type="Label" comment="D panels">Delete</entry>
+		<entry name="EditModeBtnDefaultLbl" type="Button" comment="">Use Default</entry>
+		<entry name="EditModeBtnShowAllLbl" type="Button" comment="">Show All</entry>
+		<entry name="ActivityTooltipFromDateLbl" type="Label" comment="">From:</entry>
+		<entry name="ActivityTooltipToDateLbl" type="Label" comment="">To:</entry>
+		<entry name="ActivityTooltipDurationLbl" type="Label" comment="">Duration:</entry>
+		<entry name="RelatedOptions" type="Menu" comment="">Related Options</entry>
+		<entry name="Customizations" type="Menu" comment="">Personalize</entry>
+		<entry name="CollapseExpandTooltip" type="Tooltip" comment="">Expand/Collapse all list rows (F11)</entry>
+		<entry name="hdrShortcuts" type="Heading" comment="">Shortcuts</entry>
+		<entry name="hdrCustomScripts" type="Heading" comment="">Scripts</entry>
+		<entry name="hdrHyperlinks" type="Heading" comment="">Hyperlinks</entry>
+		<entry name="hdrCreateHyperlinks" type="Heading" comment="">Create Hyperlinks</entry>
+		<entry name="hdrConditionalStyles" type="Heading" comment="">Conditional Styles</entry>
+		<entry name="hdrEditLabels" type="Heading" comment="">Edit labels</entry>
+		<entry name="hdrShowHideFields" type="Heading" comment="">Show/Hide fields</entry>
+		<entry name="hdrEditTabOrder" type="Heading" comment="">Edit tab order</entry>
+		<entry name="EnableHistory" type="Menu" comment="">Enable Favorites</entry>
+		<entry name="DisableHistory" type="Menu" comment="">Disable Favorites</entry>
+		<entry name="CreateCondStyle" type="Menu" comment="">Add Conditional Style...</entry>
+		<entry name="EditLabelMenuItem" type="Menu" comment="">Edit Label...</entry>
+		<entry name="EnableMandatory" type="Menu" comment="">Enable Mandatory</entry>
+		<entry name="DisableMandatory" type="Menu" comment="">Disable Mandatory</entry>
+		<entry name="MandatoryIndicator" type="Label" comment="A single character that indicates a mandatory field">*</entry>
+		<entry name="msgMandatoryField" type="Message" comment="">The field is mandatory.</entry>
+		<entry name="CreateOption" type="Menu" comment="Basic option 1">Create</entry>
+		<entry name="SelectOption" type="Menu" comment="Basic option 1">Select</entry>
+		<entry name="ChangeOption" type="Menu" comment="Basic option 2">Change</entry>
+		<entry name="CopyOption" type="Menu" comment="Basic option 3">Copy</entry>
+		<entry name="DeleteOption" type="Menu" comment="Basic option 4">Delete</entry>
+		<entry name="DisplayOption" type="Menu" comment="Basic option 5">Display</entry>
+		<entry name="hdrFieldHelp" type="Menu" comment="">Field Help...</entry>
+		<entry name="hdrBrowse" type="Menu" comment="">Browse...</entry>
+		<entry name="hdrCustomize" type="Heading" comment="">Personalize</entry>
+		<entry name="UserSettingsMenuItem" type="Menu" comment="">User Settings...</entry>
+		<entry name="CustomizationsEnabled" type="Message" comment="">Personalizations have been enabled</entry>
+		<entry name="CustomizationsDisabled" type="Message" comment="">Personalizations have been disabled</entry>
+		<entry name="MustRefreshPanel" type="Message" comment="">The panel must be refreshed for the changes to take effect.</entry>
+		<entry name="WillRefreshPanel" type="Message" comment="">The panel will be refreshed to reflect the changes.</entry>
+		<entry name="CustomizationImportMismatch" type="Message" comment="">Personalizations for the program {0} cannot be imported into current program {1}.</entry>
+		<entry name="RefreshOption" type="ButtonOrMenu" comment="F5">Refresh</entry>
+		<entry name="TextOption" type="ButtonOrMenu" comment="F6">Text</entry>
+		<entry name="Request" type="Label" comment="">Request</entry>
+		<entry name="MilliSeconds" type="Label" comment="">ms</entry>
+		<entry name="OpenCompanionMenu" type="Menu" comment="">Form Help...</entry>
+		<entry name="DisplayLabelTooltipMenu" type="Menu" comment="">Display label tooltips</entry>
+		<entry name="DisplayHelpTooltipMenu" type="Menu" comment="">Display help tooltips</entry>
+		<entry name="FormKeyboardShortcuts" type="Menu" comment="">Hotkey Help...</entry>
+		<entry name="TitleHotKeyHelp" type="Heading" comment="">M3 - Make, Move, Maintain Hotkey Help</entry>
+		<entry name="hdrError" type="Heading" comment="">Error</entry>
+		<entry name="CompanyDivisionsErrorDialog" type="Message" comment="">Companies and Divisions could not be retrieved.</entry>
+		<entry name="ConfirmCompanyDivision" type="Message" comment="">Failed to change company and division</entry>
+		<entry name="hdrAttentionRestartApplication" type="Heading" comment="">Restart the Application</entry>
+		<entry name="msgAttentionRestartApplication" type="Message" comment="">The application requires a restart to use the new company and division.</entry>
+		<entry name="PreviewCell" type="Label" comment="">Preview cell</entry>
+		<entry name="msgFailedToRunScript" type="Message" comment="">Failed to run script {0}.</entry>
+		<entry name="msgScriptNotFound" type="Message" comment="">The script {0} could not be found.</entry>
+		<entry name="msgScriptError" type="Message" comment="">The script {0} has errors.</entry>
+		<entry name="hdrScriptNotFound" type="Message" comment="">Script not found</entry>
+		<entry name="hdrScriptError" type="Heading" comment="">Script error</entry>
+		<entry name="hdrInvalidURL" type="Message" comment="">Could not open link {0}</entry>
+		<entry name="linkNoName" type="Message" comment="">The link needs to have a name</entry>
+		<entry name="linkNoURL" type="Message" comment="">The link needs to have an url</entry>
+		<entry name="ExportToExcel" type="Heading" comment="">Export to Excel</entry>
+		<entry name="GanttInvalidData" type="Message" comment="">Gantt Chart received invalid data.</entry>
+		<entry name="msgExportToExcelFailed" type="Message" comment="">Failed to export to Excel</entry>
+		<entry name="msgExportToExcelFailedDescription" type="Message" comment="">Make sure that Excel is installed and is working properly.</entry>
+		<entry name="msgScriptUrlMismatch" type="Message" comment="">Please verify that the 'M3 Net Extension Callback' value ({0}) in the server configuration for Lawson Web Services, has the same server and port as the 'RuntimeUrl' value ({1}) for MForms in the Lawson Smart Office profile [MFS0060].</entry>
+		<entry name="NoGanttChart" type="Message" comment="">The Gantt Chart functionality is not supported in this version.</entry>
+		<entry name="hdrNoInstanceSelected" type="Heading" comment="">No instance selected</entry>
+		<entry name="msgNoInstanceSelected" type="Message" comment="">You must select a running MForms instance.</entry>
+		<entry name="hdrFailedToLoadApplication" type="Message" comment="">Failed to load application MForms</entry>
+		<entry name="msgFailedToLoadApplication" type="Message" comment="">Menus from M3 will not be available and MForms programs will not be available. Please see client logs for more details.</entry>
+		<entry name="Browse" type="DialogTitle" comment="">Browse</entry>
+		<entry name="Text" type="DialogTitle" comment="">Text</entry>
+		<entry name="TextCopy" type="DialogTitle" comment="">Text - Copy</entry>
+		<entry name="TextDelete" type="DialogTitle" comment="">Text - Delete</entry>
+		<entry name="BrowseSelection" type="DialogTitle" comment="">Browse - Selection</entry>
+		<entry name="Help" type="Button" comment="">Help</entry>
+		<entry name="hdrFeedApplicationMessages" type="Heading" comment="">M3 Application Messages</entry>
+		<entry name="DescriptionFeedApplicationMessages" type="Description" comment="">M3 Application Message - CRS420. All messages in status 10-49 will be in this channel.</entry>
+		<entry name="LinkTitleAppMessage" type="Heading" comment="">Application Message. Open</entry>
+		<entry name="Monitor" type="Menu" comment="">Monitor</entry>
+		<entry name="CreateWatch" type="Menu" comment="">Create watch...</entry>
+		<entry name="hdrMetadataNotFound" type="Message" comment="">A watch cannot be created for the field {0}</entry>
+		<entry name="msgMetadataNotFound" type="Message" comment="">The data required for the watch is not available in M3.</entry>
+		<entry name="Visualizer" type="DialogTitle" comment="">Visualizer</entry>
+		<entry name="VisualizerMenu" type="Menu" comment="">Visualizer...</entry>
+		<entry name="Trace" type="DialogTitle" comment="">Trace</entry>
+		<entry name="TraceMenu" type="Menu" comment="">Trace...</entry>
+		<entry name="msgCloseAllPrograms" type="Message" comment="">Close all programs before changing language or company.</entry>
+		<entry name="EditView" type="Heading" comment="">Edit view</entry>
+		<entry name="msgDatePickerWrongDate1" type="Message" comment="">The date is invalid: {0}</entry>
+		<entry name="msgDatePickerWrongDate2" type="Message" comment="">Enter dates using format {0}</entry>
+		<entry name="DeleteColumnMenuItem" type="Menu" comment="">Hide Column</entry>
+		<entry name="EditList" type="Tooltip" comment="">Edit view</entry>
+		<entry name="SelectColumns" type="Tooltip" comment="">Select columns</entry>
+		<entry name="ViewPersonalizationsTitle" type="DialogTitle" comment="">View Personalizations</entry>
+		<entry name="ViewPersonalizationsMenu" type="Menu" comment="">View Personalizations...</entry>
+		<entry name="Personalization" type="ColumnLabel" comment="">Personalization</entry>
+		<entry name="Source" type="ColumnLabel" comment="">Source</entry>
+		<entry name="SourceName" type="ColumnLabel" comment="">Source Name</entry>
+		<entry name="ImageSettingsShortcuts" type="Tooltip" comment="Tooltip on an icon that can be clicked to open a new window where shortcuts can be configured.">Shortcuts...</entry>
+		<entry name="AlternativeLink" type="Hyperlink" comment="">Click here to find an alternative</entry>
+		<entry name="FieldHelpLink" type="Hyperlink" comment="">Field Help</entry>
+	</area>
+	<area name="Notes">
+		<entry name="FieldNotes" type="Label" comment="">Field Notes</entry>
+		<entry name="RecordNotes" type="Label" comment="">Record Notes</entry>
+	</area>
+</assembly>

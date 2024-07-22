@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mp:Properties xmlns:mp="http://schemas.intentia.net/Mango/Settings/Properties">
+  <mp:Settings>
+    <mp:UserSettings>
+      <mp:Property Name="DisplayLabelTooltips" ReadOnly="false">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>True</mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisplayHelpTooltips" ReadOnly="false">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisplayMessagesInDialog" ReadOnly="false">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value>True</mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisplayCompanyAndVersion" ReadOnly="false">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value>True</mp:Value>
+      </mp:Property>
+      <mp:Property Name="CursorAtEnd" ReadOnly="false">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+      <mp:Property Name="PlusKeyAsTab" ReadOnly="false">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+      <mp:Property Name="RightAlignLabels" ReadOnly="false">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+      <mp:Property Name="EnableToolbox" ReadOnly="false">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value>True</mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisplayProgramStack" ReadOnly="false">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value>True</mp:Value>
+      </mp:Property>
+      <mp:Property Name="KeyboardBuffer" ReadOnly="false">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+      <mp:Property Name="StandardOption" ReadOnly="false">
+        <mp:DefaultValue>5</mp:DefaultValue>
+        <mp:Value>5</mp:Value>
+      </mp:Property>
+      <mp:Property Name="ProgramOptions" ReadOnly="false">
+        <mp:DefaultValue />
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="ExpandLists" ReadOnly="false">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+      <mp:Property Name="GridLinesInListView" ReadOnly="false">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+    </mp:UserSettings>
+    <mp:ApplicationSettings>
+      <mp:Property Name="MenuFetchTimeout">
+        <mp:DefaultValue>5</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="RequestTimeout">
+        <mp:DefaultValue>600000</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="EnableM3Roles">
+        <mp:DefaultValue>True</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="Roles">
+        <mp:DefaultValue />
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisableCustomization">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisableUserCustomization">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisableScriptTool">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>False</mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisableTrace">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="MWPSessionKey">
+        <mp:DefaultValue>MWPSESSIONID</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+      <mp:Property Name="DisableRecordAnnotations">
+        <mp:DefaultValue>False</mp:DefaultValue>
+        <mp:Value>
+        </mp:Value>
+      </mp:Property>
+    </mp:ApplicationSettings>
+  </mp:Settings>
+  <mp:Hash>YmtSvEfBkrzwVKH0aNt9lvR6lkERyMUgViH+VCQnyds=</mp:Hash>
+  <mp:LastServerChange>2021-04-13T09:27:30</mp:LastServerChange>
+</mp:Properties>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest package="M3">
+	<RequiresVersion></RequiresVersion>
+	<Author>Lawson Software</Author>
+	<Url>http://www.lawson.com</Url>
+	<Title>M3 - Make, Move Maintain</Title>
+	<Description>M3 for Lawson Smart Office</Description>
+	<Version>9.1.2.0</Version>
+	<BuildDate>6/10/2010 9:45:06 PM</BuildDate>
+	<File name="MForms.dll" size="1417216" />
+	<Dependencies>
+		<Assembly name="DocumentArchive" />
+	</Dependencies>
+	<SettingsFile assembly="MForms" />
+	<LanguageFile assembly="MForms" />
+	<ApplicationGroup type="M3" description="M3 Application group" assemblyScheme="mforms" />
+	<Application scheme="mforms" applicationGroup="M3" assemblyName="MForms" factoryClass="MForms.MainController" profileSettingsClass="MForms.Profile.ProfileSettingsProvider" canSupplyTasks="true" metaTags="M3,MForms,Apps" />
+	<Application scheme="ibrix" applicationGroup="M3" assemblyName="MForms" factoryClass="M3.IBrix.IBrixApplication" canSupplyTasks="false" metaTags="M3,IBrix,Apps" />
+	<Widget scheme="Mango.Widgets.ProfileInfoWidget" applicationGroup="M3" assemblyName="MForms" factoryClass="Mango.Widgets.M3.ProfileInfoFactory" isSingleton="true"></Widget>
+	<Widget scheme="Mango.Widgets.BrowseLauncher" applicationGroup="M3" assemblyName="MForms" factoryClass="Mango.Widgets.M3.BrowseLauncherFactory"></Widget>
+	<Profile group="M3" enabled="false">
+		<WebService>
+			<AuthMode>Basic</AuthMode>
+			<url></url>
+		</WebService>
+		<MForms>
+			<AuthMode>Basic</AuthMode>
+			<ApplicationServer></ApplicationServer>
+			<RuntimeUrl></RuntimeUrl>
+			<RuntimeUrlLogon></RuntimeUrlLogon>
+			<Dev>False</Dev>
+			<DebitCredit></DebitCredit>
+			<CachedPanels></CachedPanels>
+		</MForms>
+		<M3Workplace Description="MWP data">
+			<M3WorkplaceURL></M3WorkplaceURL>
+			<ApplicationServerName></ApplicationServerName>
+			<SSOEnabled>True</SSOEnabled>
+		</M3Workplace>
+		<Companion>
+			<Url></Url>
+		</Companion>
+	</Profile>
+	<Profile group="EnterpriseSearch" enabled="false">
+		<M3 enabled="false">
+			<Type>M3</Type>
+			<ProductId>M3</ProductId>
+			<Host></Host>
+			<AuthMode>Basic</AuthMode>
+			<Protocol>http</Protocol>
+			<Port></Port>
+			<InstanceName></InstanceName>
+			<BaseFolder>/les/</BaseFolder>
+		</M3>
+	</Profile>
+	<Size>1417216</Size>
+</Manifest>

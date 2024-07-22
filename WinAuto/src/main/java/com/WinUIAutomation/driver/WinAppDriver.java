@@ -1,6 +1,7 @@
 package com.WinUIAutomation.driver;
 
 import com.WinUIAutomation.constants.WinAppConstants;
+import com.WinUIAutomation.helpers.WinAppHelpers;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -19,7 +20,7 @@ public enum WinAppDriver {
 
         @Override
         public DesiredCapabilities getOptions() {
-            String lawsonClientPath = WinAppConstants.LAWSON_CLIENT_PATH;
+            String lawsonClientPath = WinAppHelpers.getCurrentDir() + WinAppConstants.LAWSON_CLIENT_PATH;
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("platformName", "windows");
             capabilities.setCapability("deviceName", "WindowsPC");
@@ -32,7 +33,7 @@ public enum WinAppDriver {
 
     public abstract DesiredCapabilities getOptions();
     private static void openLawSonApp() {
-        String lawSonAppDirect = WinAppConstants.LAWSON_DIRECT_LINK;
+        String lawSonAppDirect = WinAppHelpers.getCurrentDir() + WinAppConstants.LAWSON_DIRECT_LINK;
 
         ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "start", lawSonAppDirect);
         processBuilder.redirectErrorStream(true);

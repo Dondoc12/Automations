@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly name="Mango.Core">
+	<area name="stringdictionary">
+		<entry name="AuthenticateErrror" type="" comment="">Authentication error</entry>
+		<entry name="CommunicationError" type="" comment="">Communication error</entry>
+		<entry name="Error" type="" comment="">Error</entry>
+		<entry name="hdrClientSettings" type="" comment="">Lawson Smart Office</entry>
+		<entry name="hdrM3SystemSettings" type="" comment="">M3 Transactions</entry>
+		<entry name="hdrLandmarkSystemSettings" type="" comment="">Specials</entry>
+		<entry name="hdrMFormsSettings" type="" comment="">MForms</entry>
+		<entry name="hdrPFSystemSettings" type="" comment="">Workflows</entry>
+		<entry name="hdrLBISystemSettings" type="" comment="">Analysis</entry>
+		<entry name="hdrS3SystemSettings" type="" comment="">S3 Transactions</entry>
+		<entry name="msgClientSettings" type="" comment="">The settings for the Lawson Smart Office</entry>
+		<entry name="msgM3SystemSettings" type="" comment="">The system settings for the M3 applications</entry>
+		<entry name="msgLandmarkSystemSettings" type="" comment="">The system settings for the Landmark applications</entry>
+		<entry name="msgMFormsSettings" type="" comment="">The settings for the MForms applications</entry>
+		<entry name="msgPFSystemSettings" type="" comment="">The settings for the Process Server applications</entry>
+		<entry name="msgLBISystemSettings" type="" comment="">The settings for the Business Intelligence applications</entry>
+		<entry name="msgS3SystemSettings" type="" comment="">The system settings for the S3 applications</entry>
+		<entry name="hdrUpdatedTheLocalDB" type="" comment="">Local Database</entry>
+		<entry name="msgUpdatedTheLocalDB" type="" comment="">The local database has been updated to a new version. The Lawson Smart Office will shutdown now. Please restart it afterwards!</entry>
+		<entry name="ServerCouldNotBeReached" type="" comment="">The server could not be reached, no communication will take place with the server. Please verify the address {0}.</entry>
+		<entry name="ServerNotLoggedIn" type="" comment="">The server failed to logged in specified user.</entry>
+		<entry name="ServerTimeout" type="" comment="">The connection to the server timed out.</entry>
+		<entry name="ServerTimeoutDescription" type="" comment="">The reason might be some sort of network problem. Try again, or restart the application.</entry>
+		<entry name="SSLCertNotAccepted" type="" comment="">SSL Certificate not accepted</entry>
+		<entry name="SSLCertNotAcceptedDetails" type="" comment="">Due to unfortunate circumstances, you have not previously accepted the SSL certificate on the Lawson Smart Office server. Please do so, and try again.</entry>
+		<entry name="UnknownError" type="" comment="">Unknown Error</entry>
+		<entry name="WrongPwd" type="" comment="">You have typed in the wrong user ID or password. Please try again. Note that too many failed attempts will lock out your account.</entry>
+		<entry name="MissingProfileOnServer" type="" comment="">System Profile Missing</entry>
+		<entry name="MissingProfileOnServerDetails" type="" comment="">The System Profile {0} defined in the user settings on the client cannot be found on the server. The System Profile has now reverted to the default System Profile {1}.</entry>
+		<entry name="MissingDefaultProfileOnServerDetails" type="" comment="">The default System Profile {0} set on the client cannot be found on the server. The application can not run. Please contact your system administrator. The application will shut down when you confirm by pressing the OK button.</entry>
+		<entry name="LoadSettingsProfileErrorDetails" type="msg" comment="Detail message when the client can not be started">There was a problem retreiving settings or profile information from the server. The application can not run. Please contact your system administrator. The application will shut down when you confirm by pressing the OK button.</entry>
+		<entry name="hdrUnsuportedClientVersion" type="" comment="">Unsupported version</entry>
+		<entry name="msgUnsuportedClientVersion" type="" comment="">This version of Lawson Smart Office is not supported by the server. Please contact your system administrator. The application will shut down when you press the OK button.</entry>
+		<entry name="hdrVerifyServer" type="" comment="">Unable to connect to server</entry>
+		<entry name="msgVerifyServer" type="" comment="">The client could not connect to the server. Please contact your system administrator. Possible reasons for failure are that the server version is too old or the server is not configured correctly.</entry>
+		<entry name="msgInitializeApps" type="" comment="">Initializing applications...</entry>
+		<entry name="msgMissingSettings" type="" comment="">Cannot find property {0} in settings file. Please contact your system administrator and check your server configuration. The application will shutdown when you press the OK button.</entry>
+		<entry name="msgDoublePropertyScope" type="" comment="">Property {0} is marked as both user and application scope. Please contact your system administrator and check your server configuration. The application will shutdown when you press the OK button.</entry>
+		<entry name="hdrSystemProfileError" type="" comment="">System Profile Error</entry>
+		<entry name="msgSystemProfileError" type="" comment="">The System Profile is not configured correctly. Please contact your system administrator.</entry>
+		<entry name="hdrServerURLMissing" type="" comment="">"Missing Server URL"</entry>
+		<entry name="msgServerURLMissing" type="" comment="">"No Server URL was specified. Please verify your environment."</entry>
+		<entry name="hdrAppDefAdmin" type="" comment="Is shown as a top node in the Navigator">Administration Tools</entry>
+	</area>
+</assembly>

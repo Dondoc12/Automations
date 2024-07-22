@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  <WidgetSettingsDefinitions version="1.0">
+    <WidgetSettings id="DW.Widgets.ShortcutNote" assemblyName="Mango.UI" factoryClass="Mango.Widgets.ShortcutNoteFactory">
+      <Properties>
+        <Property name="Name" readOnly="true">
+          <DefaultValue>DW Master List</DefaultValue>
+        </Property>
+        <Property name="link" readOnly="true">
+          <DefaultValue>https://uat-m3x-so.talgroup.com/standard-garment-finishing-list.html</DefaultValue>
+        </Property>
+      </Properties>
+      <Title>DW Shortcut</Title>
+      <Description>The list for Dipping and Washing Type used in M3</Description>
+    </WidgetSettings>
+  </WidgetSettingsDefinitions>
+  <Hash>OvLRurbd4gyQGbkNNfGuJ6ngCGtRe/mdurt4iKFBueg=</Hash>
+  <mp:LastServerChange xmlns:mp="http://schemas.intentia.net/Mango/Settings/Properties">2024-06-04T03:43:34</mp:LastServerChange>
+</Definitions>
