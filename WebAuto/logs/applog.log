@@ -26,3 +26,71 @@
 [INFO] 22-07-2024 09:34:04 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
 [INFO] 22-07-2024 09:34:06 [main] [LogUtils] - ********** RUN FINISHED **********
 [INFO] 22-07-2024 09:34:06 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\22_07_2024_10_54_04_ExtentReports.html
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:54:04 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 22-07-2024 10:54:11 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 22-07-2024 10:54:13 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:54:13 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 22-07-2024 10:54:13 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (2654bc25-e235-460f-ac08-64333bc1aaf2)
+[INFO] 22-07-2024 10:54:13 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 22-07-2024 10:54:13 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:54:15 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 10:54:15 [main] [LogUtils] - =====> End Suite: Web Tests
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\22_07_2024_10_56_27_ExtentReports.html
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:56:27 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 10:56:32 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 22-07-2024 10:56:35 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:56:35 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 22-07-2024 10:56:35 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (f32453111cf059ac26aecfa35482b561)
+[INFO] 22-07-2024 10:56:36 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 22-07-2024 10:56:36 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:56:36 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 10:56:36 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\22_07_2024_10_57_14_ExtentReports.html
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:57:14 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 10:57:19 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 22-07-2024 10:57:21 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:57:21 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 22-07-2024 10:57:21 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (c07887f64e33936b0bd19388aa5f915d)
+[INFO] 22-07-2024 10:57:21 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 22-07-2024 10:57:21 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:57:22 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 10:57:22 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\22_07_2024_10_59_43_ExtentReports.html
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:59:43 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 22-07-2024 10:59:48 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 22-07-2024 10:59:51 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:59:51 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 22-07-2024 10:59:51 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (8b5f9993-9a84-4c51-9f5a-4860fe9b83da)
+[INFO] 22-07-2024 10:59:53 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 22-07-2024 10:59:53 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 10:59:57 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 10:59:57 [main] [LogUtils] - =====> End Suite: Web Tests

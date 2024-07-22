@@ -52,3 +52,19 @@
 [INFO] 22-07-2024 09:29:14 [main] [WinAppLogUtils] - Screenshot taken: test
 [INFO] 22-07-2024 09:29:16 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
 [INFO] 22-07-2024 09:29:16 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_10_55_37_ExtentReports.html
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 22-07-2024 10:55:38 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
