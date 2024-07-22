@@ -1,8 +1,8 @@
 package example;
 
 public class data {
-    public static String userName = "";
-    public static String password = "";
+    public static String userName = "techvify5";
+    public static String password = "exj?6RTakxrh";
     public static String searchData = "mforms://cmp500503";
     public static String OpenVMIAPI = "OSS421";
     public static String WareHouseValue = "015";
