@@ -1,11 +1,11 @@
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - Loaded all properties files.
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - ********** RUN STARTED **********
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - Loaded all properties files.
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - Link Extent Report: D:\Automations\WebAuto\reports/ExtentReports\20_07_2024_10_43_14_ExtentReports.html
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - Extent Reports is installed.
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - =====> Starting Suite: Surefire suite
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - ********** RUN FINISHED **********
-[INFO] 20-07-2024 10:43:14 [main] [LogUtils] - =====> End Suite: Surefire suite
+[INFO] 22-07-2024 09:21:49 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 09:21:49 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 09:21:49 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 09:21:49 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 09:21:49 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 09:21:49 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\22_07_2024_09_21_49_ExtentReports.html
+[INFO] 22-07-2024 09:21:50 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 09:21:50 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 09:21:50 [main] [LogUtils] - =====> Starting Suite: Surefire suite
+[INFO] 22-07-2024 09:21:50 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 09:21:50 [main] [LogUtils] - =====> End Suite: Surefire suite

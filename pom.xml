@@ -34,7 +34,7 @@
     </dependencies>
     <profiles>
         <profile>
-            <id>suite2</id>
+            <id>winsuite2</id>
             <build>
                 <plugins>
                     <plugin>
@@ -43,7 +43,7 @@
                         <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/suites/suite2.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/suites/winsuite2.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
