@@ -9,3 +9,20 @@
 [INFO] 22-07-2024 09:21:50 [main] [LogUtils] - =====> Starting Suite: Surefire suite
 [INFO] 22-07-2024 09:21:50 [main] [LogUtils] - ********** RUN FINISHED **********
 [INFO] 22-07-2024 09:21:50 [main] [LogUtils] - =====> End Suite: Surefire suite
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\22_07_2024_09_33_53_ExtentReports.html
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 09:33:53 [main] [LogUtils] - =====> Starting Suite: Web Tests
+[INFO] 22-07-2024 09:34:02 [main] [LogUtils] - Test case: end111 is starting...
+[INFO] 22-07-2024 09:34:04 [main] [LogUtils] - Open website with URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 09:34:04 [main] [LogUtils] - Test case: end111 is passed.
+[INFO] 22-07-2024 09:34:04 [main] [LogUtils] - Driver for Screenshot: FirefoxDriver: firefox on windows (27f1effb-949b-4824-8896-d5244fe11668)
+[INFO] 22-07-2024 09:34:04 [main] [LogUtils] - Screenshot taken: end111
+[INFO] 22-07-2024 09:34:04 [main] [LogUtils] - Screenshot taken current URL: https://www.google.com.vn/?hl=vi
+[INFO] 22-07-2024 09:34:06 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 09:34:06 [main] [LogUtils] - =====> End Suite: Web Tests
