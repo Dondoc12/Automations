@@ -11,6 +11,7 @@ import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
+import pageObject.pageObject;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -24,7 +25,6 @@ public class BaseTest {
         openWinAppDriver();
         WindowsDriver<WindowsElement> driver = WinAppDriver.valueOf(appName).createDriver();
         WinAppDriverManagement.setDriver(driver);
-        System.out.println("Driver initialized successfully");
     }
 
     @AfterMethod(alwaysRun = true)
@@ -73,7 +73,6 @@ public class BaseTest {
 
         try {
             Process process = processBuilder.start();
-
             process.waitFor();
             WinAppLogUtils.info("WinAppDriver is started");
         } catch (IOException e) {
