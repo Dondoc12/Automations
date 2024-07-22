@@ -15,6 +15,6 @@ public class WinAppEmailConfigs {
     public static final String FROM = "dondocim@gmail.com";
     public static final String PASSWORD = "mqpbezyjwcewqjqb";
 
-    public static final String[] TO = {""};
+    public static final String[] TO = {"letong.datus@gmail.com"};
     public static final String SUBJECT = WinAppConstants.REPORT_TITLE;
 }

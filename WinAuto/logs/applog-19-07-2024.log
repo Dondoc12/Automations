@@ -1,0 +1,686 @@
+[INFO] 19-07-2024 13:44:26 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_14_00_44_ExtentReports.html
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 19-07-2024 14:00:44 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - No Folder: D:\ffbf\WinAuto\ExportData/Images
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - Folder created: D:\ffbf\WinAuto\ExportData\Images
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:00:44 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 19-07-2024 14:01:39 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:01:39 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:01:39 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:01:39 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:01:40 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:01:40 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_14_01_40_ExtentReports.html
+[INFO] 19-07-2024 14:01:40 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:01:40 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:01:40 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 19-07-2024 14:01:46 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 14:01:46 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:01:49 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 14:01:51 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 14:01:54 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 14:02:07 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 14:02:11 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:02:14 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:02:24 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:02:30 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:02:33 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:02:36 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:02:49 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 19-07-2024 14:02:52 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[ERROR] 19-07-2024 14:03:29 [main] [WinAppLogUtils] - Timeout waiting for the element ready to click. [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[ERROR] 19-07-2024 14:03:29 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 14:03:29 [main] [WinAppLogUtils] - java.lang.AssertionError: Timeout waiting for the element ready to click. [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 14:03:29 [main] [WinAppLogUtils] - No Folder: D:\ffbf\WinAuto\ExportData/Images
+[INFO] 19-07-2024 14:03:29 [main] [WinAppLogUtils] - Folder created: D:\ffbf\WinAuto\ExportData\Images
+[INFO] 19-07-2024 14:03:29 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 14:03:30 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 14:03:33 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:03:33 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_14_04_37_ExtentReports.html
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:04:37 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_14_05_31_ExtentReports.html
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:05:31 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 14:05:38 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 14:05:38 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:05:40 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 14:05:42 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 14:05:44 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 14:05:44 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 14:05:44 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 14:05:44 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: RemoteWebDriver
+[INFO] 19-07-2024 14:05:44 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 14:05:44 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:05:44 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 14:06:23 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:06:23 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:06:23 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:06:23 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:06:23 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:06:24 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_14_06_23_ExtentReports.html
+[INFO] 19-07-2024 14:06:24 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:06:24 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:06:24 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 14:06:30 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 14:06:30 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:06:32 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 14:06:34 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 14:06:38 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 14:06:51 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 14:06:54 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:06:59 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:07:05 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:07:13 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:07:16 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:07:20 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:07:37 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 19-07-2024 14:07:39 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 14:07:41 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 14:07:41 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 14:07:41 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 14:07:44 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:07:44 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_14_45_02_ExtentReports.html
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:45:02 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 14:45:08 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 14:45:08 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:45:11 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 14:45:13 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 14:45:17 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 14:45:27 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 14:45:34 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:45:38 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:45:46 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:45:54 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:45:57 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:46:01 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:46:18 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 19-07-2024 14:46:21 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 14:46:22 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 14:46:22 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 14:46:22 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 14:46:25 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:46:25 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_14_54_09_ExtentReports.html
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 14:54:09 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 14:54:15 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 14:54:15 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 14:54:17 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 14:54:19 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 14:54:23 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 14:54:36 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 14:54:39 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:54:43 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:54:49 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:54:58 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 14:55:00 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 14:55:04 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 14:55:21 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 19-07-2024 14:55:24 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 14:55:30 [main] [WinAppLogUtils] - Scroll to element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 14:55:39 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 14:55:39 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 14:55:39 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 14:55:41 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 14:55:41 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_04_37_ExtentReports.html
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:04:37 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:04:43 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:04:43 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:04:45 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:04:47 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:04:51 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:05:03 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:05:06 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:05:11 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 15:05:19 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 15:05:27 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 15:05:30 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:05:34 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 15:05:51 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 19-07-2024 15:05:53 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 15:06:20 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:06:20 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:06:21 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:06:23 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:06:23 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:06:45 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:06:45 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:06:45 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:06:45 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:06:45 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests (0)
+[INFO] 19-07-2024 15:06:51 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:06:53 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:06:55 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:06:58 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:07:11 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:07:14 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:07:18 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 15:07:24 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 15:07:32 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 15:07:35 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:07:40 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 15:07:56 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 19-07-2024 15:07:59 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 15:08:27 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:08:27 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:08:28 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:08:30 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:08:30 [main] [WinAppLogUtils] - =====> End Suite: Win Tests (0)
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_11_20_ExtentReports.html
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:11:20 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:11:26 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:11:26 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:11:28 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:11:31 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:11:34 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:11:43 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:11:49 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:11:56 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:11:56 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:11:56 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:11:56 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: RemoteWebDriver
+[INFO] 19-07-2024 15:11:56 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:11:56 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:11:56 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_12_49_ExtentReports.html
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:12:49 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:12:55 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:12:55 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:12:57 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:13:00 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:13:03 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - org.openqa.selenium.WebDriverException: An unknown error occurred in the remote end while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:/Users/david.le/AppData/L..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: D1F66161-A024-492F-9419-2E25E87D96A7
+[INFO] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:13:11 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_14_31_ExtentReports.html
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:14:31 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:14:37 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:14:37 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:14:39 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:14:42 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:14:45 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - org.openqa.selenium.WebDriverException: An unknown error occurred in the remote end while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:/Users/david.le/AppData/L..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: 1E265438-18D6-46F6-B989-C25A7D4A94E5
+[INFO] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:14:53 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_16_54_ExtentReports.html
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:16:54 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:17:00 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:17:00 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:17:03 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:17:05 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:17:08 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:17:08 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:17:08 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:17:08 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:17:09 [main] [WinAppLogUtils] - LawsonClient.exe is closed.
+[INFO] 19-07-2024 15:17:09 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:17:09 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_17_25_ExtentReports.html
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:17:25 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:17:31 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:17:31 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:17:34 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:17:36 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:17:39 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:17:39 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:17:39 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:17:39 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:17:40 [main] [WinAppLogUtils] - LawsonClient.exe is closed.
+[INFO] 19-07-2024 15:17:40 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:17:40 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_18_22_ExtentReports.html
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:18:22 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:18:28 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:18:28 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:18:30 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:18:32 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:18:36 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - org.openqa.selenium.WebDriverException: An unknown error occurred in the remote end while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:/Users/david.le/AppData/L..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: 22B9BAC6-FA76-471B-95A7-B905E029A3C2
+[INFO] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:18:48 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:22:35 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:22:35 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:22:35 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:22:35 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:22:35 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:22:35 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_22_35_ExtentReports.html
+[INFO] 19-07-2024 15:22:36 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:22:36 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:22:36 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 19-07-2024 15:22:41 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:22:41 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:22:44 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:22:46 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:22:49 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:23:02 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[ERROR] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - Element not exist. By.accessibilityId: PART_Field
+[ERROR] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - java.lang.AssertionError: Element not exist. By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - org.openqa.selenium.WebDriverException: An unknown error occurred in the remote end while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:/Users/david.le/AppData/L..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: 58E1A248-FE43-4621-97E9-B101E071F048
+[INFO] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:23:32 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_25_14_ExtentReports.html
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:25:14 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 19-07-2024 15:25:20 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:25:20 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:25:22 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:25:24 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:25:28 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:25:39 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[ERROR] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - Element not exist. By.accessibilityId: PART_Field
+[ERROR] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - java.lang.AssertionError: Element not exist. By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - org.openqa.selenium.WebDriverException: An unknown error occurred in the remote end while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:/Users/david.le/AppData/L..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: 5AA93E07-3A8B-47B4-A7A0-A78D68EC08BF
+[INFO] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:26:10 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_29_00_ExtentReports.html
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:29:00 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:29:06 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:29:06 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:29:09 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:29:11 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:29:14 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:29:27 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[ERROR] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - Element not exist. By.accessibilityId: PART_Field
+[ERROR] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - java.lang.AssertionError: Element not exist. By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - org.openqa.selenium.WebDriverException: An unknown error occurred in the remote end while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:/Users/david.le/AppData/L..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: 084A528B-8B09-44ED-A0C1-494C14A91EB5
+[INFO] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:29:57 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_31_19_ExtentReports.html
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:31:19 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:31:25 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:31:25 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:31:27 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:31:29 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:31:32 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:31:44 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:31:47 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:31:47 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:31:47 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:31:47 [main] [WinAppLogUtils] - LawsonClient.exe is closed.
+[INFO] 19-07-2024 15:31:47 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:31:47 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_32_18_ExtentReports.html
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:32:18 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:32:24 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:32:24 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:32:26 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:32:28 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:32:31 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:32:36 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:32:39 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:32:39 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:32:39 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:32:41 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:32:41 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_33_46_ExtentReports.html
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:33:46 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:33:52 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:33:52 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:33:54 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:33:57 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:34:00 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:34:05 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:34:11 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - Get Element By.accessibilityId: PART_SearchButton Error
+[ERROR] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - Timeout waiting for the element ready to click. By.accessibilityId: PART_SearchButton
+[ERROR] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - java.lang.AssertionError: Timeout waiting for the element ready to click. By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: C:/Users/david.le/AppData/L..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: BA45BE9D-7692-4379-A307-BF344AF68EF5
+[INFO] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:34:32 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_36_42_ExtentReports.html
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:36:42 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:36:48 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:36:48 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:36:51 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:36:53 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:36:56 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_45_07_ExtentReports.html
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:45:07 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:45:13 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:45:13 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:45:15 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:45:18 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:45:21 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:45:57 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:45:57 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 19-07-2024 15:45:57 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 19-07-2024 15:45:57 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: RemoteWebDriver
+[INFO] 19-07-2024 15:45:57 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:45:57 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:45:57 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_46_42_ExtentReports.html
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:46:42 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:46:48 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:46:48 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:46:50 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:46:53 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:46:56 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:47:08 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:47:12 [main] [WinAppLogUtils] - Clear and Fill mforms://cmp500503 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:47:16 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 15:47:24 [main] [WinAppLogUtils] - Verify element visible By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 15:47:33 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: ButtonOK
+[INFO] 19-07-2024 15:47:36 [main] [WinAppLogUtils] - Clear and Fill OSS421 on By.accessibilityId: PART_Field
+[INFO] 19-07-2024 15:47:40 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: PART_SearchButton
+[INFO] 19-07-2024 15:47:56 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: XT_0168
+[INFO] 19-07-2024 15:47:59 [main] [WinAppLogUtils] - Clicked on the element [[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}] -> class name: ListViewItem]
+[INFO] 19-07-2024 15:48:08 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:48:08 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:48:08 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:48:11 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:48:11 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:48:33 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:48:33 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:48:33 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:48:33 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:48:33 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests (0)
+[INFO] 19-07-2024 15:48:39 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:48:41 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:48:44 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:48:46 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:48:51 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:48:56 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:48:56 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:48:57 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:48:59 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:48:59 [main] [WinAppLogUtils] - =====> End Suite: Win Tests (0)
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_49_32_ExtentReports.html
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:49:32 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:49:38 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:49:38 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:49:40 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:49:43 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:49:45 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:49:51 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:49:56 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:49:56 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:49:56 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:49:58 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:49:58 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_50_27_ExtentReports.html
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - =====> Starting Suite: Surefire suite
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:50:27 [main] [WinAppLogUtils] - =====> End Suite: Surefire suite
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_15_50_35_ExtentReports.html
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 15:50:35 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 19-07-2024 15:50:42 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 19-07-2024 15:50:42 [main] [LogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 15:50:44 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 19-07-2024 15:50:46 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
+[INFO] 19-07-2024 15:50:48 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 19-07-2024 15:50:53 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 19-07-2024 15:50:58 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 19-07-2024 15:50:58 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 19-07-2024 15:50:59 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 19-07-2024 15:51:01 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 15:51:01 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_16_00_27_ExtentReports.html
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 16:00:27 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:00:28 [main] [WinAppLogUtils] - =====> Starting Suite: Surefire suite
+[INFO] 19-07-2024 16:00:28 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 16:00:28 [main] [WinAppLogUtils] - =====> End Suite: Surefire suite
+[INFO] 19-07-2024 16:01:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:01:07 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 19-07-2024 16:01:07 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:01:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 19-07-2024 16:01:07 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 19-07-2024 16:01:07 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\19_07_2024_16_01_07_ExtentReports.html
+[INFO] 19-07-2024 16:01:08 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 19-07-2024 16:01:08 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 19-07-2024 16:01:08 [main] [WinAppLogUtils] - =====> Starting Suite: Surefire suite
+[INFO] 19-07-2024 16:01:08 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 19-07-2024 16:01:08 [main] [WinAppLogUtils] - =====> End Suite: Surefire suite
