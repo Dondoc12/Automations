@@ -2,6 +2,7 @@ package com.WinUIAutomation.driver;
 
 import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.helpers.WinAppHelpers;
+import com.WinUIAutomation.keywords.WinUI;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -15,6 +16,7 @@ public enum WinAppDriver {
         @Override
         public WindowsDriver<WindowsElement> createDriver() throws MalformedURLException {
             openLawSonApp();
+            WinUI.sleep(3);
             return new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), getOptions());
         }
 
@@ -40,7 +42,7 @@ public enum WinAppDriver {
 
         try {
             Process process = processBuilder.start();
-            process.waitFor(); // Đợi cho đến khi quá trình hoàn thành
+            process.waitFor();
             System.out.println("Application launched successfully");
         } catch (IOException e) {
             e.printStackTrace();

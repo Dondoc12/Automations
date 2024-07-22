@@ -220,3 +220,29 @@ Session ID: BD288FA7-1EF7-4E2B-B4D9-46310ADF6708
 [INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
 [INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
 [INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_13_42_14_ExtentReports.html
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 22-07-2024 13:42:15 [main] [WinAppLogUtils] - WinAppDriver is started
+[INFO] 22-07-2024 13:42:21 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 22-07-2024 13:42:21 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-07-2024 13:42:24 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
+[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.windows.WindowsDriver
+Capabilities {app: D:\ffbf\WinAuto\2.0/87TZ2E1..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: F94A7F75-05C0-41FB-B77B-67BD668A99C9
+[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
