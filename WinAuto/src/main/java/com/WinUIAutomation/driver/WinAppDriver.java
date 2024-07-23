@@ -16,8 +16,14 @@ public enum WinAppDriver {
     LAWSON_CLIENT {
         @Override
         public WindowsDriver<WindowsElement> createDriver() throws MalformedURLException {
-            WinAppLogUtils.info("Start create driver");
-            return new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), getOptions());
+            try {
+                WinAppLogUtils.info("Start create driver");
+                return new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), getOptions());
+            }
+            catch (Exception e){
+                WinAppLogUtils.info("Create Driver Fail");
+            }
+            return null;
         }
 
         @Override
