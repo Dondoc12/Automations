@@ -1,6 +1,0 @@
-<dialogcontrol Version="1.1">
-  <hidden>
-    <type Type="Question" UTCTime="18/11/2016 2:07:03 AM" Header="LogOffLabel" Text="Log Off" Scheme="Canvas" />
-    <type Type="Question" UTCTime="12/21/2016 6:22:38 AM" Header="ShutDownLabel" Text="Shut Down" Scheme="Canvas" />
-  </hidden>
-</dialogcontrol>

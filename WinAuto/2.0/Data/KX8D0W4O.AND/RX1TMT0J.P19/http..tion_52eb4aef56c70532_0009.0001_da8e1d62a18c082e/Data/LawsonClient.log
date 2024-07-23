@@ -1,0 +1,126 @@
+2024-07-23 09:59:03,977 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 09:59:04,000 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - ---------------------
+2024-07-23 09:59:04,000 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -   Application Start  
+2024-07-23 09:59:04,000 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -    ---         ---   
+2024-07-23 09:59:04,000 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -      ---     ---     
+2024-07-23 09:59:04,000 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -        --- ---       
+2024-07-23 09:59:04,000 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -          ---         
+2024-07-23 09:59:04,001 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -           -          
+2024-07-23 09:59:04,001 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 09:59:04,001 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 09:59:04,016 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - Application is started in 'NetworkDeployed' mode with activation uri = https://sdcum3so1.talgroup.com/tal_lso01/LawsonClient.application?server=https://SDCUM3SO1.talgroup.com:10002/lws_lso01 from ApplicationDelpoyment
+2024-07-23 09:59:04,098 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseUrlParameters - Main server taken from URL parameter. Main server = https://SDCUM3SO1.talgroup.com:10002/lws_lso01
+2024-07-23 09:59:04,158 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.CheckForUpdates - Client deployment IsFirstRun=True. Language files will be updated.
+2024-07-23 09:59:04,162 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.DeployLanguage - Language files for en-US will be extracted to: C:\Users\david.le\AppData\Local\Apps\2.0\Data\KX8D0W4O.AND\RX1TMT0J.P19\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\Data\Resources\Localization\en-US
+2024-07-23 09:59:04,326 [Mango.Main] INFO  Mango.UI.Client.MangoApplication.GetWindowsLocale - Found language, language used is en-US
+2024-07-23 09:59:05,048 [5] INFO  Mango.Services.Helper.VerifyServer.Verify - LSO server https://SDCUM3SO1.talgroup.com:10002/lws_lso01 is used.
+2024-07-23 09:59:05,493 [5] INFO  Mango.Services.Helper.VerifyServer.Initialize - LWS version = 9.0.2.1_20110927
+2024-07-23 09:59:05,494 [5] INFO  Mango.Services.Helper.VerifyServer.Initialize - All calls to LWS are going to be made in a non-Grid way
+2024-07-23 10:00:00,343 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - ---------------------
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -   Application Start  
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -    ---         ---   
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -      ---     ---     
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -        --- ---       
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -          ---         
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -           -          
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:00:00,367 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:00:00,382 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - Application is started in 'NetworkDeployed' mode with activation uri =  from ApplicationDelpoyment
+2024-07-23 10:00:00,386 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - No ActivationURI specified
+2024-07-23 10:00:00,389 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseUrlParameters - Paramters not taken from URL parameters.
+2024-07-23 10:00:00,391 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseLocalParameters - Main server taken from Local parameter. Main server = https://SDCUM3SO1.talgroup.com:10002/lws_lso01
+2024-07-23 10:00:00,418 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.DeployLanguage - Language files for en-US will be extracted to: C:\Users\david.le\AppData\Local\Apps\2.0\Data\KX8D0W4O.AND\RX1TMT0J.P19\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\Data\Resources\Localization\en-US
+2024-07-23 10:00:00,850 [4] INFO  Mango.Services.Helper.VerifyServer.Verify - LSO server https://SDCUM3SO1.talgroup.com:10002/lws_lso01 is used.
+2024-07-23 10:00:01,257 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - LWS version = 9.0.2.1_20110927
+2024-07-23 10:00:01,258 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - All calls to LWS are going to be made in a non-Grid way
+2024-07-23 10:02:01,334 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - ---------------------
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -   Application Start  
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -    ---         ---   
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -      ---     ---     
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -        --- ---       
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -          ---         
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -           -          
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:02:01,369 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:02:01,389 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - Application is started in 'NetworkDeployed' mode with activation uri =  from ApplicationDelpoyment
+2024-07-23 10:02:01,395 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - No ActivationURI specified
+2024-07-23 10:02:01,401 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseUrlParameters - Paramters not taken from URL parameters.
+2024-07-23 10:02:01,404 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseLocalParameters - Main server taken from Local parameter. Main server = https://SDCUM3SO1.talgroup.com:10002/lws_lso01
+2024-07-23 10:02:01,441 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.DeployLanguage - Language files for en-US will be extracted to: C:\Users\david.le\AppData\Local\Apps\2.0\Data\KX8D0W4O.AND\RX1TMT0J.P19\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\Data\Resources\Localization\en-US
+2024-07-23 10:02:01,982 [4] INFO  Mango.Services.Helper.VerifyServer.Verify - LSO server https://SDCUM3SO1.talgroup.com:10002/lws_lso01 is used.
+2024-07-23 10:02:02,370 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - LWS version = 9.0.2.1_20110927
+2024-07-23 10:02:02,371 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - All calls to LWS are going to be made in a non-Grid way
+2024-07-23 10:02:08,171 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:02:08,193 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - ---------------------
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -   Application Start  
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -    ---         ---   
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -      ---     ---     
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -        --- ---       
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -          ---         
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -           -          
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:02:08,194 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:02:08,209 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - Application is started in 'NetworkDeployed' mode with activation uri =  from ApplicationDelpoyment
+2024-07-23 10:02:08,213 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - No ActivationURI specified
+2024-07-23 10:02:08,216 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseUrlParameters - Paramters not taken from URL parameters.
+2024-07-23 10:02:08,218 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseLocalParameters - Main server taken from Local parameter. Main server = https://SDCUM3SO1.talgroup.com:10002/lws_lso01
+2024-07-23 10:02:08,244 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.DeployLanguage - Language files for en-US will be extracted to: C:\Users\david.le\AppData\Local\Apps\2.0\Data\KX8D0W4O.AND\RX1TMT0J.P19\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\Data\Resources\Localization\en-US
+2024-07-23 10:02:08,695 [4] INFO  Mango.Services.Helper.VerifyServer.Verify - LSO server https://SDCUM3SO1.talgroup.com:10002/lws_lso01 is used.
+2024-07-23 10:02:09,083 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - LWS version = 9.0.2.1_20110927
+2024-07-23 10:02:09,083 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - All calls to LWS are going to be made in a non-Grid way
+2024-07-23 10:11:42,893 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - ---------------------
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -   Application Start  
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -    ---         ---   
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -      ---     ---     
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -        --- ---       
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -          ---         
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -           -          
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:11:42,917 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:11:42,932 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - Application is started in 'NetworkDeployed' mode with activation uri =  from ApplicationDelpoyment
+2024-07-23 10:11:42,936 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - No ActivationURI specified
+2024-07-23 10:11:42,939 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseUrlParameters - Paramters not taken from URL parameters.
+2024-07-23 10:11:42,941 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseLocalParameters - Main server taken from Local parameter. Main server = https://SDCUM3SO1.talgroup.com:10002/lws_lso01
+2024-07-23 10:11:42,967 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.DeployLanguage - Language files for en-US will be extracted to: C:\Users\david.le\AppData\Local\Apps\2.0\Data\KX8D0W4O.AND\RX1TMT0J.P19\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\Data\Resources\Localization\en-US
+2024-07-23 10:11:43,388 [4] INFO  Mango.Services.Helper.VerifyServer.Verify - LSO server https://SDCUM3SO1.talgroup.com:10002/lws_lso01 is used.
+2024-07-23 10:11:43,798 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - LWS version = 9.0.2.1_20110927
+2024-07-23 10:11:43,799 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - All calls to LWS are going to be made in a non-Grid way
+2024-07-23 10:13:53,588 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:13:53,610 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - ---------------------
+2024-07-23 10:13:53,610 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -   Application Start  
+2024-07-23 10:13:53,611 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -    ---         ---   
+2024-07-23 10:13:53,611 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -      ---     ---     
+2024-07-23 10:13:53,611 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -        --- ---       
+2024-07-23 10:13:53,611 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -          ---         
+2024-07-23 10:13:53,611 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -           -          
+2024-07-23 10:13:53,611 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:13:53,611 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:13:53,626 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - Application is started in 'NetworkDeployed' mode with activation uri =  from ApplicationDelpoyment
+2024-07-23 10:13:53,629 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - No ActivationURI specified
+2024-07-23 10:13:53,633 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseUrlParameters - Paramters not taken from URL parameters.
+2024-07-23 10:13:53,635 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseLocalParameters - Main server taken from Local parameter. Main server = https://SDCUM3SO1.talgroup.com:10002/lws_lso01
+2024-07-23 10:13:53,662 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.DeployLanguage - Language files for en-US will be extracted to: C:\Users\david.le\AppData\Local\Apps\2.0\Data\KX8D0W4O.AND\RX1TMT0J.P19\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\Data\Resources\Localization\en-US
+2024-07-23 10:13:54,106 [4] INFO  Mango.Services.Helper.VerifyServer.Verify - LSO server https://SDCUM3SO1.talgroup.com:10002/lws_lso01 is used.
+2024-07-23 10:13:54,578 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - LWS version = 9.0.2.1_20110927
+2024-07-23 10:13:54,579 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - All calls to LWS are going to be made in a non-Grid way
+2024-07-23 10:14:56,514 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - ---------------------
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -   Application Start  
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -    ---         ---   
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -      ---     ---     
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -        --- ---       
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -          ---         
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup -           -          
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:14:56,538 [1] INFO  Mango.UI.Client.MangoApplication.OnStartup - 
+2024-07-23 10:14:56,553 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - Application is started in 'NetworkDeployed' mode with activation uri =  from ApplicationDelpoyment
+2024-07-23 10:14:56,557 [1] INFO  Mango.Services.Helper.ApplicationParameters.GetQueryStringParameters - No ActivationURI specified
+2024-07-23 10:14:56,561 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseUrlParameters - Paramters not taken from URL parameters.
+2024-07-23 10:14:56,562 [1] INFO  Mango.Services.Helper.ApplicationParameters.UseLocalParameters - Main server taken from Local parameter. Main server = https://SDCUM3SO1.talgroup.com:10002/lws_lso01
+2024-07-23 10:14:56,590 [Mango.Main] INFO  Mango.Core.Util.LanguageManagerBase.DeployLanguage - Language files for en-US will be extracted to: C:\Users\david.le\AppData\Local\Apps\2.0\Data\KX8D0W4O.AND\RX1TMT0J.P19\http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e\Data\Resources\Localization\en-US
+2024-07-23 10:14:57,028 [4] INFO  Mango.Services.Helper.VerifyServer.Verify - LSO server https://SDCUM3SO1.talgroup.com:10002/lws_lso01 is used.
+2024-07-23 10:14:57,728 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - LWS version = 9.0.2.1_20110927
+2024-07-23 10:14:57,729 [4] INFO  Mango.Services.Helper.VerifyServer.Initialize - All calls to LWS are going to be made in a non-Grid way

@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ColumnDefinitions>
-	<cd key="PMA095BS_1" order="S1OPNO,S1ROID,S1TRDT,S1PLGR,S1UPIT,S1UMAT,S1MAQA,S1SCQA,S1SCRE,S1RUDI,S1REND,S1REMK">NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN</cd>
-</ColumnDefinitions>

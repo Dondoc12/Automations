@@ -17,6 +17,11 @@ public enum WinAppDriver {
         @Override
         public WindowsDriver<WindowsElement> createDriver() throws MalformedURLException {
             openLawSonApp();
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             WinAppLogUtils.info("Start create driver");
             return new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), getOptions());
         }

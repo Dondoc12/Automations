@@ -1,439 +1,95 @@
-[INFO] 22-07-2024 09:23:48 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:23:48 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 09:23:48 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 09:23:48 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:23:48 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 09:23:48 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_09_23_48_ExtentReports.html
-[INFO] 22-07-2024 09:23:49 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 09:23:49 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 09:23:49 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
-[INFO] 22-07-2024 09:24:04 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 09:24:04 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:24:06 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 09:24:08 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 09:24:10 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_09_24_53_ExtentReports.html
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 09:24:53 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
-[INFO] 22-07-2024 09:24:59 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 09:24:59 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:25:02 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 09:25:04 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 09:25:06 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
-[INFO] 22-07-2024 09:25:20 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
-[INFO] 22-07-2024 09:25:22 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 09:25:22 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 09:25:22 [main] [WinAppLogUtils] - Screenshot taken: test
-[INFO] 22-07-2024 09:25:24 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 09:25:24 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_09_28_47_ExtentReports.html
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 09:28:47 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
-[INFO] 22-07-2024 09:28:53 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 09:28:53 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 09:28:56 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 09:28:58 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 09:29:00 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
-[INFO] 22-07-2024 09:29:09 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
-[INFO] 22-07-2024 09:29:14 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 09:29:14 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=C:/Users/david.le/AppData/Local/Apps/2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 09:29:14 [main] [WinAppLogUtils] - Screenshot taken: test
-[INFO] 22-07-2024 09:29:16 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 09:29:16 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_10_55_37_ExtentReports.html
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 10:55:37 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
-[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 10:55:38 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 10:55:38 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_11_20_33_ExtentReports.html
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 11:20:33 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - Test case: the is starting...
-[ERROR] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - FAILED !! Test case the is failed.
-[ERROR] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 11:20:34 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 11:20:34 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_11_21_40_ExtentReports.html
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 11:21:40 [main] [WinAppLogUtils] - Test case: the is starting...
-[INFO] 22-07-2024 11:21:40 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 11:23:40 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_11_23_41_ExtentReports.html
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Test case: the is starting...
-[INFO] 22-07-2024 11:23:41 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Test case: the is passed.
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[ERROR] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - FAILED !! Test case the is failed.
-[ERROR] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because the return value of "com.WinUIAutomation.driver.WinAppDriverManagement.getDriver()" is null
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 11:23:41 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_07_29_ExtentReports.html
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:07:29 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 12:07:36 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 12:07:36 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 12:08:29 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_08_29_ExtentReports.html
-[INFO] 22-07-2024 12:08:30 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 12:08:30 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:08:30 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 12:08:36 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 12:08:36 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_09_10_ExtentReports.html
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:09:10 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 12:09:15 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 12:09:15 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_28_28_ExtentReports.html
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:28:28 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 12:28:35 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 12:28:35 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_12_28_45_ExtentReports.html
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 12:28:45 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 12:28:54 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 12:28:54 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_13_24_18_ExtentReports.html
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 13:24:18 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 13:24:19 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 13:24:26 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 13:24:26 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 13:24:30 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 13:24:33 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[ERROR] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\23_07_2024_10_13_50_ExtentReports.html
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:13:50 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 23-07-2024 10:13:51 [main] [WinAppLogUtils] - WinAppDriver is started
+[INFO] 23-07-2024 10:13:51 [main] [WinAppLogUtils] - Application launched successfully
+[INFO] 23-07-2024 10:13:51 [main] [WinAppLogUtils] - Start create driver
+[INFO] 23-07-2024 10:13:52 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 23-07-2024 10:13:52 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 23-07-2024 10:13:52 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 23-07-2024 10:13:52 [main] [LogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:13:52 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 23-07-2024 10:13:52 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 23-07-2024 10:13:52 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\23_07_2024_10_14_53_ExtentReports.html
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:14:53 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 23-07-2024 10:14:54 [main] [WinAppLogUtils] - WinAppDriver is started
+[INFO] 23-07-2024 10:14:54 [main] [WinAppLogUtils] - Application launched successfully
+[INFO] 23-07-2024 10:14:59 [main] [WinAppLogUtils] - Start create driver
+[INFO] 23-07-2024 10:15:00 [main] [WinAppLogUtils] - Test case: test is starting...
+[ERROR] 23-07-2024 10:15:00 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 23-07-2024 10:15:00 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[INFO] 23-07-2024 10:15:00 [main] [LogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:15:00 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 23-07-2024 10:15:00 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 23-07-2024 10:15:00 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\23_07_2024_10_15_14_ExtentReports.html
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - WinAppDriver is started
+[INFO] 23-07-2024 10:15:14 [main] [WinAppLogUtils] - Application launched successfully
+[INFO] 23-07-2024 10:15:19 [main] [WinAppLogUtils] - Start create driver
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\23_07_2024_10_16_07_ExtentReports.html
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - WinAppDriver is started
+[INFO] 23-07-2024 10:16:07 [main] [WinAppLogUtils] - Application launched successfully
+[INFO] 23-07-2024 10:16:12 [main] [WinAppLogUtils] - Start create driver
+[INFO] 23-07-2024 10:16:49 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 23-07-2024 10:16:49 [main] [LogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:16:49 [main] [WinAppLogUtils] - Starting test........
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\23_07_2024_10_16_53_ExtentReports.html
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 23-07-2024 10:16:53 [main] [WinAppLogUtils] - WinAppDriver is started
+[INFO] 23-07-2024 10:16:54 [main] [WinAppLogUtils] - Application launched successfully
+[INFO] 23-07-2024 10:16:59 [main] [WinAppLogUtils] - Start create driver
+[INFO] 23-07-2024 10:17:09 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 23-07-2024 10:17:09 [main] [LogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:17:09 [main] [WinAppLogUtils] - Starting test........
+[INFO] 23-07-2024 10:17:12 [main] [WinAppLogUtils] - Clear and Fill techvify5 on By.accessibilityId: User
+[INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - Clear and Fill exj?6RTakxrh on By.accessibilityId: Password
+[INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/QKJWK9HE.2O8/N6EXPK7D.ZX8/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[ERROR] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
 Driver info: io.appium.java_client.windows.WindowsDriver
-Capabilities {app: D:\ffbf\WinAuto\2.0/87TZ2E1..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
-Session ID: BD288FA7-1EF7-4E2B-B4D9-46310ADF6708
-[INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 13:24:35 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_13_42_14_ExtentReports.html
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 13:42:14 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 13:42:15 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 13:42:21 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 13:42:21 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 13:42:24 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[ERROR] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: io.appium.java_client.windows.WindowsDriver
-Capabilities {app: D:\ffbf\WinAuto\2.0/87TZ2E1..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
-Session ID: F94A7F75-05C0-41FB-B77B-67BD668A99C9
-[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 13:42:25 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 14:24:55 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:24:55 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 14:24:55 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 14:24:55 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:24:55 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 14:24:55 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_14_24_55_ExtentReports.html
-[INFO] 22-07-2024 14:24:56 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 14:24:56 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 14:24:56 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
-[INFO] 22-07-2024 14:24:56 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 14:24:56 [main] [WinAppLogUtils] - Application launched successfully
-[INFO] 22-07-2024 14:24:56 [main] [WinAppLogUtils] - Start create driver
-[INFO] 22-07-2024 14:25:02 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 14:25:02 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:25:02 [main] [WinAppLogUtils] - Starting test........
-[INFO] 22-07-2024 14:25:05 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 14:25:07 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 14:25:09 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
-[INFO] 22-07-2024 14:25:18 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 14:25:18 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[ERROR] 22-07-2024 14:25:18 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 14:25:18 [main] [WinAppLogUtils] - org.openqa.selenium.WebDriverException: Connection refused: getsockopt
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: driver.version: RemoteWebDriver
-[INFO] 22-07-2024 14:25:18 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 14:25:18 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 14:25:18 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
-[INFO] 22-07-2024 14:25:37 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:25:37 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 14:25:37 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 14:25:37 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_14_25_38_ExtentReports.html
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - Application launched successfully
-[INFO] 22-07-2024 14:25:38 [main] [WinAppLogUtils] - Start create driver
-[INFO] 22-07-2024 14:25:44 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 14:25:44 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:25:44 [main] [WinAppLogUtils] - Starting test........
-[INFO] 22-07-2024 14:25:46 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 14:25:49 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 14:25:51 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
-[INFO] 22-07-2024 14:26:05 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
-[INFO] 22-07-2024 14:26:08 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 14:26:08 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 14:26:08 [main] [WinAppLogUtils] - Screenshot taken: test
-[INFO] 22-07-2024 14:26:11 [main] [WinAppLogUtils] - WinAppDriver.exe is closed.
-[INFO] 22-07-2024 14:26:11 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 14:26:11 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_14_33_59_ExtentReports.html
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
-[INFO] 22-07-2024 14:33:59 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 14:34:00 [main] [WinAppLogUtils] - Application launched successfully
-[INFO] 22-07-2024 14:34:00 [main] [WinAppLogUtils] - Start create driver
-[INFO] 22-07-2024 14:34:06 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 14:34:06 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 14:34:06 [main] [WinAppLogUtils] - Starting test........
-[INFO] 22-07-2024 14:34:08 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 14:34:10 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 14:34:12 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
-[INFO] 22-07-2024 14:34:42 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 14:34:42 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[ERROR] 22-07-2024 14:34:42 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 14:34:42 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: io.appium.java_client.windows.WindowsDriver
-Capabilities {app: D:\ffbf\WinAuto\2.0/87TZ2E1..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
-Session ID: EC6B5431-2056-4B9C-93C2-30C4B99AA20F
-[INFO] 22-07-2024 14:34:42 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 14:34:42 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 14:34:42 [main] [WinAppLogUtils] - =====> End Suite: Win Tests
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_15_01_50_ExtentReports.html
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:01:50 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 15:01:51 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 15:01:51 [main] [WinAppLogUtils] - Application launched successfully
-[INFO] 22-07-2024 15:01:51 [main] [WinAppLogUtils] - Start create driver
-[INFO] 22-07-2024 15:01:52 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 15:01:52 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 15:01:52 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 15:01:52 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:01:52 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 15:01:52 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 15:01:52 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_15_02_28_ExtentReports.html
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:02:28 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 15:02:29 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 15:02:29 [main] [WinAppLogUtils] - Application launched successfully
-[INFO] 22-07-2024 15:02:29 [main] [WinAppLogUtils] - Start create driver
-[INFO] 22-07-2024 15:02:30 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 15:02:30 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 15:02:30 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 15:02:30 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:02:30 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 15:02:30 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 15:02:30 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_15_03_29_ExtentReports.html
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:03:29 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - WinAppDriver is started
-[ERROR] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - Element not exist. By.accessibilityId: PasswordPrompt
-[INFO] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 15:03:30 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 15:03:30 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_15_03_58_ExtentReports.html
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 15:03:58 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - Application launched successfully
-[INFO] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - Start create driver
-[INFO] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - Test case: test is starting...
-[ERROR] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
-[INFO] 22-07-2024 15:03:59 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - Driver for Screenshot: null
-[INFO] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 15:03:59 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - ********** RUN STARTED **********
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\22_07_2024_15_04_42_ExtentReports.html
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - Extent Reports is installed.
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - WinAppDriver is started
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - Application launched successfully
-[INFO] 22-07-2024 15:04:42 [main] [WinAppLogUtils] - Start create driver
-[INFO] 22-07-2024 15:04:48 [main] [WinAppLogUtils] - Test case: test is starting...
-[INFO] 22-07-2024 15:04:48 [main] [LogUtils] - Loaded all properties files.
-[INFO] 22-07-2024 15:04:48 [main] [WinAppLogUtils] - Starting test........
-[INFO] 22-07-2024 15:04:51 [main] [WinAppLogUtils] - Clear and Fill techvify11 on By.accessibilityId: User
-[INFO] 22-07-2024 15:04:53 [main] [WinAppLogUtils] - Clear and Fill kcePrCwe214S on By.accessibilityId: Password
-[INFO] 22-07-2024 15:04:55 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
-[INFO] 22-07-2024 15:05:02 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
-[INFO] 22-07-2024 15:05:12 [main] [WinAppLogUtils] - Test case: test is passed.
-[INFO] 22-07-2024 15:05:12 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[ERROR] 22-07-2024 15:05:12 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
-[ERROR] 22-07-2024 15:05:12 [main] [WinAppLogUtils] - org.openqa.selenium.NoSuchWindowException: Currently selected window has been closed (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'D1-TRONGLV', ip: '10.50.89.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: io.appium.java_client.windows.WindowsDriver
-Capabilities {app: D:\ffbf\WinAuto\2.0/87TZ2E1..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
-Session ID: B87112A4-28C7-4BC5-A664-BA669A3D7FC3
-[INFO] 22-07-2024 15:05:12 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/87TZ2E13.BT2/5PZCH2MX.3J7/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
-[INFO] 22-07-2024 15:05:12 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
-[INFO] 22-07-2024 15:05:12 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+Capabilities {app: D:\ffbf\WinAuto\2.0/QKJWK9H..., javascriptEnabled: true, ms:waitForAppLaunch: 5, platform: WINDOWS, platformName: windows}
+Session ID: 499CF8E9-4EA0-45D3-A777-6C94AFE6A682
+[INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/QKJWK9HE.2O8/N6EXPK7D.ZX8/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - =====> End Suite: Default Suite

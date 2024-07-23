@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Settings>
-  <Setting name="ServerUrl">https://SDCUM3SO1.talgroup.com:10002/lws_lso01</Setting>
-  <Setting name="LogLevel">WARN</Setting>
-</Settings>
