@@ -22,7 +22,7 @@ public enum WinAppDriver {
 
         @Override
         public DesiredCapabilities getOptions() {
-            String lawsonClientPath = WinAppHelpers.getCurrentDir() + WinAppConstants.LAWSON_CLIENT_PATH;
+            String lawsonClientPath = WinAppConstants.LAWSON_CLIENT_PATH;
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("platformName", "windows");
             capabilities.setCapability("deviceName", "WindowsPC");
