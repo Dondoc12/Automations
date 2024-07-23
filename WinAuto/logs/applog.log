@@ -93,3 +93,28 @@ Session ID: 499CF8E9-4EA0-45D3-A777-6C94AFE6A682
 [INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/QKJWK9HE.2O8/N6EXPK7D.ZX8/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
 [INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
 [INFO] 23-07-2024 10:17:14 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\23_07_2024_10_21_29_ExtentReports.html
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 23-07-2024 10:21:29 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 23-07-2024 10:21:30 [main] [WinAppLogUtils] - WinAppDriver is started
+[INFO] 23-07-2024 10:21:30 [main] [WinAppLogUtils] - Application launched successfully
+[INFO] 23-07-2024 10:21:35 [main] [WinAppLogUtils] - Start create driver
+[INFO] 23-07-2024 10:21:46 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 23-07-2024 10:21:46 [main] [LogUtils] - Loaded all properties files.
+[INFO] 23-07-2024 10:21:46 [main] [WinAppLogUtils] - Starting test........
+[INFO] 23-07-2024 10:21:48 [main] [WinAppLogUtils] - Clear and Fill techvify5 on By.accessibilityId: User
+[INFO] 23-07-2024 10:21:50 [main] [WinAppLogUtils] - Clear and Fill exj?6RTakxrh on By.accessibilityId: Password
+[INFO] 23-07-2024 10:21:52 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn
+[INFO] 23-07-2024 10:22:09 [main] [WinAppLogUtils] - Wait By.accessibilityId: PART_CopyRight Invisible
+[INFO] 23-07-2024 10:22:14 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 23-07-2024 10:22:14 [main] [WinAppLogUtils] - Driver for Screenshot: io.appium.java_client.windows.WindowsDriver, Capabilities: {app=D:\ffbf\WinAuto\2.0/QKJWK9HE.2O8/N6EXPK7D.ZX8/http..tion_52eb4aef56c70532_0009.0001_da8e1d62a18c082e/LawsonClient.exe, javascriptEnabled=true, ms:waitForAppLaunch=5, platform=WINDOWS, platformName=windows}
+[INFO] 23-07-2024 10:22:14 [main] [WinAppLogUtils] - Screenshot taken: test
+[INFO] 23-07-2024 10:22:19 [main] [WinAppLogUtils] - WinAppDriver.exe is closed.
+[INFO] 23-07-2024 10:22:19 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 23-07-2024 10:22:19 [main] [WinAppLogUtils] - =====> End Suite: Win Tests

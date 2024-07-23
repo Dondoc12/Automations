@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Definitions><WidgetDefinitions version="1.0"><!-- 
-		
-		This is only a placeholder file. No content should be added here.
-		The file is generated during the build and is only used NetworkDeployed mode.
-		
-		--><Widget scheme="LBI.Client.Charting.ChartWidgetContainer" applicationGroup="LBI" assemblyName="LBI.Client" factoryClass="LBI.Client.Charting.ChartWidgetFactory" showInMenu="false" /><Widget scheme="Companion.CompanionWidget" applicationGroup="SmartClient" assemblyName="Companion" factoryClass="Companion.WidgetFactory" /><Widget scheme="Mango.Widgets.ProfileInfoWidget" applicationGroup="M3" assemblyName="MForms" factoryClass="Mango.Widgets.M3.ProfileInfoFactory" isSingleton="true" /><Widget scheme="Mango.Widgets.BrowseLauncher" applicationGroup="M3" assemblyName="MForms" factoryClass="Mango.Widgets.M3.BrowseLauncherFactory" /><Widget scheme="S3.Client.Widgets.DataWidget.DataBrowser" applicationGroup="S3" assemblyName="S3.Client" factoryClass="S3.Client.Widgets.DataWidget.DataBrowserFactory" /><Widget scheme="Groove.Client.Widgets.GrooveWidget" applicationGroup="Groove" assemblyName="Groove.Client" factoryClass="Groove.Client.Widgets.GrooveWidgetFactory" isSingleton="true" /></WidgetDefinitions></Definitions>
