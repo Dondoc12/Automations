@@ -8,6 +8,7 @@ import com.UIAutomation.helpers.Helpers;
 import com.UIAutomation.keywords.WebUI;
 import com.UIAutomation.utils.ZipUtils;
 import com.project.common.BaseTest;
+import com.project.reportsystem.excel.ExcelUtils;
 import com.project.reportsystem.pageElement.DST0052DXRPTPage;
 import com.project.reportsystem.pageElement.homeRPTPage;
 import org.openqa.selenium.By;
@@ -65,41 +66,44 @@ public class reportDST0052DX extends BaseTest {
         }
     }
     public static void main(String[]args){
-        WebDriver driver = new Target().createInstance("CHROME");
-        DriverManagement.setDriver(driver);
-        driver.manage().window().maximize();
-        login.loginSuccess();
-        WebUI.clickElement(homeRPTPage.DST0052DX);
-        WebUI.clickElement(DST0052DXRPTPage.btnOutPutFolder);
-        WebUI.selectOptionByText(DST0052DXRPTPage.selectDays,"3 Days");
-        String requestNumber = "142100";
-        WebElement table = WebUI.getWebElement(By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody"));
-        List<WebElement> tableData = table.findElements(By.tagName("tr"));
-        for (int i = 0; i <= tableData.size();i++){
-            List<WebElement> requestData = tableData.get(i).findElements(By.tagName("td"));
-                if(requestData.size() > 5 && requestData.get(0).getText().equals(requestNumber)){
-                    int j = i +1;
-                    By downloadxlsxlink = By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[" + j + "]/td["+ 6 +"]/a");
-                    WebUI.clickElement(downloadxlsxlink);
-                    break;
-                }
-        }
-        WebUI.sleep(5);
-        String directoryPath = Constants.DOWNLOAD_FOLDER;
-        List<String> fileNames = ListFilesInDirectory.listFiles(directoryPath);
-        for(String filename : fileNames){
-            if(filename.contains(requestNumber) && filename.contains(".zip")){
-                String filPath = directoryPath + filename;
-                ZipUtils.unZip(filPath,directoryPath);
-            }
-        }
+//        WebDriver driver = new Target().createInstance("CHROME");
+//        DriverManagement.setDriver(driver);
+//        driver.manage().window().maximize();
+//        login.loginSuccess();
+//        WebUI.clickElement(homeRPTPage.DST0052DX);
+//        WebUI.clickElement(DST0052DXRPTPage.btnOutPutFolder);
+//        WebUI.selectOptionByText(DST0052DXRPTPage.selectDays,"3 Days");
+//        String requestNumber = "142100";
+//        WebElement table = WebUI.getWebElement(By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody"));
+//        List<WebElement> tableData = table.findElements(By.tagName("tr"));
+//        for (int i = 0; i <= tableData.size();i++){
+//            List<WebElement> requestData = tableData.get(i).findElements(By.tagName("td"));
+//                if(requestData.size() > 5 && requestData.get(0).getText().equals(requestNumber)){
+//                    int j = i +1;
+//                    By downloadxlsxlink = By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[" + j + "]/td["+ 6 +"]/a");
+//                    WebUI.clickElement(downloadxlsxlink);
+//                    break;
+//                }
+//        }
+//        WebUI.sleep(5);
+
+//        List<String> fileNames = ListFilesInDirectory.listFiles(directoryPath);
+//        for(String filename : fileNames){
+//            if(filename.contains(requestNumber) && filename.contains(".zip")){
+//                String filPath = directoryPath + filename;
+//                ZipUtils.unZip(filPath,directoryPath);
+//            }
+//        }
+        String directoryPath = Helpers.getCurrentDir() + "WebAuto\\" + "src\\test\\resources\\data\\";
         List<String> excelfileNames = ListFilesInDirectory.listFiles(directoryPath);
-        for(String excelfilename : excelfileNames){
-            if(excelfilename.contains(".xls") && !excelfilename.contains(".zip")){
-                ExcelHelpers excelHelpers = new ExcelHelpers();
-                Object[][] data = excelHelpers.getDataHashTable(excelfilename, "Sheet1", 2, 100,1);
+        for (String excelfilename : excelfileNames) {
+            if (excelfilename.contains(".xls") && excelfilename.contains("142100") && !excelfilename.contains(".zip")) {
+                ExcelUtils excelUtils = new ExcelUtils();
+                List<String> data = excelUtils.getDataByHeader(Helpers.getCurrentDir() + "WebAuto\\" + "src\\test\\resources\\data\\" + excelfilename, "Sheet1", "Grouping");
+                for (int i = 0; i < data.size(); i++) {
+                    System.out.println(data.get(i));
+                }
             }
         }
     }
 }
-
