@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Properties;
 
+
+
 public class PropertiesHelpers {
 
     private static Properties properties;
@@ -16,7 +18,7 @@ public class PropertiesHelpers {
     private static FileInputStream file;
     private static FileOutputStream out;
     private static String relPropertiesFilePathDefault = "src/test/resources/config/config.properties";
-
+    private static String mainModulePath = Helpers.getCurrentDir();
     public static Properties loadAllFiles() {
         LinkedList<String> files = new LinkedList<>();
         // Add all file Properties
@@ -29,16 +31,19 @@ public class PropertiesHelpers {
 
             for (String f : files) {
                 Properties tempProp = new Properties();
-                linkFile = Helpers.getCurrentDir() + f;
+                if (!mainModulePath.contains("WebAuto")){
+                    mainModulePath = Helpers.getCurrentDir() + "WebAuto\\";
+                }
+                linkFile = mainModulePath + f;
                 file = new FileInputStream(linkFile);
                 tempProp.load(file);
                 properties.putAll(tempProp);
             }
             file.close();
             LogUtils.info("Loaded all properties files.");
-            //LogUtils.info(properties);
             return properties;
         } catch (IOException e) {
+            LogUtils.info("Warning !! Can not Load File: " + linkFile);
             LogUtils.info("Warning !! Can not Load All File.");
             return new Properties();
         }
@@ -51,7 +56,10 @@ public class PropertiesHelpers {
     public static void setFile(String relPropertiesFilePath) {
         properties = new Properties();
         try {
-            linkFile = Helpers.getCurrentDir() + relPropertiesFilePath;
+            if (!mainModulePath.contains("WebAuto")){
+                mainModulePath = Helpers.getCurrentDir() + "WebAuto\\";
+            }
+            linkFile = mainModulePath + relPropertiesFilePath;
             file = new FileInputStream(linkFile);
             properties.load(file);
             file.close();
@@ -63,7 +71,10 @@ public class PropertiesHelpers {
     public static void setDefaultFile() {
         properties = new Properties();
         try {
-            linkFile = Helpers.getCurrentDir() + relPropertiesFilePathDefault;
+            if (!mainModulePath.contains("WebAuto")){
+                mainModulePath = Helpers.getCurrentDir() + "WebAuto\\";
+            }
+            linkFile = mainModulePath + relPropertiesFilePathDefault;
             file = new FileInputStream(linkFile);
             properties.load(file);
             file.close();
@@ -75,9 +86,12 @@ public class PropertiesHelpers {
     public static String getValue(String key) {
         String keyValue = null;
         try {
+            if (!mainModulePath.contains("WebAuto")){
+                mainModulePath = Helpers.getCurrentDir() + "WebAuto\\";
+            }
             if (file == null && properties == null) {
                 properties = new Properties();
-                linkFile = Helpers.getCurrentDir() + relPropertiesFilePathDefault;
+                linkFile = mainModulePath + relPropertiesFilePathDefault;
                 file = new FileInputStream(linkFile);
                 properties.load(file);
                 file.close();
@@ -94,12 +108,15 @@ public class PropertiesHelpers {
 
     public static void setValue(String key, String keyValue) {
         try {
+            if (!mainModulePath.contains("WebAuto")){
+                mainModulePath = Helpers.getCurrentDir() + "WebAuto\\";
+            }
             if (file == null) {
                 properties = new Properties();
-                file = new FileInputStream(Helpers.getCurrentDir() + relPropertiesFilePathDefault);
+                file = new FileInputStream(mainModulePath + relPropertiesFilePathDefault);
                 properties.load(file);
                 file.close();
-                out = new FileOutputStream(Helpers.getCurrentDir() + relPropertiesFilePathDefault);
+                out = new FileOutputStream(mainModulePath + relPropertiesFilePathDefault);
             }
             //Write to the same Prop file as the extracted file
             out = new FileOutputStream(linkFile);

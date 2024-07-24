@@ -19,6 +19,7 @@ public class Constants {
 
     public static final String PROJECT_PATH = Helpers.getCurrentDir();
     public static final String EXCEL_DATA_FILE_PATH = PropertiesHelpers.getValue("EXCEL_DATA_FILE_PATH");
+    public static final String REPORTDST0052DX_EXCEL_DATA_FILE_PATH = PropertiesHelpers.getValue("REPORTDST0052DX_EXCEL_DATA_FILE_PATH");
     public static final String JSON_DATA_FILE_PATH = PropertiesHelpers.getValue("JSON_DATA_FILE_PATH");
 
     public static final String BROWSER = PropertiesHelpers.getValue("BROWSER");
@@ -59,7 +60,6 @@ public class Constants {
     public static final String EXTENT_REPORT_FILE_NAME = EXTENT_REPORT_NAME + ".html";
     public static String EXTENT_REPORT_FILE_PATH = EXTENT_REPORT_FOLDER_PATH + File.separator + EXTENT_REPORT_FILE_NAME;
 
-    //Zip file for Report folder
     public static final String ZIPPED_EXTENT_REPORTS_FOLDER = EXTENT_REPORT_FOLDER + ".zip";
 
     public static final String YES = "yes";
@@ -67,7 +67,10 @@ public class Constants {
 
     public static final String BOLD_START = "<b>";
     public static final String BOLD_END = "</b>";
-
+    /* RPTCONSTANTS - START */
+    public static final String RPT_USERNAME = PropertiesHelpers.getValue("RPT_USERNAME");
+    public static final String RPT_PASSWORD = PropertiesHelpers.getValue("RPT_PASSWORD");
+    /* RPTCONSTANTS - END */
     /* ICONS - START */
 
     public static final String ICON_SMILEY_PASS = "<i class='fa fa-smile-o' style='font-size:24px'></i>";

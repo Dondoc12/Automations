@@ -78,7 +78,7 @@ public class WebUI {
     }
 
     /**
-     * Take entire-page screenshot and add to Extent report and Allure report
+     * Take entire-page screenshot and add to Extent report
      *
      * @param screenName Screenshot name
      */
@@ -2515,6 +2515,15 @@ public class WebUI {
         }
         addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + DateUtils.getCurrentDateTime());
     }
+    public static void clickElement(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(DriverManagement.getDriver(),Duration.ofSeconds(Constants.WAIT_EXPLICIT));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        LogUtils.info("Clicked on the element " + element.toString());
+        if (ExtentTestManagement.getExtentTest() != null) {
+            ExtentReportManagement.pass("Clicked on the element " + element.toString());
+        }
+        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + DateUtils.getCurrentDateTime());
+    }
 
     /**
      * Click on element with timeout
@@ -2771,7 +2780,7 @@ public class WebUI {
 
         List<WebElement> totalRows = DriverManagement.getDriver().findElements(By.xpath("//tbody/tr"));
         sleep(1);
-        LogUtils.info("Number of results for column (" + column + "): " + totalRows.size()); //Không thích ghi log thì xóa nhen
+        LogUtils.info("Number of results for column (" + column + "): " + totalRows.size());
 
         ArrayList arrayList = new ArrayList<String>();
 
@@ -2782,7 +2791,7 @@ public class WebUI {
                 boolean res = false;
                 WebElement title = DriverManagement.getDriver().findElement(By.xpath("//tbody/tr[" + i + "]/td[" + column + "]"));
                 arrayList.add(title.getText());
-                LogUtils.info("Row " + i + ":" + title.getText()); //Không thích ghi log thì xóa nhen
+                LogUtils.info("Row " + i + ":" + title.getText());
             }
         }
 
