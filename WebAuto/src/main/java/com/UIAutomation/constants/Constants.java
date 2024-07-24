@@ -21,6 +21,7 @@ public class Constants {
     public static final String EXCEL_DATA_FILE_PATH = PropertiesHelpers.getValue("EXCEL_DATA_FILE_PATH");
     public static final String REPORTDST0052DX_EXCEL_DATA_FILE_PATH = PropertiesHelpers.getValue("REPORTDST0052DX_EXCEL_DATA_FILE_PATH");
     public static final String JSON_DATA_FILE_PATH = PropertiesHelpers.getValue("JSON_DATA_FILE_PATH");
+    public static final String DOWNLOAD_FOLDER = PropertiesHelpers.getValue("DOWNLOAD_FOLDER");
 
     public static final String BROWSER = PropertiesHelpers.getValue("BROWSER");
     public static final String REMOTE_URL = PropertiesHelpers.getValue("REMOTE_URL");

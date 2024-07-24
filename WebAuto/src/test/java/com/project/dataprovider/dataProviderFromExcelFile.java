@@ -24,7 +24,6 @@ public final class dataProviderFromExcelFile {
         System.out.println("ExcelDataHeader.Category = " + data.get(setUpExcelKey.getCategory()));
         System.out.println("ExcelDataHeader.Weight = " + data.get(setUpExcelKey.getWeight()));
         System.out.println("ExcelDataHeader.Tags = " + data.get(setUpExcelKey.getTags()));
-
     }
 
 

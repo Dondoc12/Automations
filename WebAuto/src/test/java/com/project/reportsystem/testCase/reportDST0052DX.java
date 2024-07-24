@@ -6,10 +6,12 @@ import com.UIAutomation.driver.Target;
 import com.UIAutomation.helpers.ExcelHelpers;
 import com.UIAutomation.helpers.Helpers;
 import com.UIAutomation.keywords.WebUI;
+import com.UIAutomation.utils.ZipUtils;
 import com.project.common.BaseTest;
 import com.project.reportsystem.pageElement.DST0052DXRPTPage;
 import com.project.reportsystem.pageElement.homeRPTPage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ThreadGuard;
@@ -17,6 +19,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.util.List;
 
 public class reportDST0052DX extends BaseTest {
@@ -31,9 +34,6 @@ public class reportDST0052DX extends BaseTest {
     }
     @Test
     public void genreportDST0052DXSuccess(){
-        WebDriver driver = new Target().createInstance("CHROME");
-        DriverManagement.setDriver(driver);
-        driver.manage().window().maximize();
         login.loginSuccess();
         WebUI.clickElement(homeRPTPage.DST0052DX);
         WebUI.clearAndFillText(DST0052DXRPTPage.Facility,"TAV");
@@ -64,26 +64,42 @@ public class reportDST0052DX extends BaseTest {
             }
         }
     }
-    @Test
-    public void downLoadReport(){
+    public static void main(String[]args){
         WebDriver driver = new Target().createInstance("CHROME");
         DriverManagement.setDriver(driver);
         driver.manage().window().maximize();
         login.loginSuccess();
         WebUI.clickElement(homeRPTPage.DST0052DX);
         WebUI.clickElement(DST0052DXRPTPage.btnOutPutFolder);
-        WebUI.verifySelectedByText(DST0052DXRPTPage.selectDays,"3 Days");
-        String requestNumber = "";
+        WebUI.selectOptionByText(DST0052DXRPTPage.selectDays,"3 Days");
+        String requestNumber = "142100";
         WebElement table = WebUI.getWebElement(By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody"));
         List<WebElement> tableData = table.findElements(By.tagName("tr"));
-        for (WebElement data : tableData){
-            List<WebElement> requestData = data.findElements(By.tagName("td"));
-            if(requestData.get(0).getText().equals(requestNumber)){
-                WebUI.clickElement(requestData.get(5));
-                break;
+        for (int i = 0; i <= tableData.size();i++){
+            List<WebElement> requestData = tableData.get(i).findElements(By.tagName("td"));
+                if(requestData.size() > 5 && requestData.get(0).getText().equals(requestNumber)){
+                    int j = i +1;
+                    By downloadxlsxlink = By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[" + j + "]/td["+ 6 +"]/a");
+                    WebUI.clickElement(downloadxlsxlink);
+                    break;
+                }
+        }
+        WebUI.sleep(5);
+        String directoryPath = Constants.DOWNLOAD_FOLDER;
+        List<String> fileNames = ListFilesInDirectory.listFiles(directoryPath);
+        for(String filename : fileNames){
+            if(filename.contains(requestNumber) && filename.contains(".zip")){
+                String filPath = directoryPath + filename;
+                ZipUtils.unZip(filPath,directoryPath);
             }
         }
-
+        List<String> excelfileNames = ListFilesInDirectory.listFiles(directoryPath);
+        for(String excelfilename : excelfileNames){
+            if(excelfilename.contains(".xls") && !excelfilename.contains(".zip")){
+                ExcelHelpers excelHelpers = new ExcelHelpers();
+                Object[][] data = excelHelpers.getDataHashTable(excelfilename, "Sheet1", 2, 100,1);
+            }
+        }
     }
 }
 

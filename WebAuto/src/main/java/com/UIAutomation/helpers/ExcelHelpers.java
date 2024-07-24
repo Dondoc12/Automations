@@ -210,6 +210,53 @@ public class ExcelHelpers {
         return data;
 
     }
+    public Object[][] getDataHashTable(String excelPath, String sheetName, int startRow, int endRow, int headerNum) {
+        LogUtils.info("Excel File: " + excelPath);
+        LogUtils.info("Sheet Name: " + sheetName);
+
+        Object[][] data = null;
+
+        try {
+
+            File f = new File(excelPath);
+
+            if (!f.exists()) {
+                try {
+                    LogUtils.info("File Excel path not found.");
+                    throw new InvalidPathForExcelException("File Excel path not found.");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            fis = new FileInputStream(excelPath);
+            workbook = new XSSFWorkbook(fis);
+            sheet = workbook.getSheet(sheetName);
+
+            int rows = getRows();
+            int columns = getColumns();
+
+            LogUtils.info("Row: " + rows + " - Column: " + columns);
+            LogUtils.info("StartRow: " + startRow + " - EndRow: " + endRow);
+
+            data = new Object[(endRow - startRow) + 1][1];
+            Hashtable<String, String> table = null;
+            for (int rowNums = startRow; rowNums <= endRow; rowNums++) {
+                table = new Hashtable<>();
+                for (int colNum = 0; colNum < columns; colNum++) {
+                    table.put(getCellData(headerNum, colNum), getCellData(rowNums, colNum));
+                }
+                data[rowNums - startRow][0] = table;
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            LogUtils.error(e.getMessage());
+        }
+
+        return data;
+
+    }
 
     public String getTestCaseName(String testCaseName) {
         String value = testCaseName;
