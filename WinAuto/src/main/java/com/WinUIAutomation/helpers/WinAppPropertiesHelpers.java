@@ -1,6 +1,5 @@
 package com.WinUIAutomation.helpers;
 
-import com.WinUIAutomation.helpers.WinAppHelpers;
 import com.WinUIAutomation.utils.WinAppLanguageUtils;
 import com.WinUIAutomation.utils.WinAppLogUtils;
 

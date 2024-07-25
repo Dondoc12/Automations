@@ -155,9 +155,7 @@ public class WebUI {
      * @return the download directory path
      */
     public static String getPathDownloadDirectory() {
-        String path = "";
-        String machine_name = System.getProperty("user.home");
-        path = machine_name + File.separator + "Downloads";
+        String path = Constants.DOWNLOAD_FOLDER;
         return path;
     }
 

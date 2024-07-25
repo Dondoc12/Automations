@@ -1,19 +1,15 @@
 package com.winProject.common;
 
-import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.driver.WinAppDriver;
 import com.WinUIAutomation.driver.WinAppDriverManagement;
-import com.WinUIAutomation.helpers.WinAppHelpers;
 import com.WinUIAutomation.helpers.WinAppPropertiesHelpers;
 import com.WinUIAutomation.keywords.WinUI;
-import com.WinUIAutomation.utils.WinAppLogUtils;
 import com.winProject.listener.TestListener;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-import java.io.IOException;
 import java.net.MalformedURLException;
 
 @Listeners({TestListener.class})

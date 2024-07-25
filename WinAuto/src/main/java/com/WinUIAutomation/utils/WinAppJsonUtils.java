@@ -1,7 +1,6 @@
 package com.WinUIAutomation.utils;
 
 import com.WinUIAutomation.constants.WinAppConstants;
-import com.WinUIAutomation.helpers.WinAppHelpers;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.DocumentContext;
