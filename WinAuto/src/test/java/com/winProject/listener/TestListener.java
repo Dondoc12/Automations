@@ -2,6 +2,7 @@ package com.winProject.listener;
 
 
 import com.WinUIAutomation.annotation.WinAppAnnotation;
+import com.WinUIAutomation.constants.WinAppConstants;
 import com.WinUIAutomation.driver.WinAppDriverManagement;
 import com.WinUIAutomation.enums.WinAppAuthorValue;
 import com.WinUIAutomation.enums.WinAppCategoryValue;
@@ -20,7 +21,8 @@ import org.testng.*;
 import java.awt.*;
 import java.io.IOException;
 
-import static com.UIAutomation.constants.Constants.*;
+import static com.WinUIAutomation.constants.WinAppConstants.*;
+
 
 public class TestListener implements ITestListener, ISuiteListener, IInvokedMethodListener {
 

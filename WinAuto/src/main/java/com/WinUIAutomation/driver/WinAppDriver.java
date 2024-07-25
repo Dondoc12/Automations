@@ -14,7 +14,6 @@ public enum WinAppDriver {
         @Override
         public WindowsDriver<WindowsElement> createDriver() throws MalformedURLException {
             try {
-                WinAppLogUtils.info("Start create driver");
                 return new WindowsDriver<>(new URL("http://127.0.0.1:4723/"), getOptions());
             }
             catch (Exception e){
@@ -30,7 +29,7 @@ public enum WinAppDriver {
             capabilities.setCapability("platformName", "windows");
             capabilities.setCapability("deviceName", "WindowsPC");
             capabilities.setCapability("app", lawsonClientPath);
-            capabilities.setCapability("ms:waitForAppLaunch", "5");
+            capabilities.setCapability("ms:waitForAppLaunch", "10");
             return capabilities;
         }
     };
