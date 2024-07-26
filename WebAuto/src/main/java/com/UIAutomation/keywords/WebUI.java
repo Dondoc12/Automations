@@ -570,7 +570,6 @@ public class WebUI {
     public static void sleep(double second) {
         try {
             Thread.sleep((long) (second * 1000));
-            LogUtils.info("Sleeped " + second);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
