@@ -1,7 +1,6 @@
 package com.winProject.testCase;
 
 import com.WinUIAutomation.keywords.WinUI;
-import com.WinUIAutomation.utils.WinAppLogUtils;
 import com.winProject.common.BaseTest;
 import example.data;
 import org.testng.annotations.Test;
