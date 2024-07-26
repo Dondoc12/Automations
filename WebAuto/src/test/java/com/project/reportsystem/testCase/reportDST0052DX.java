@@ -190,6 +190,7 @@ public class reportDST0052DX extends BaseTest {
                 int j = i +1;
                 By downloadxlsxlink = By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[" + j + "]/td["+ 6 +"]/a");
                 WebUI.clickElement(downloadxlsxlink);
+                WebUI.sleep(3);
                 FileHelpers.waitForDownloadToComplete(Constants.DOWNLOAD_FOLDER,30);
                 List<String> fileNames = FileHelpers.listFiles(directoryPath);
                 for(String filename : fileNames){
@@ -213,33 +214,23 @@ public class reportDST0052DX extends BaseTest {
                                 String stas = map.get("STAS");
                                 String grade = map.get("2nd grade A/B/C or garment grade U");
                                 String lotNumber = map.get("LOT#");
-
-                                if (stas != null && stas.equals("3") &&
-                                        grade != null && grade.equals("U")) {
+                                if (stas != null && stas.equals("3") && grade != null && grade.equals("U")) {
                                     boolean check = lotNumber.endsWith("U");
-                                    if (check){
-                                        LogUtils.info("LOT# " + lotNumber + " " + stas + " "  + grade + " Pass");
-                                    }
-                                    else {
-                                        LogUtils.error("LOT# " + lotNumber + " " + stas + " " + grade  + " Fail");
-                                    }
+                                    Assert.assertTrue(check, "LOT# " + lotNumber + " " + stas + " " + grade + " Fail");
                                 } else {
                                     if (lotNumber != null) {
-                                        if (!lotNumber.endsWith("U")) {
-                                            LogUtils.info("LOT# " + lotNumber + " " + stas + " " + grade  + " Pass");
-                                        } else {
-                                            LogUtils.error("LOT# " + lotNumber + " " + stas + " " + grade  + " Fail");
-                                        }
+                                        Assert.assertFalse(lotNumber.endsWith("U"), "LOT# " + lotNumber + " " + stas + " " + grade + " Fail");
                                     } else {
                                         LogUtils.info("Missing Data");
                                     }
                                 }
                             }
+                            }
                         }
                     }
+                    break;
                 }
-                break;
-            }
+
         }
     }
 }
