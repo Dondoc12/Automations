@@ -2506,6 +2506,7 @@ public class WebUI {
      */
     public static void clickElement(By by) {
         waitForElementClickable(by).click();
+        sleep(1);
         LogUtils.info("Clicked on the element " + by.toString());
 
         if (ExtentTestManagement.getExtentTest() != null) {

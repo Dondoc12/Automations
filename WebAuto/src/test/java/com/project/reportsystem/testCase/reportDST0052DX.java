@@ -5,8 +5,10 @@ import com.UIAutomation.helpers.FileHelpers;
 import com.UIAutomation.helpers.Helpers;
 import com.UIAutomation.helpers.deleteFolderHelper;
 import com.UIAutomation.keywords.WebUI;
+import com.UIAutomation.report.ExtentTestManagement;
 import com.UIAutomation.utils.LogUtils;
 import com.UIAutomation.utils.ZipUtils;
+import com.aventstack.extentreports.Status;
 import com.project.common.BaseTest;
 import com.UIAutomation.utils.ExcelUtils;
 import com.project.reportsystem.pageElement.DST0052DXRPTPage;
@@ -138,39 +140,37 @@ public class reportDST0052DX extends BaseTest {
                             headers.add("STAS");
                             headers.add("2nd grade A/B/C or garment grade U");
                             Object[][] data = excelUtils.getDataHashMap(Constants.DOWNLOAD_FOLDER + excelfilename, "Sheet1", headers);
-                            for (Object[] row : data) {
+                            for (int rowIndex = 0; rowIndex < data.length; rowIndex++) {
+                                Object[] row = data[rowIndex];
                                 if (row[0] != null) {
                                     HashMap<String, String> map = (HashMap<String, String>) row[0];
                                     String stas = map.get("STAS");
                                     String grade = map.get("2nd grade A/B/C or garment grade U");
                                     String lotNumber = map.get("LOT#");
-
-                                    if (stas != null && stas.equals("3") &&
-                                            grade != null && grade.equals("U")) {
+                                    if (stas != null && stas.equals("3") && grade != null && grade.equals("U")) {
                                         boolean check = lotNumber.endsWith("U");
-                                        if (check){
-                                            LogUtils.info("LOT# " + lotNumber + " " + stas + " "  + grade + " Pass");
-                                        }
-                                        else {
-                                            LogUtils.error("LOT# " + lotNumber + " " + stas + " " + grade  + " Fail");
+                                        if (!check) {
+                                            String errorMessage = "Row: " + (rowIndex + 1) + " - LOT# " + lotNumber + " STAS: " + stas + " Grade: " + grade + " - Fail";
+                                            ExtentTestManagement.getExtentTest().log(Status.FAIL, errorMessage);
                                         }
                                     } else {
                                         if (lotNumber != null) {
-                                            if (!lotNumber.endsWith("U")) {
-                                                LogUtils.info("LOT# " + lotNumber + " " + stas + " " + grade  + " Pass");
-                                            } else {
-                                                LogUtils.error("LOT# " + lotNumber + " " + stas + " " + grade  + " Fail");
+                                            if (lotNumber.endsWith("U")) {
+                                                String errorMessage = "Row: " + (rowIndex + 1) + " - LOT# " + lotNumber + " STAS: " + stas + " Grade: " + grade + " - Fail";
+                                                ExtentTestManagement.getExtentTest().log(Status.FAIL, errorMessage);
                                             }
                                         } else {
-                                            LogUtils.info("Missing Data");
+                                            LogUtils.info("Missing Data at Row: " + (rowIndex + 1));
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                    break;
                 }
+        }
+        if (ExtentTestManagement.getExtentTest().getStatus() == Status.FAIL) {
+            Assert.fail("There are errors in the report. Please check the ExtentReports for details.");
         }
     }
     @Test (groups = {"Check Data"})
@@ -181,22 +181,24 @@ public class reportDST0052DX extends BaseTest {
         login.loginSuccess();
         WebUI.clickElement(homeRPTPage.DST0052DX);
         WebUI.clickElement(DST0052DXRPTPage.btnOutPutFolder);
-        WebUI.selectOptionByText(DST0052DXRPTPage.selectDays,"3 Days");
+        WebUI.selectOptionByText(DST0052DXRPTPage.selectDays, "All");
+
         WebElement table = WebUI.getWebElement(By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody"));
         List<WebElement> tableData = table.findElements(By.tagName("tr"));
-        for (int i = 0; i <= tableData.size();i++){
+
+        for (int i = 0; i < tableData.size(); i++) {
             List<WebElement> requestData = tableData.get(i).findElements(By.tagName("td"));
-            if(requestData.size() > 5 && requestData.get(0).getText().equals(requestNumber)){
-                int j = i +1;
-                By downloadxlsxlink = By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[" + j + "]/td["+ 6 +"]/a");
+            if (requestData.size() > 5 && requestData.get(0).getText().equals(requestNumber)) {
+                int j = i + 1;
+                By downloadxlsxlink = By.xpath("/html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[" + j + "]/td[" + 6 + "]/a");
                 WebUI.clickElement(downloadxlsxlink);
                 WebUI.sleep(3);
-                FileHelpers.waitForDownloadToComplete(Constants.DOWNLOAD_FOLDER,30);
+                FileHelpers.waitForDownloadToComplete(Constants.DOWNLOAD_FOLDER, 30);
                 List<String> fileNames = FileHelpers.listFiles(directoryPath);
-                for(String filename : fileNames){
-                    if(filename.contains(requestNumber) && filename.contains(".zip")){
+                for (String filename : fileNames) {
+                    if (filename.contains(requestNumber) && filename.contains(".zip")) {
                         String filPath = directoryPath + filename;
-                        ZipUtils.unZip(filPath,directoryPath);
+                        ZipUtils.unZip(filPath, directoryPath);
                     }
                 }
                 List<String> excelfileNames = FileHelpers.listFiles(directoryPath);
@@ -208,7 +210,8 @@ public class reportDST0052DX extends BaseTest {
                         headers.add("STAS");
                         headers.add("2nd grade A/B/C or garment grade U");
                         Object[][] data = excelUtils.getDataHashMap(Constants.DOWNLOAD_FOLDER + excelfilename, "Sheet1", headers);
-                        for (Object[] row : data) {
+                        for (int rowIndex = 0; rowIndex < data.length; rowIndex++) {
+                            Object[] row = data[rowIndex];
                             if (row[0] != null) {
                                 HashMap<String, String> map = (HashMap<String, String>) row[0];
                                 String stas = map.get("STAS");
@@ -216,21 +219,28 @@ public class reportDST0052DX extends BaseTest {
                                 String lotNumber = map.get("LOT#");
                                 if (stas != null && stas.equals("3") && grade != null && grade.equals("U")) {
                                     boolean check = lotNumber.endsWith("U");
-                                    Assert.assertTrue(check, "LOT# " + lotNumber + " " + stas + " " + grade + " Fail");
+                                    if (!check) {
+                                        String errorMessage = "Row: " + (rowIndex + 1) + " - LOT# " + lotNumber + " STAS: " + stas + " Grade: " + grade + " - Fail";
+                                        ExtentTestManagement.getExtentTest().log(Status.FAIL, errorMessage);
+                                    }
                                 } else {
                                     if (lotNumber != null) {
-                                        Assert.assertFalse(lotNumber.endsWith("U"), "LOT# " + lotNumber + " " + stas + " " + grade + " Fail");
+                                        if (lotNumber.endsWith("U")) {
+                                            String errorMessage = "Row: " + (rowIndex + 1) + " - LOT# " + lotNumber + " STAS: " + stas + " Grade: " + grade + " - Fail";
+                                            ExtentTestManagement.getExtentTest().log(Status.FAIL, errorMessage);
+                                        }
                                     } else {
-                                        LogUtils.info("Missing Data");
+                                        LogUtils.info("Missing Data at Row: " + (rowIndex + 1));
                                     }
                                 }
                             }
-                            }
                         }
                     }
-                    break;
                 }
-
+            }
+        }
+        if (ExtentTestManagement.getExtentTest().getStatus() == Status.FAIL) {
+            Assert.fail("There are errors in the report. Please check the ExtentReports for details.");
         }
     }
 }
