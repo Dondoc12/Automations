@@ -4,7 +4,7 @@
 
     <test name="Tests">
         <classes>
-            <class name="com.winProject.testCase.suiteThu2"/>
+            <class name="com.winProject.testCase.demoAutomation"/>
         </classes>
     </test>
 </suite>

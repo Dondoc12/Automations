@@ -1,0 +1,49 @@
+[INFO] 29-07-2024 13:14:34 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 13:14:34 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 13:14:34 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 13:14:34 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\29_07_2024_13_14_35_ExtentReports.html
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - Create Driver Fail
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[ERROR] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because the return value of "com.WinUIAutomation.driver.WinAppDriverManagement.getDriver()" is null
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 13:14:35 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\29_07_2024_13_17_20_ExtentReports.html
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 13:17:20 [main] [WinAppLogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - Create Driver Fail
+[INFO] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - Test case: test is passed.
+[INFO] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[ERROR] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - FAILED !! Test case test is failed.
+[ERROR] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because the return value of "com.WinUIAutomation.driver.WinAppDriverManagement.getDriver()" is null
+[INFO] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - Driver for Screenshot: null
+[INFO] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 13:17:21 [main] [WinAppLogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - Link Extent Report: D:\ffbf\WinAuto\reports/ExtentReports\29_07_2024_16_54_07_ExtentReports.html
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:54:07 [main] [WinAppLogUtils] - =====> Starting Suite: Win Tests
+[INFO] 29-07-2024 16:54:24 [main] [WinAppLogUtils] - Test case: test is starting...
+[INFO] 29-07-2024 16:54:26 [main] [WinAppLogUtils] - Clear and Fill techvify5 on By.accessibilityId: User
+[INFO] 29-07-2024 16:54:29 [main] [WinAppLogUtils] - Clear and Fill exj?6RTakxrh on By.accessibilityId: Password
+[INFO] 29-07-2024 16:54:31 [main] [WinAppLogUtils] - Clicked on the element By.accessibilityId: SignIn

@@ -21,5 +21,6 @@ public class pageObject {
         public static By getApplyButton = ByAccessibilityId.accessibilityId("XT_0168");
         public static By getQuality = ByAccessibilityId.accessibilityId("R23C4");
         public static By getCopyRight = ByAccessibilityId.accessibilityId("PART_CopyRight");
+        public static By getCloseButton = ByAccessibilityId.accessibilityId("ButtonClose");
 
 }

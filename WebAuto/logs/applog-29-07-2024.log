@@ -1,0 +1,300 @@
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_13_18_23_ExtentReports.html
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 13:18:23 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 13:18:29 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[ERROR] 29-07-2024 13:18:30 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 13:18:30 [main] [LogUtils] - org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=126.0.6478.185)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [784e6198e48140426f3addb4d1e233d5, get {url=https://uat-report.talgroup.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.185, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\david.le\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59797/devtoo..., se:cdpVersion: 126.0.6478.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 784e6198e48140426f3addb4d1e233d5
+[INFO] 29-07-2024 13:18:30 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (784e6198e48140426f3addb4d1e233d5)
+[INFO] 29-07-2024 13:18:30 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 13:18:30 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 13:18:31 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 13:18:31 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_14_09_36_ExtentReports.html
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:09:36 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 14:09:41 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 14:09:42 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 14:09:42 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:09:42 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:09:42 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 14:09:42 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:09:42 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:09:42 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 14:10:04 [main] [LogUtils] - Clicked on the element By.name: login
+[ERROR] 29-07-2024 14:10:04 [main] [LogUtils] - Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[ERROR] 29-07-2024 14:10:04 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 14:10:04 [main] [LogUtils] - java.lang.AssertionError: Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[INFO] 29-07-2024 14:10:04 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (749ec0140a67e23d719e94d8339d76e7)
+[INFO] 29-07-2024 14:10:04 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 14:10:04 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/reportfolder.jsp
+[INFO] 29-07-2024 14:10:05 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 14:10:05 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_14_10_59_ExtentReports.html
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:10:59 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 14:11:03 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 14:11:04 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 14:11:04 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:11:04 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:11:04 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 14:11:05 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:11:05 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:11:05 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 14:11:07 [main] [LogUtils] - Clicked on the element By.name: login
+[ERROR] 29-07-2024 14:11:07 [main] [LogUtils] - Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[ERROR] 29-07-2024 14:11:07 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 14:11:07 [main] [LogUtils] - java.lang.AssertionError: Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[INFO] 29-07-2024 14:11:07 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (8b4dbd874e460d4eaaf539727189d69f)
+[INFO] 29-07-2024 14:11:07 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 14:11:07 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/reportfolder.jsp
+[INFO] 29-07-2024 14:11:08 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 14:11:08 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_14_11_19_ExtentReports.html
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:11:19 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 14:11:21 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 14:11:21 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 14:11:21 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:11:21 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:11:21 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 14:11:22 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:11:22 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:11:22 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 14:11:29 [main] [LogUtils] - Clicked on the element By.name: login
+[ERROR] 29-07-2024 14:11:29 [main] [LogUtils] - Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[ERROR] 29-07-2024 14:11:29 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 14:11:29 [main] [LogUtils] - java.lang.AssertionError: Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[INFO] 29-07-2024 14:11:29 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (055f2505aaf3e3794aaf35399c9bf7c8)
+[INFO] 29-07-2024 14:11:30 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 14:11:30 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/reportfolder.jsp
+[INFO] 29-07-2024 14:11:30 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 14:11:30 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_14_11_43_ExtentReports.html
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:11:43 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 14:11:45 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 14:11:45 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 14:11:46 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:11:46 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:11:46 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 14:11:46 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:11:46 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:11:46 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 14:11:49 [main] [LogUtils] - Clicked on the element By.name: login
+[ERROR] 29-07-2024 14:12:09 [main] [LogUtils] - Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[ERROR] 29-07-2024 14:12:13 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 14:12:13 [main] [LogUtils] - java.lang.AssertionError: Timeout waiting for the element ready to click. By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[5]/td[2]/a[8]
+[INFO] 29-07-2024 14:12:13 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (39d0a19c00e32ddbac0ae63ecd1fa0b9)
+[INFO] 29-07-2024 14:12:14 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 14:12:14 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/reportfolder.jsp
+[INFO] 29-07-2024 14:12:14 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 14:12:14 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_14_12_56_ExtentReports.html
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:12:56 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 14:13:00 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 14:13:01 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 14:13:01 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:13:01 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:13:01 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 14:13:01 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:13:01 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:13:01 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 14:13:04 [main] [LogUtils] - Clicked on the element By.name: login
+[INFO] 29-07-2024 14:13:05 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[4]/td[2]/a[8]
+[INFO] 29-07-2024 14:13:07 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table[1]/tbody/tr/td[2]/a
+[INFO] 29-07-2024 14:13:07 [main] [LogUtils] - Select Option By.name: spby text 3 Days
+[ERROR] 29-07-2024 14:13:07 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 14:13:07 [main] [LogUtils] - java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+[INFO] 29-07-2024 14:13:07 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (0ba8a1d727d80fb0b370ed03922c1068)
+[INFO] 29-07-2024 14:13:07 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 14:13:07 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/output.jsp?id=DST0052DX&period=3
+[INFO] 29-07-2024 14:13:08 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 14:13:08 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_14_13_45_ExtentReports.html
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 14:13:45 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 14:13:49 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 14:13:49 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 14:13:49 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:13:49 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 14:13:50 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 14:13:50 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:13:50 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 14:13:50 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 14:13:52 [main] [LogUtils] - Clicked on the element By.name: login
+[INFO] 29-07-2024 14:13:54 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[4]/td[2]/a[8]
+[INFO] 29-07-2024 14:13:55 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table[1]/tbody/tr/td[2]/a
+[INFO] 29-07-2024 14:13:56 [main] [LogUtils] - Select Option By.name: spby text All
+[INFO] 29-07-2024 14:13:57 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[13]/td[6]/a
+[INFO] 29-07-2024 14:14:30 [main] [LogUtils] - Unzipped D:\DownloadFileAutomation\DST0052DX-142100-20240724.162007.275310.xls.zip successfully !!
+[ERROR] 29-07-2024 14:14:32 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 14:14:32 [main] [LogUtils] - java.lang.AssertionError: LOT# 8089918RU 2  Fail expected [false] but found [true]
+[INFO] 29-07-2024 14:14:32 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (3751fd0a6363972d3ee6fbecd50ce6ed)
+[INFO] 29-07-2024 14:14:32 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 14:14:32 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/output.jsp?id=DST0052DX&period=0
+[INFO] 29-07-2024 14:14:32 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 14:14:32 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_16_04_32_ExtentReports.html
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:04:32 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 16:04:39 [main] [LogUtils] - Test case: checkUnShipSingleRecord1 is starting...
+[ERROR] 29-07-2024 16:04:40 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord1 is failed.
+[ERROR] 29-07-2024 16:04:40 [main] [LogUtils] - org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=126.0.6478.185)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0b406760fdd477a349e8337f468a482, get {url=https://uat-report.talgroup.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.185, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\david.le\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51308/devtoo..., se:cdpVersion: 126.0.6478.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0b406760fdd477a349e8337f468a482
+[INFO] 29-07-2024 16:04:40 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (d0b406760fdd477a349e8337f468a482)
+[INFO] 29-07-2024 16:04:40 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord1
+[INFO] 29-07-2024 16:04:40 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 16:04:41 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 16:04:41 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_16_05_49_ExtentReports.html
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:05:49 [main] [LogUtils] - =====> Starting Suite: Default Suite
+[INFO] 29-07-2024 16:05:53 [main] [LogUtils] - Test case: checkUnShipSingleRecord1 is starting...
+[INFO] 29-07-2024 16:05:54 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 16:05:54 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 16:05:54 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 16:05:54 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 16:05:54 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 16:05:54 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 16:05:54 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 16:06:08 [main] [LogUtils] - Clicked on the element By.name: login
+[INFO] 29-07-2024 16:06:10 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[4]/td[2]/a[8]
+[INFO] 29-07-2024 16:06:11 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table[1]/tbody/tr/td[2]/a
+[INFO] 29-07-2024 16:06:12 [main] [LogUtils] - Select Option By.name: spby text All
+[INFO] 29-07-2024 16:06:13 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[13]/td[6]/a
+[INFO] 29-07-2024 16:06:47 [main] [LogUtils] - Unzipped D:\DownloadFileAutomation\DST0052DX-142100-20240724.162007.275310.xls.zip successfully !!
+[ERROR] 29-07-2024 16:06:48 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord1 is failed.
+[ERROR] 29-07-2024 16:06:48 [main] [LogUtils] - java.lang.AssertionError: There are errors in the report. Please check the ExtentReports for details.
+[INFO] 29-07-2024 16:06:48 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (b10d9dcd9545b79e7d33f2f9697bdd5e)
+[INFO] 29-07-2024 16:06:48 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord1
+[INFO] 29-07-2024 16:06:48 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/output.jsp?id=DST0052DX&period=0
+[INFO] 29-07-2024 16:06:49 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 16:06:49 [main] [LogUtils] - =====> End Suite: Default Suite
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_16_18_29_ExtentReports.html
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:18:29 [main] [LogUtils] - =====> Starting Suite: reportDST0052DX
+[INFO] 29-07-2024 16:18:34 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 16:18:34 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 16:18:34 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 16:18:34 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 16:18:34 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 16:18:35 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 16:18:35 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 16:18:35 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 16:18:56 [main] [LogUtils] - Clicked on the element By.name: login
+[INFO] 29-07-2024 16:18:58 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[4]/td[2]/a[8]
+[INFO] 29-07-2024 16:18:59 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table[1]/tbody/tr/td[2]/a
+[INFO] 29-07-2024 16:18:59 [main] [LogUtils] - Select Option By.name: spby text All
+[INFO] 29-07-2024 16:19:01 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[13]/td[6]/a
+[INFO] 29-07-2024 16:19:34 [main] [LogUtils] - Unzipped D:\DownloadFileAutomation\DST0052DX-142100-20240724.162007.275310.xls.zip successfully !!
+[ERROR] 29-07-2024 16:19:35 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 16:19:35 [main] [LogUtils] - java.lang.AssertionError: There are errors in the report. Please check the ExtentReports for details.
+[INFO] 29-07-2024 16:19:36 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (b1088eb8607194cd9532e851fc1b2f49)
+[INFO] 29-07-2024 16:19:36 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 16:19:36 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/output.jsp?id=DST0052DX&period=0
+[INFO] 29-07-2024 16:19:36 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 16:19:36 [main] [LogUtils] - =====> End Suite: reportDST0052DX
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - Loaded all properties files.
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - Link Extent Report: D:\ffbf\WebAuto\reports/ExtentReports\29_07_2024_16_25_14_ExtentReports.html
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 29-07-2024 16:25:14 [main] [LogUtils] - =====> Starting Suite: reportDST0052DX
+[INFO] 29-07-2024 16:25:22 [main] [LogUtils] - Test case: checkUnShipSingleRecord is starting...
+[INFO] 29-07-2024 16:25:23 [main] [LogUtils] - Open website with URL: https://uat-report.talgroup.com/
+[INFO] 29-07-2024 16:25:23 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 16:25:23 [main] [LogUtils] - Verify element visible By.name: username
+[INFO] 29-07-2024 16:25:23 [main] [LogUtils] - Clear and Fill techvify5 on By.name: username
+[INFO] 29-07-2024 16:25:23 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 16:25:23 [main] [LogUtils] - Verify element visible By.name: password
+[INFO] 29-07-2024 16:25:23 [main] [LogUtils] - Clear and Fill exj?6RTakxrh on By.name: password
+[INFO] 29-07-2024 16:25:26 [main] [LogUtils] - Clicked on the element By.name: login
+[INFO] 29-07-2024 16:25:27 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[2]/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr[4]/td[2]/a[8]
+[INFO] 29-07-2024 16:25:28 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table[1]/tbody/tr/td[2]/a
+[INFO] 29-07-2024 16:25:29 [main] [LogUtils] - Select Option By.name: spby text All
+[INFO] 29-07-2024 16:25:30 [main] [LogUtils] - Clicked on the element By.xpath: /html/body/table[3]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[13]/td[6]/a
+[INFO] 29-07-2024 16:26:03 [main] [LogUtils] - Unzipped D:\DownloadFileAutomation\DST0052DX-142100-20240724.162007.275310.xls.zip successfully !!
+[ERROR] 29-07-2024 16:26:05 [main] [LogUtils] - FAILED !! Test case checkUnShipSingleRecord is failed.
+[ERROR] 29-07-2024 16:26:05 [main] [LogUtils] - java.lang.AssertionError: There are errors in the report. Please check the ExtentReports for details.
+[INFO] 29-07-2024 16:26:05 [main] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (a3cfd31baf6e25909422ec4c2c53b4ca)
+[INFO] 29-07-2024 16:26:05 [main] [LogUtils] - Screenshot taken: checkUnShipSingleRecord
+[INFO] 29-07-2024 16:26:05 [main] [LogUtils] - Screenshot taken current URL: https://uat-report.talgroup.com/output.jsp?id=DST0052DX&period=0
+[INFO] 29-07-2024 16:26:06 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 29-07-2024 16:26:06 [main] [LogUtils] - =====> End Suite: reportDST0052DX

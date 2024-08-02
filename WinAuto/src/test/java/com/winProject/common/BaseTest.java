@@ -8,7 +8,9 @@ import com.winProject.listener.TestListener;
 import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
+import pageObject.pageObject;
 
 import java.net.MalformedURLException;
 
@@ -25,7 +27,10 @@ public class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void closeDriver() {
         WinUI.stopSoftAssertAll();
-        WinAppDriverManagement.quit();
+        WebElement closeButton = WinUI.getWindowElement(pageObject.getCloseButton);
+        if (closeButton != null && closeButton.isDisplayed()){
+            WinUI.clickElement(closeButton);
+        }
     }
 
     public WebDriver createBrowser(String appName) throws MalformedURLException {
